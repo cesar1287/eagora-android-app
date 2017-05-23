@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         s2.setBanner("http://i.imgur.com/7unwhF0.jpg");
         recipesList.add(s2);
 
+        Segment s3 = new Segment();
+        s3.setName("Metalúrgica");
+        s3.setBanner("http://i.imgur.com/7unwhF0.jpg");
+        recipesList.add(s3);
+
         frag = (SegmentFragment) getSupportFragmentManager().findFragmentByTag("mainFrag");
         if(frag == null) {
             frag = new SegmentFragment();

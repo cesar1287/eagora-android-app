@@ -11,6 +11,7 @@ import java.util.List;
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.fragment.SegmentFragment;
+import harmonytech.eagora.controller.util.Utility;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,74 +29,74 @@ public class MainActivity extends AppCompatActivity {
     private void setupUI() {
 
         Segment animal = new Segment();
-        animal.setName("Animais");
-        Uri uriAnimal = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_animal);
+        animal.setName(Utility.SEGMENTO_ANIMAIS);
+        Uri uriAnimal = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_animal);
         animal.setBanner(uriAnimal);
         recipesList.add(animal);
 
         Segment arteCultura = new Segment();
-        arteCultura.setName("Arte e Cultura");
-        Uri uriArteCultura = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_arte_cultura);
+        arteCultura.setName(Utility.SEGMENTO_ARTE_CULTURA);
+        Uri uriArteCultura = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_arte_cultura);
         arteCultura.setBanner(uriArteCultura);
         recipesList.add(arteCultura);
 
         Segment assistenciaTecnica = new Segment();
-        assistenciaTecnica.setName("Assistência Técnica");
-        Uri uriAssistenciaTecnica = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_assistencia_tecnica);
+        assistenciaTecnica.setName(Utility.SEGMENTO_ASSISTENCIA_TECNICA);
+        Uri uriAssistenciaTecnica = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_assistencia_tecnica);
         assistenciaTecnica.setBanner(uriAssistenciaTecnica);
         recipesList.add(assistenciaTecnica);
 
         Segment aulas = new Segment();
-        aulas.setName("Aulas");
-        Uri uriAulas = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_aulas);
+        aulas.setName(Utility.SEGMENTO_AULAS);
+        Uri uriAulas = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_aulas);
         aulas.setBanner(uriAulas);
         recipesList.add(aulas);
 
         Segment autos = new Segment();
-        autos.setName("Autos");
-        Uri uriAutos = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_autos);
+        autos.setName(Utility.SEGMENTO_AUTOS);
+        Uri uriAutos = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_autos);
         autos.setBanner(uriAutos);
         recipesList.add(aulas);
 
         Segment belezaEstetica = new Segment();
-        belezaEstetica.setName("Beleza e Estética");
-        Uri uriBelezaEstetica = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_beleza);
+        belezaEstetica.setName(Utility.SEGMENTO_BELEZA_ESTETICA);
+        Uri uriBelezaEstetica = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_beleza);
         belezaEstetica.setBanner(uriBelezaEstetica);
         recipesList.add(belezaEstetica);
 
         Segment construcao = new Segment();
-        construcao.setName("Construção e Reformas");
-        Uri uriConstrucao = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_construcao);
+        construcao.setName(Utility.SEGMENTO_CONSTRUCAO);
+        Uri uriConstrucao = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_construcao);
         construcao.setBanner(uriConstrucao);
         recipesList.add(construcao);
 
         Segment consultoria = new Segment();
-        consultoria.setName("Consultoria");
-        Uri uriConsultoria = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_consultoria);
+        consultoria.setName(Utility.SEGMENTO_CONSULTORIA);
+        Uri uriConsultoria = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_consultoria);
         consultoria.setBanner(uriConsultoria);
         recipesList.add(consultoria);
 
         Segment design = new Segment();
-        design.setName("Design e Tecnologia");
-        Uri uriDesign = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_design);
+        design.setName(Utility.SEGMENTO_DESIGN);
+        Uri uriDesign = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_design);
         design.setBanner(uriDesign);
         recipesList.add(design);
 
         Segment eventos = new Segment();
-        eventos.setName("Eventos");
-        Uri uriEventos = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_eventos);
+        eventos.setName(Utility.SEGMENTO_EVENTOS);
+        Uri uriEventos = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_eventos);
         eventos.setBanner(uriEventos);
         recipesList.add(eventos);
 
         Segment saude = new Segment();
-        saude.setName("Saúde");
-        Uri uriSaude = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_saude);
+        saude.setName(Utility.SEGMENTO_SAUDE);
+        Uri uriSaude = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_saude);
         saude.setBanner(uriSaude);
         recipesList.add(saude);
 
         Segment servicosDomesticos = new Segment();
-        servicosDomesticos.setName("Serviços Domésticos");
-        Uri uriServicoDomestico = Uri.parse("android.resource://harmonytech.eagora/" + R.drawable.eagora_icon_servicos_domesticos);
+        servicosDomesticos.setName(Utility.SEGMENTO_SERVICOS_DOMESTICOS);
+        Uri uriServicoDomestico = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_icon_servicos_domesticos);
         servicosDomesticos.setBanner(uriServicoDomestico);
         recipesList.add(servicosDomesticos);
 

@@ -42,6 +42,7 @@ public class SegmentAdapter extends RecyclerView.Adapter<SegmentAdapter.MyViewHo
 
         Glide.with(c)
                 .load(mList.get((position)).getBanner())
+                .centerCrop()
                 .into(myViewHolder.bannerSegment);
         myViewHolder.nameSegment.setText(mList.get(position).getName());
     }

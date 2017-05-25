@@ -1,6 +1,7 @@
 package harmonytech.eagora.controller.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -18,6 +19,7 @@ import harmonytech.eagora.controller.adapter.SegmentAdapter;
 import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.interfaces.RecyclerViewOnClickListenerHack;
 import harmonytech.eagora.view.MainActivity;
+import harmonytech.eagora.view.SegmentDetailsActivity;
 
 public class SegmentFragment extends Fragment implements RecyclerViewOnClickListenerHack {
 
@@ -51,9 +53,8 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
 
     @Override
     public void onClickListener(View view, int position) {
-        //Intent intent = new Intent(getActivity(), ArticleActivity.class);
-        //intent.putExtra("article", mList.get(position));
-        //startActivity(intent);
+        Intent intent = new Intent(getActivity(), SegmentDetailsActivity.class);
+        startActivity(intent);
     }
 
     private static class RecyclerViewTouchListener implements RecyclerView.OnItemTouchListener {
@@ -79,7 +80,6 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
                 }
             });
         }
-
         @Override
         public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
             mGestureDetector.onTouchEvent(e);

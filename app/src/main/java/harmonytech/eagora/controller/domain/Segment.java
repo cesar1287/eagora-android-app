@@ -1,8 +1,11 @@
 package harmonytech.eagora.controller.domain;
 
+import android.net.Uri;
+
 public class Segment {
 
-    private String name, banner;
+    private String name;
+    private Uri banner;
 
     public String getName() {
         return name;
@@ -12,11 +15,11 @@ public class Segment {
         this.name = name;
     }
 
-    public String getBanner() {
+    public Uri getBanner() {
         return banner;
     }
 
-    public void setBanner(String banner) {
+    public void setBanner(Uri banner) {
         this.banner = banner;
     }
 }

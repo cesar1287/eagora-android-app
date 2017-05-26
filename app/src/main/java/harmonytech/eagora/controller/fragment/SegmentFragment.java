@@ -18,6 +18,7 @@ import harmonytech.eagora.R;
 import harmonytech.eagora.controller.adapter.SegmentAdapter;
 import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.interfaces.RecyclerViewOnClickListenerHack;
+import harmonytech.eagora.controller.util.Utility;
 import harmonytech.eagora.view.MainActivity;
 import harmonytech.eagora.view.SegmentDetailsActivity;
 
@@ -36,7 +37,7 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
         mRecyclerView = (RecyclerView) view.findViewById(R.id.rv_list);
         mRecyclerView.setHasFixedSize(true);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 3);
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(gridLayoutManager);
 
@@ -54,6 +55,7 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
     @Override
     public void onClickListener(View view, int position) {
         Intent intent = new Intent(getActivity(), SegmentDetailsActivity.class);
+        intent.putExtra(Utility.SEGMENTO, mList.get(position).getName());
         startActivity(intent);
     }
 

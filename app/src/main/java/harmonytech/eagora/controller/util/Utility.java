@@ -4,6 +4,8 @@ public class Utility {
 
     public static final String URI_PACKAGE = "android.resource://harmonytech.eagora/";
 
+    public static final String SEGMENTO = "segmento";
+
     public static final String SEGMENTO_ANIMAIS = "Animais";
     public static final String SEGMENTO_ARTE_CULTURA = "Arte e Cultura";
     public static final String SEGMENTO_ASSISTENCIA_TECNICA = "Assistência Técnica";

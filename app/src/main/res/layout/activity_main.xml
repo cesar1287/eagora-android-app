@@ -3,9 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context="harmonytech.eagora.view.MainActivity">
 
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+
     <RelativeLayout
+        android:layout_below="@id/video"
         android:id="@+id/segments_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

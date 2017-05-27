@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupUI() {
 
         final VideoView videoview = (VideoView) findViewById(R.id.video);
-        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.screwdriver_4729);
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.eagora_clip);
         videoview.setVideoURI(uri);
         videoview.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override

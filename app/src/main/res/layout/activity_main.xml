@@ -3,19 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackground"
     tools:context="harmonytech.eagora.view.MainActivity">
 
-    <VideoView
-        android:id="@+id/video"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp" />
 
     <RelativeLayout
-        android:layout_below="@id/video"
+        android:id="@+id/video_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eagora?"
+            android:textSize="70dp"
+            android:fontFamily="@string/common_google_play_services_restricted_profile_title"
+            android:textColor="@color/colorCard"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/categorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Categorias"
+        android:textSize="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/video_logo" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/categorias"
         android:id="@+id/segments_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

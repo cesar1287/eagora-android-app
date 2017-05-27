@@ -11,7 +11,10 @@
     <RelativeLayout
         android:id="@+id/video_logo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <VideoView
             android:id="@+id/video"
@@ -37,8 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:text="Categorias"
-        android:textSize="21dp"
-        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="14dp"
         android:layout_below="@+id/video_logo" />
 
 
@@ -47,7 +50,7 @@
         android:id="@+id/segments_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="17dp"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

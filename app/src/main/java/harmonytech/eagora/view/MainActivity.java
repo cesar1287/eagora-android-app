@@ -1,8 +1,11 @@
 package harmonytech.eagora.view;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.VideoView;
@@ -29,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         setupUI();
 
         setupHashMap();
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
     }
 
     private void setupHashMap() {

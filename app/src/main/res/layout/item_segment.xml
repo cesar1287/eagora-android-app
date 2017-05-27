@@ -6,25 +6,25 @@
 
 
     <RelativeLayout
-        android:layout_width="90dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/segment_banner"
-            android:layout_width="90dp"
-            android:layout_height="90dp" />
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
 
         <TextView
             android:id="@+id/segment_name"
             android:text="Deldo de fresa"
             android:fontFamily="@string/common_google_play_services_enable_button"
-            android:textSize="13sp"
+            android:textSize="11sp"
             android:textColor="#333333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="81dp"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginRight="10dp"

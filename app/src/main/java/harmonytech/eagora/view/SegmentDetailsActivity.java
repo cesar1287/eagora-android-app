@@ -5,8 +5,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -98,6 +96,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
                     p.setPostalCode((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_POSTAL_CODE).getValue());
                     p.setBirth((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_BIRTH).getValue());
                     p.setSubcategory((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY).getValue());
+                    p.setRate((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
                 }
             }
 

@@ -2,7 +2,15 @@ package harmonytech.eagora.controller.domain;
 
 public class Provider {
 
-    private String name, email, phone, postalCode, birth, subcategory;
+    private String name, email, phone, postalCode, birth, subcategory, rate;
+
+    public String getRate() {
+        return rate;
+    }
+
+    public void setRate(String rate) {
+        this.rate = rate;
+    }
 
     public String getPhone() {
         return phone;

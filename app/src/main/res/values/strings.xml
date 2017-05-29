@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Eagora</string>
+    <string name="app_name_main">E agora?</string>
+    <string name="label_main_categorias">Categorias</string>
 </resources>

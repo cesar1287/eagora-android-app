@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.VideoView;
 
 import java.util.ArrayList;
@@ -28,11 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         setupUI();
 
-        ActionBar actionBar = getSupportActionBar();
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        if(actionBar!=null) {
-            actionBar.hide();
-        }
+        if(toolbar!=null) {
+            toolbar.setTitle(getResources().getString(R.string.app_name));
+        }*/
+
 
     }
 

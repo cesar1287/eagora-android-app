@@ -1,56 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackground"
     tools:context="harmonytech.eagora.view.MainActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:id="@+id/video_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <VideoView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_main"
+                    android:textSize="70sp"
+                    android:fontFamily="@string/common_google_play_services_restricted_profile_title"
+                    android:textColor="@color/colorCard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
 
     <RelativeLayout
-        android:id="@+id/video_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <VideoView
-            android:id="@+id/video"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <TextView
+            android:id="@+id/categorias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name_main"
-            android:textSize="70sp"
-            android:fontFamily="@string/common_google_play_services_restricted_profile_title"
-            android:textColor="@color/colorCard"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/label_main_categorias"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"/>
 
+        <RelativeLayout
+            android:layout_below="@id/categorias"
+            android:id="@+id/segments_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/categorias"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:text="@string/label_main_categorias"
-        android:textSize="20sp"
-        android:layout_marginTop="14dp"
-        android:layout_below="@+id/video_logo" />
-
-
-    <RelativeLayout
-        android:layout_below="@id/categorias"
-        android:id="@+id/segments_fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="17dp"
-        android:layout_centerHorizontal="true" />
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import android.os.Handler;
 import harmonytech.eagora.R;
+import harmonytech.eagora.controller.util.Singleton;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -15,8 +16,13 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        setupHashMap();
+
         ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
+        if(actionBar!=null) {
+            actionBar.hide();
+        }
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -29,7 +35,9 @@ public class SplashActivity extends AppCompatActivity {
 
     }
 
+    private void setupHashMap() {
 
-
+        Singleton.getInstance().getSegmentos();
+    }
 
 }

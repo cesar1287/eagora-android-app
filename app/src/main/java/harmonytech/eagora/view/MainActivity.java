@@ -1,7 +1,5 @@
 package harmonytech.eagora.view;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v4.app.FragmentTransaction;
@@ -16,7 +14,6 @@ import java.util.List;
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.fragment.SegmentFragment;
-import harmonytech.eagora.controller.util.Singleton;
 import harmonytech.eagora.controller.util.Utility;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,16 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
         setupUI();
 
-        setupHashMap();
-
         ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
 
-    }
+        if(actionBar!=null) {
+            actionBar.hide();
+        }
 
-    private void setupHashMap() {
-
-        Singleton.getInstance().getSegmentos();
     }
 
     private void setupUI() {

@@ -2,4 +2,6 @@
     <string name="app_name">E agora</string>
     <string name="app_name_main">E agora?</string>
     <string name="label_main_categorias">Categorias</string>
+    <string name="loading_segments_pls_wait">Carregando segmentos, por favor aguarde…</string>
+    <string name="error_loading_segments">Erro ao carregar os segmentos.</string>
 </resources>

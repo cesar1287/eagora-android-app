@@ -20,7 +20,7 @@ import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.interfaces.RecyclerViewOnClickListenerHack;
 import harmonytech.eagora.controller.util.Utility;
 import harmonytech.eagora.view.MainActivity;
-import harmonytech.eagora.view.SegmentDetailsActivity;
+import harmonytech.eagora.view.SegmentCategoryActivity;
 
 public class SegmentFragment extends Fragment implements RecyclerViewOnClickListenerHack {
 
@@ -54,7 +54,7 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
 
     @Override
     public void onClickListener(View view, int position) {
-        Intent intent = new Intent(getActivity(), SegmentDetailsActivity.class);
+        Intent intent = new Intent(getActivity(), SegmentCategoryActivity.class);
         intent.putExtra(Utility.SEGMENTO, mList.get(position).getName());
         startActivity(intent);
     }

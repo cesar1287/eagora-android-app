@@ -18,8 +18,7 @@
         <TextView
             android:id="@+id/segment_name"
             android:text="Deldo de fresa"
-            android:fontFamily="@string/common_google_play_services_enable_button"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:textColor="#333333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,6 +29,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginEnd="10dp"/>
+            <!--android:fontFamily="@string/common_google_play_services_enable_button"-->
 
     </RelativeLayout>
 

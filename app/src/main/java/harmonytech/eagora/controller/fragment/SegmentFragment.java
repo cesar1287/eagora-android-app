@@ -37,7 +37,7 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
         mRecyclerView = (RecyclerView) view.findViewById(R.id.rv_list);
         mRecyclerView.setHasFixedSize(true);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 3);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(gridLayoutManager);
 

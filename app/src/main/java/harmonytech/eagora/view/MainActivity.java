@@ -26,14 +26,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setupUI();
-
-        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-        if(toolbar!=null) {
-            toolbar.setTitle(getResources().getString(R.string.app_name));
-        }*/
-
-
     }
 
     private void setupUI() {

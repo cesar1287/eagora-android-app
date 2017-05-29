@@ -40,10 +40,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/app_name_main"
                     android:textSize="70sp"
-                    android:fontFamily="@string/common_google_play_services_restricted_profile_title"
                     android:textColor="@color/colorCard"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"/>
+
+                <!--android:fontFamily="@string/common_google_play_services_restricted_profile_title"-->
 
             </RelativeLayout>
 

@@ -30,7 +30,7 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary"
                 android:fitsSystemWindows="true"
-                app:title="Eagora?"
+                app:title="E agora?"
                 app:expandedTitleMarginStart="-150dp">
 
                 <RelativeLayout

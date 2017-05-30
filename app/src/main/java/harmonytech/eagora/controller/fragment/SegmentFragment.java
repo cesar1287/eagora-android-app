@@ -56,6 +56,7 @@ public class SegmentFragment extends Fragment implements RecyclerViewOnClickList
     public void onClickListener(View view, int position) {
         Intent intent = new Intent(getActivity(), SegmentCategoryActivity.class);
         intent.putExtra(Utility.SEGMENTO, mList.get(position).getName());
+        intent.putExtra(Utility.SEGMENTO_FIREBASE, mList.get(position).getNameFirebase());
         startActivity(intent);
     }
 

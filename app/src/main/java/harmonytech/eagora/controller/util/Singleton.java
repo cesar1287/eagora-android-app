@@ -14,9 +14,11 @@ public class Singleton {
         return uniqueInstance;
     }
 
-    public HashMap<String, ArrayList<String>> getSegmentos(){
+    public HashMap<String, HashMap<String, ArrayList<String>>> getSegmentos(){
 
-        HashMap<String, ArrayList<String>> subcategoriasSegmentos = new HashMap<>();
+        HashMap<String, HashMap<String, ArrayList<String>>> subcategoriasSegmentos = new HashMap<>();
+
+        HashMap<String, ArrayList<String>> assistenciaTelas = new HashMap<>();
 
         ArrayList<String> assistenciaTecnica = new ArrayList<>();
         assistenciaTecnica.add("Ar condicionado");
@@ -28,9 +30,22 @@ public class Singleton {
         assistenciaTecnica.add("Tablets");
         assistenciaTecnica.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_ASSISTENCIA_TECNICA, assistenciaTecnica);
+        ArrayList<String> assistenciaTecnicaFirebase = new ArrayList<>();
+        assistenciaTecnicaFirebase.add("ar_condicionado");
+        assistenciaTecnicaFirebase.add("camera");
+        assistenciaTecnicaFirebase.add("computador");
+        assistenciaTecnicaFirebase.add("eletrodomesticos");
+        assistenciaTecnicaFirebase.add("eletronicos");
+        assistenciaTecnicaFirebase.add("outros");
+        assistenciaTecnicaFirebase.add("tablets");
+        assistenciaTecnicaFirebase.add("telefonia");
 
-        ArrayList<String> animais = new ArrayList<>();
+        assistenciaTelas.put(Utility.HASH_MAP_TELA, assistenciaTecnica);
+        assistenciaTelas.put(Utility.HASH_MAP_FIREBASE, assistenciaTecnicaFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_ASSISTENCIA_TECNICA, assistenciaTelas);
+
+        /*ArrayList<String> animais = new ArrayList<>();
         animais.add("Ar condicionado");
         animais.add("Câmera");
         animais.add("Computador");
@@ -160,7 +175,7 @@ public class Singleton {
         servicosDomesticos.add("Tablets");
         servicosDomesticos.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_SERVICOS_DOMESTICOS, servicosDomesticos);
+        subcategoriasSegmentos.put(Utility.SEGMENTO_SERVICOS_DOMESTICOS, servicosDomesticos);*/
 
         return subcategoriasSegmentos;
     }

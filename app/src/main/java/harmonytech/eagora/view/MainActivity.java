@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         recipesList.add(arteCultura);
 
         Segment assistenciaTecnica = new Segment();
+        assistenciaTecnica.setNameFirebase(Utility.SEGMENTO_ASSISTENCIA_TECNICA_FIREBASE);
         assistenciaTecnica.setName(Utility.SEGMENTO_ASSISTENCIA_TECNICA);
         Uri uriAssistenciaTecnica = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_assistencia);
         assistenciaTecnica.setBanner(uriAssistenciaTecnica);

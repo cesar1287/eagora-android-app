@@ -4,8 +4,16 @@ import android.net.Uri;
 
 public class Segment {
 
-    private String name;
+    private String name, nameFirebase;
     private Uri banner;
+
+    public String getNameFirebase() {
+        return nameFirebase;
+    }
+
+    public void setNameFirebase(String nameFirebase) {
+        this.nameFirebase = nameFirebase;
+    }
 
     public String getName() {
         return name;

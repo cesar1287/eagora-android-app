@@ -17,6 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.Provider;
 import harmonytech.eagora.controller.util.FirebaseHelper;
+import harmonytech.eagora.controller.util.Utility;
 
 public class SegmentDetailsActivity extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
     ValueEventListener valueEventListener;
     ValueEventListener singleValueEventListener;
 
-    String category, subcategory;
+    String category, subcategory, title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +37,13 @@ public class SegmentDetailsActivity extends AppCompatActivity {
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
+        title = getIntent().getStringExtra(Utility.SEGMENT_DETAILS_TITLE);
         category = getIntent().getStringExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY);
         subcategory = getIntent().getStringExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY);
 
         setupUI();
 
-        dialog = ProgressDialog.show(this,"", this.getResources().getString(R.string.loading_segments_pls_wait), true, false);
+        dialog = ProgressDialog.show(this,"", this.getResources().getString(R.string.loading_providers_pls_wait), true, false);
 
         loadList();
     }
@@ -51,11 +53,11 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         if(actionBar!=null){
-            actionBar.setTitle(subcategory);
+            actionBar.setTitle(title);
             actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
 
-            segmentoFirebase = mDatabase.child(category);
+            segmentoFirebase = mDatabase.child(category).child(subcategory);
         }
     }
 
@@ -102,7 +104,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Toast.makeText(SegmentDetailsActivity.this, R.string.error_loading_segments, Toast.LENGTH_LONG).show();
+                Toast.makeText(SegmentDetailsActivity.this, R.string.error_loading_providers, Toast.LENGTH_LONG).show();
                 finish();
             }
         };
@@ -110,14 +112,14 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         singleValueEventListener = new ValueEventListener() {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-
+                Toast.makeText(SegmentDetailsActivity.this, "Teste", Toast.LENGTH_SHORT).show();
 
                 dialog.dismiss();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Toast.makeText(SegmentDetailsActivity.this, R.string.error_loading_segments, Toast.LENGTH_LONG).show();
+                Toast.makeText(SegmentDetailsActivity.this, R.string.error_loading_providers, Toast.LENGTH_LONG).show();
                 finish();
             }
         };

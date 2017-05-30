@@ -19,9 +19,9 @@ import harmonytech.eagora.controller.util.Utility;
 
 public class SegmentCategoryActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
-    HashMap<String, ArrayList<String>> subcategorias;
-    String segmento;
-    ArrayList<String> arraySegmento;
+    HashMap<String, HashMap<String, ArrayList<String>>> subcategorias;
+    String segmento, segmentoFirebase;
+    HashMap<String, ArrayList<String>> arraySegmento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,8 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
         setContentView(R.layout.activity_segment_category);
 
         segmento = getIntent().getStringExtra(Utility.SEGMENTO);
+
+        segmentoFirebase = getIntent().getStringExtra(Utility.SEGMENTO_FIREBASE);
 
         subcategorias = Singleton.getInstance().getSegmentos();
 
@@ -41,8 +43,9 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
         Intent intent = new Intent(this, SegmentDetailsActivity.class);
-        intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY, segmento);
-        intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY, arraySegmento.get(i));
+        intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY, segmentoFirebase);
+        intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY, arraySegmento.get(Utility.HASH_MAP_FIREBASE).get(i));
+        intent.putExtra(Utility.SEGMENT_DETAILS_TITLE, arraySegmento.get(Utility.HASH_MAP_TELA).get(i));
         startActivity(intent);
     }
 
@@ -56,7 +59,7 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
             actoActionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arraySegmento);
+        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arraySegmento.get(Utility.HASH_MAP_TELA));
 
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);

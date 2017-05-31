@@ -1,11 +1,14 @@
 package harmonytech.eagora.view;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -16,6 +19,7 @@ import java.util.Random;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.ProviderFirebase;
+import harmonytech.eagora.controller.util.Utility;
 
 public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -41,6 +45,11 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         btnCadastrar.setOnClickListener(this);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        ActionBar actoActionBar = getSupportActionBar();
+        actoActionBar.setTitle("Cadastro de serviços");
+
+
     }
 
     @Override
@@ -63,4 +72,5 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         mDatabase.child("assistenciaTecnica").child("computador").child("random"+
                 String.valueOf(new Random().nextInt(100))).setValue(providerFirebase);
     }
+
 }

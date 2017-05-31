@@ -34,7 +34,8 @@
         <activity
             android:name=".view.RegisterServiceActivity"
             android:parentActivityName=".view.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.DoubtActivity"></activity>
     </application>
 
 </manifest>

@@ -15,7 +15,8 @@
         android:id="@+id/etNome"
         android:layout_below="@+id/nome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
 
     <TextView
         android:id="@+id/email"
@@ -28,7 +29,8 @@
         android:id="@+id/etEmail"
         android:layout_below="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
 
     <TextView
         android:id="@+id/nascimento"
@@ -41,7 +43,8 @@
         android:id="@+id/etNascimento"
         android:layout_below="@id/nascimento"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="date"/>
 
     <TextView
         android:id="@+id/cep"
@@ -54,13 +57,15 @@
         android:id="@+id/etCep"
         android:layout_below="@id/cep"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
 
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_below="@id/etCep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/AlertDialog.AppCompat"
         android:text="cadastrar"/>
 
 </RelativeLayout>

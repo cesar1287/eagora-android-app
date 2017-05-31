@@ -4,4 +4,10 @@
     <string name="label_main_categorias">Categorias</string>
     <string name="loading_providers_pls_wait">Carregando prestadores, por favor aguarde…</string>
     <string name="error_loading_providers">Erro ao carregar os prestadores.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

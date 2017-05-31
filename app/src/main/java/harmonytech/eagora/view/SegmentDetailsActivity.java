@@ -57,7 +57,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
             actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
 
-            segmentoFirebase = mDatabase.child(category).child(subcategory);
+            segmentoFirebase = mDatabase.child(category).child(subcategory).orderByChild("nome");
         }
     }
 
@@ -94,11 +94,11 @@ public class SegmentDetailsActivity extends AppCompatActivity {
                     p = new Provider();
                     p.setName((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_NAME).getValue());
                     p.setEmail((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_EMAIL).getValue());
-                    p.setPhone((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_PHONE).getValue());
-                    p.setPostalCode((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_POSTAL_CODE).getValue());
+                    p.setPhone((Long)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_PHONE).getValue());
+                    p.setPostalCode((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_POSTAL_CODE).getValue());
                     p.setBirth((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_BIRTH).getValue());
                     p.setSubcategory((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY).getValue());
-                    p.setRate((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
+                    p.setRate((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
                 }
             }
 

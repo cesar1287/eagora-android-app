@@ -2,21 +2,22 @@ package harmonytech.eagora.controller.domain;
 
 public class Provider {
 
-    private String name, email, phone, postalCode, birth, subcategory, rate;
+    private String name, email, birth, subcategory;
+    private long phone, postalCode, rate;
 
-    public String getRate() {
+    public long getRate() {
         return rate;
     }
 
-    public void setRate(String rate) {
+    public void setRate(long rate) {
         this.rate = rate;
     }
 
-    public String getPhone() {
+    public long getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(long phone) {
         this.phone = phone;
     }
 
@@ -36,11 +37,11 @@ public class Provider {
         this.email = email;
     }
 
-    public String getPostalCode() {
+    public long getPostalCode() {
         return postalCode;
     }
 
-    public void setPostalCode(String postalCode) {
+    public void setPostalCode(long postalCode) {
         this.postalCode = postalCode;
     }
 

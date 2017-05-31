@@ -1,6 +1,7 @@
 package harmonytech.eagora.view;
 
 import android.app.ProgressDialog;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,8 +15,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.Provider;
+import harmonytech.eagora.controller.domain.Segment;
+import harmonytech.eagora.controller.fragment.ProviderFragment;
+import harmonytech.eagora.controller.fragment.SegmentFragment;
 import harmonytech.eagora.controller.util.FirebaseHelper;
 import harmonytech.eagora.controller.util.Utility;
 
@@ -30,12 +37,18 @@ public class SegmentDetailsActivity extends AppCompatActivity {
 
     String category, subcategory, title;
 
+    ArrayList<Provider> providers;
+
+    ProviderFragment frag;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_details);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        providers = new ArrayList<>();
 
         title = getIntent().getStringExtra(Utility.SEGMENT_DETAILS_TITLE);
         category = getIntent().getStringExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY);
@@ -46,6 +59,10 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         dialog = ProgressDialog.show(this,"", this.getResources().getString(R.string.loading_providers_pls_wait), true, false);
 
         loadList();
+    }
+
+    public List<Provider> getProvidersList() {
+        return providers;
     }
 
     private void setupUI() {
@@ -99,6 +116,8 @@ public class SegmentDetailsActivity extends AppCompatActivity {
                     p.setBirth((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_BIRTH).getValue());
                     p.setSubcategory((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY).getValue());
                     p.setRate((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
+
+                    providers.add(p);
                 }
             }
 
@@ -112,7 +131,13 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         singleValueEventListener = new ValueEventListener() {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                Toast.makeText(SegmentDetailsActivity.this, "Teste", Toast.LENGTH_SHORT).show();
+                frag = (ProviderFragment) getSupportFragmentManager().findFragmentByTag("mainFrag");
+                if(frag == null) {
+                    frag = new ProviderFragment();
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.providers_fragment_container, frag, "mainFrag");
+                    ft.commit();
+                }
 
                 dialog.dismiss();
             }

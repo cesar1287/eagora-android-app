@@ -31,6 +31,10 @@
         <activity
             android:name=".view.SegmentDetailsActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.RegisterServiceActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="harmonytech.eagora.view.RegisterServiceActivity">
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"/>
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_below="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@+id/etNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/nascimento"
+        android:layout_below="@id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nascimento"/>
+
+    <EditText
+        android:id="@+id/etNascimento"
+        android:layout_below="@id/nascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cep"
+        android:layout_below="@id/etNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEP"/>
+
+    <EditText
+        android:id="@+id/etCep"
+        android:layout_below="@id/cep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_below="@id/etCep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cadastrar"/>
+
+</RelativeLayout>

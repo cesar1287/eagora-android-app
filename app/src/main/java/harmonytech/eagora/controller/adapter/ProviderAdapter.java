@@ -43,7 +43,7 @@ public class ProviderAdapter extends RecyclerView.Adapter<ProviderAdapter.MyView
                 .load(mList.get((position)).getBanner())
                 .centerCrop()
                 .into(myViewHolder.bannerSegment);*/
-        myViewHolder.nameSegment.setText(mList.get(position).getBirth());
+        myViewHolder.nameSegment.setText(mList.get(position).getName());
     }
 
     @Override

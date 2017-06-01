@@ -1,5 +1,6 @@
 package harmonytech.eagora.view;
 
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ import harmonytech.eagora.controller.domain.ProviderFirebase;
 public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button btnCadastrar;
-    EditText etNome, etEmail, etCEP, etNascimento, etCPF;
+    TextInputLayout etNome, etEmail, etCEP, etNascimento, etCPF;
     Spinner spCategoria, spEspecialidade;
 
     DatabaseReference mDatabase;
@@ -30,11 +31,11 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_service);
 
-        etNome = (EditText) findViewById(R.id.etNome);
-        etEmail = (EditText) findViewById(R.id.etEmail);
-        etNascimento = (EditText) findViewById(R.id.etNascimento);
-        etCEP = (EditText) findViewById(R.id.etCep);
-        etCPF = (EditText) findViewById(R.id.etCpf);
+        etNome = (TextInputLayout) findViewById(R.id.etNome);
+        etEmail = (TextInputLayout) findViewById(R.id.etEmail);
+        etNascimento = (TextInputLayout) findViewById(R.id.etNascimento);
+        etCEP = (TextInputLayout) findViewById(R.id.etCep);
+        etCPF = (TextInputLayout) findViewById(R.id.etCpf);
         spCategoria = (Spinner) findViewById(R.id.spCategorias);
         spEspecialidade = (Spinner) findViewById(R.id.spSubCategoria);
 
@@ -58,11 +59,11 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
                 String name, email, birth, postalCode, cpf, phone;
 
-                name = etNome.getText().toString();
-                email = etEmail.getText().toString();
-                birth = etNascimento.getText().toString();
-                postalCode = etCEP.getText().toString();
-                cpf = etCPF.getText().toString();
+                name = etNome.getEditText().getText().toString();
+                email = etEmail.getEditText().getText().toString();
+                birth = etNascimento.getEditText().getText().toString();
+                postalCode = etCEP.getEditText().getText().toString();
+                cpf = etCPF.getEditText().getText().toString();
 
                 writeNewProvider(name, email, birth, postalCode, cpf);
                 Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();

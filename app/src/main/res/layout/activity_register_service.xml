@@ -46,79 +46,91 @@
 
             </Spinner>
 
-            <TextView
-                android:id="@+id/nome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nome"/>
-
-            <EditText
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/etNome"
+                android:layout_below="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"/>
+                android:hint="Nome">
 
-            <TextView
-                android:id="@+id/cpf"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CPF"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"/>
 
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/etCpf"
+                android:layout_below="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:hint="CPF">
 
-            <TextView
-                android:id="@+id/telefone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Telefone"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
 
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/etTelefone"
+                android:layout_below="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:hint="Telefone">
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_below="@+id/etNome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
 
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/etEmail"
+                android:layout_below="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"/>
+                android:hint="Email">
 
-            <TextView
-                android:id="@+id/nascimento"
-                android:layout_below="@id/etEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nascimento"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"/>
 
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/etNascimento"
+                android:layout_below="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="date"/>
+                android:hint="Data de Nascimento">
 
-            <TextView
-                android:id="@+id/cep"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CEP"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"/>
 
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/etCep"
+                android:layout_below="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:hint="CEP">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/btnCadastrar"

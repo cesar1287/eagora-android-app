@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleX="0.7"
-        android:scaleY="0.3"
-        android:background="@drawable/e_agora_transparent"
+        android:scaleY="0.5"
+        android:background="@drawable/eagora_image_logo"
         android:layout_centerVertical="true"/>
 </RelativeLayout>

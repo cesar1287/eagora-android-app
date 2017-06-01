@@ -10,6 +10,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -30,14 +31,14 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
     String segmento, segmentoFirebase;
     HashMap<String, ArrayList<String>> arraySegmento;
 
-    RelativeLayout relativeLayout;
+    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_category);
 
-        relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
+        linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
         segmento = getIntent().getStringExtra(Utility.SEGMENTO);
 

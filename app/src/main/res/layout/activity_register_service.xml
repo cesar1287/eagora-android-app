@@ -1,71 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="harmonytech.eagora.view.RegisterServiceActivity">
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/nome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome"/>
-
-    <EditText
-        android:id="@+id/etNome"
-        android:layout_below="@+id/nome"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tools:context="harmonytech.eagora.view.RegisterServiceActivity">
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_below="@+id/etNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/eagora_image_profile"/>
 
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_below="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"/>
 
-    <TextView
-        android:id="@+id/nascimento"
-        android:layout_below="@id/etEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nascimento"/>
+            <Spinner
+                android:id="@+id/spCategorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
 
-    <EditText
-        android:id="@+id/etNascimento"
-        android:layout_below="@id/nascimento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="date"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especialidade"/>
 
-    <TextView
-        android:id="@+id/cep"
-        android:layout_below="@id/etNascimento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CEP"/>
+            <Spinner
+                android:id="@+id/spSubCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/etCep"
-        android:layout_below="@id/cep"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"/>
+            </Spinner>
 
-    <Button
-        android:id="@+id/btnCadastrar"
-        android:layout_below="@id/etCep"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/AlertDialog.AppCompat"
-        android:text="cadastrar"/>
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"/>
 
-</RelativeLayout>
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF"/>
+
+            <EditText
+                android:id="@+id/etCpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_below="@+id/etNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:id="@+id/nascimento"
+                android:layout_below="@id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nascimento"/>
+
+            <EditText
+                android:id="@+id/etNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"/>
+
+            <TextView
+                android:id="@+id/cep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP"/>
+
+            <EditText
+                android:id="@+id/etCep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AlertDialog.AppCompat"
+                android:text="cadastrar"
+                android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

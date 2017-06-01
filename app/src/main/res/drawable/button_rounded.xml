@@ -10,7 +10,6 @@
             android:color="#3498db"
             />
 
-        // Reduce the corner radius value
         <corners android:radius="10dp" />
 
         <padding

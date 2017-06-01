@@ -60,10 +60,10 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
                 String name, email, birth, postalCode, cpf, phone;
 
                 name = etNome.getEditText().getText().toString();
-                email = etEmail.getEditText().getText().toString();
-                birth = etNascimento.getEditText().getText().toString();
-                postalCode = etCEP.getEditText().getText().toString();
-                cpf = etCPF.getEditText().getText().toString();
+                email = etEmail.getEditText().toString();
+                birth = etNascimento.getEditText().toString();
+                postalCode = etCEP.getEditText().toString();
+                cpf = etCPF.getEditText().toString();
 
                 writeNewProvider(name, email, birth, postalCode, cpf);
                 Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();

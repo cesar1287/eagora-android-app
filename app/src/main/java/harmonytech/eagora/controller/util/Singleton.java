@@ -45,7 +45,9 @@ public class Singleton {
 
         subcategoriasSegmentos.put(Utility.SEGMENTO_ASSISTENCIA_TECNICA, assistenciaTelas);
 
-        /*ArrayList<String> animais = new ArrayList<>();
+        HashMap<String, ArrayList<String>> animaisTelas = new HashMap<>();
+
+        ArrayList<String> animais = new ArrayList<>();
         animais.add("Ar condicionado");
         animais.add("Câmera");
         animais.add("Computador");
@@ -55,7 +57,22 @@ public class Singleton {
         animais.add("Tablets");
         animais.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_ANIMAIS, animais);
+        ArrayList<String> animaisFirebase = new ArrayList<>();
+        animaisFirebase.add("ar_condicionado");
+        animaisFirebase.add("camera");
+        animaisFirebase.add("computador");
+        animaisFirebase.add("eletrodomesticos");
+        animaisFirebase.add("eletronicos");
+        animaisFirebase.add("outros");
+        animaisFirebase.add("tablets");
+        animaisFirebase.add("telefonia");
+
+        animaisTelas.put(Utility.HASH_MAP_TELA, animais);
+        animaisTelas.put(Utility.HASH_MAP_FIREBASE, animaisFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_ANIMAIS, animaisTelas);
+
+        HashMap<String, ArrayList<String>> arteCulturaTelas = new HashMap<>();
 
         ArrayList<String> arteCultura = new ArrayList<>();
         arteCultura.add("Ar condicionado");
@@ -67,7 +84,22 @@ public class Singleton {
         arteCultura.add("Tablets");
         arteCultura.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_ARTE_CULTURA, arteCultura);
+        ArrayList<String> arteCulturaFirebase = new ArrayList<>();
+        arteCulturaFirebase.add("ar_condicionado");
+        arteCulturaFirebase.add("camera");
+        arteCulturaFirebase.add("computador");
+        arteCulturaFirebase.add("eletrodomesticos");
+        arteCulturaFirebase.add("eletronicos");
+        arteCulturaFirebase.add("outros");
+        arteCulturaFirebase.add("tablets");
+        arteCulturaFirebase.add("telefonia");
+
+        arteCulturaTelas.put(Utility.HASH_MAP_TELA, arteCultura);
+        arteCulturaTelas.put(Utility.HASH_MAP_FIREBASE, arteCulturaFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_ARTE_CULTURA, arteCulturaTelas);
+
+        HashMap<String, ArrayList<String>> aulasTelas = new HashMap<>();
 
         ArrayList<String> aulas = new ArrayList<>();
         aulas.add("Ar condicionado");
@@ -79,7 +111,22 @@ public class Singleton {
         aulas.add("Tablets");
         aulas.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_AULAS, aulas);
+        ArrayList<String> aulasFirebase = new ArrayList<>();
+        aulasFirebase.add("ar_condicionado");
+        aulasFirebase.add("camera");
+        aulasFirebase.add("computador");
+        aulasFirebase.add("eletrodomesticos");
+        aulasFirebase.add("eletronicos");
+        aulasFirebase.add("outros");
+        aulasFirebase.add("tablets");
+        aulasFirebase.add("telefonia");
+
+        aulasTelas.put(Utility.HASH_MAP_TELA, aulas);
+        aulasTelas.put(Utility.HASH_MAP_FIREBASE, aulasFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_AULAS, aulasTelas);
+
+        HashMap<String, ArrayList<String>> autosTelas = new HashMap<>();
 
         ArrayList<String> autos = new ArrayList<>();
         autos.add("Ar condicionado");
@@ -91,7 +138,22 @@ public class Singleton {
         autos.add("Tablets");
         autos.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_AUTOS, autos);
+        ArrayList<String> autosFirebase = new ArrayList<>();
+        autosFirebase.add("ar_condicionado");
+        autosFirebase.add("camera");
+        autosFirebase.add("computador");
+        autosFirebase.add("eletrodomesticos");
+        autosFirebase.add("eletronicos");
+        autosFirebase.add("outros");
+        autosFirebase.add("tablets");
+        autosFirebase.add("telefonia");
+
+        autosTelas.put(Utility.HASH_MAP_TELA, autos);
+        autosTelas.put(Utility.HASH_MAP_FIREBASE, autosFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_AUTOS, autosTelas);
+
+        HashMap<String, ArrayList<String>> belezaEsteticaTelas = new HashMap<>();
 
         ArrayList<String> belezaEstetica = new ArrayList<>();
         belezaEstetica.add("Ar condicionado");
@@ -103,7 +165,22 @@ public class Singleton {
         belezaEstetica.add("Tablets");
         belezaEstetica.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_BELEZA_ESTETICA, belezaEstetica);
+        ArrayList<String> belezaEsteticaFirebase = new ArrayList<>();
+        belezaEsteticaFirebase.add("ar_condicionado");
+        belezaEsteticaFirebase.add("camera");
+        belezaEsteticaFirebase.add("computador");
+        belezaEsteticaFirebase.add("eletrodomesticos");
+        belezaEsteticaFirebase.add("eletronicos");
+        belezaEsteticaFirebase.add("outros");
+        belezaEsteticaFirebase.add("tablets");
+        belezaEsteticaFirebase.add("telefonia");
+
+        belezaEsteticaTelas.put(Utility.HASH_MAP_TELA, belezaEstetica);
+        belezaEsteticaTelas.put(Utility.HASH_MAP_FIREBASE, belezaEsteticaFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_BELEZA_ESTETICA, belezaEsteticaTelas);
+
+        HashMap<String, ArrayList<String>> construcaoReformasTelas = new HashMap<>();
 
         ArrayList<String> construcaoReformas = new ArrayList<>();
         construcaoReformas.add("Ar condicionado");
@@ -115,7 +192,22 @@ public class Singleton {
         construcaoReformas.add("Tablets");
         construcaoReformas.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_CONSTRUCAO, construcaoReformas);
+        ArrayList<String> construcaoReformasFirebase = new ArrayList<>();
+        construcaoReformasFirebase.add("ar_condicionado");
+        construcaoReformasFirebase.add("camera");
+        construcaoReformasFirebase.add("computador");
+        construcaoReformasFirebase.add("eletrodomesticos");
+        construcaoReformasFirebase.add("eletronicos");
+        construcaoReformasFirebase.add("outros");
+        construcaoReformasFirebase.add("tablets");
+        construcaoReformasFirebase.add("telefonia");
+
+        construcaoReformasTelas.put(Utility.HASH_MAP_TELA, construcaoReformas);
+        construcaoReformasTelas.put(Utility.HASH_MAP_FIREBASE, construcaoReformasFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_CONSTRUCAO, construcaoReformasTelas);
+
+        HashMap<String, ArrayList<String>> consultoriaTelas = new HashMap<>();
 
         ArrayList<String> consultoria = new ArrayList<>();
         consultoria.add("Ar condicionado");
@@ -127,7 +219,22 @@ public class Singleton {
         consultoria.add("Tablets");
         consultoria.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_CONSULTORIA, consultoria);
+        ArrayList<String> consultoriaFirebase = new ArrayList<>();
+        consultoriaFirebase.add("ar_condicionado");
+        consultoriaFirebase.add("camera");
+        consultoriaFirebase.add("computador");
+        consultoriaFirebase.add("eletrodomesticos");
+        consultoriaFirebase.add("eletronicos");
+        consultoriaFirebase.add("outros");
+        consultoriaFirebase.add("tablets");
+        consultoriaFirebase.add("telefonia");
+
+        consultoriaTelas.put(Utility.HASH_MAP_TELA, consultoria);
+        consultoriaTelas.put(Utility.HASH_MAP_FIREBASE, consultoriaFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_CONSULTORIA, consultoriaTelas);
+
+        HashMap<String, ArrayList<String>> designTecnologiaTelas = new HashMap<>();
 
         ArrayList<String> designTecnologia = new ArrayList<>();
         designTecnologia.add("Ar condicionado");
@@ -139,7 +246,22 @@ public class Singleton {
         designTecnologia.add("Tablets");
         designTecnologia.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_DESIGN, designTecnologia);
+        ArrayList<String> designTecnologiaFirebase = new ArrayList<>();
+        designTecnologiaFirebase.add("ar_condicionado");
+        designTecnologiaFirebase.add("camera");
+        designTecnologiaFirebase.add("computador");
+        designTecnologiaFirebase.add("eletrodomesticos");
+        designTecnologiaFirebase.add("eletronicos");
+        designTecnologiaFirebase.add("outros");
+        designTecnologiaFirebase.add("tablets");
+        designTecnologiaFirebase.add("telefonia");
+
+        designTecnologiaTelas.put(Utility.HASH_MAP_TELA, designTecnologia);
+        designTecnologiaTelas.put(Utility.HASH_MAP_FIREBASE, designTecnologiaFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_DESIGN, designTecnologiaTelas);
+
+        HashMap<String, ArrayList<String>> eventosTelas = new HashMap<>();
 
         ArrayList<String> eventos = new ArrayList<>();
         eventos.add("Ar condicionado");
@@ -151,7 +273,22 @@ public class Singleton {
         eventos.add("Tablets");
         eventos.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_EVENTOS, eventos);
+        ArrayList<String> eventosTelasFirebase = new ArrayList<>();
+        eventosTelasFirebase.add("ar_condicionado");
+        eventosTelasFirebase.add("camera");
+        eventosTelasFirebase.add("computador");
+        eventosTelasFirebase.add("eletrodomesticos");
+        eventosTelasFirebase.add("eletronicos");
+        eventosTelasFirebase.add("outros");
+        eventosTelasFirebase.add("tablets");
+        eventosTelasFirebase.add("telefonia");
+
+        eventosTelas.put(Utility.HASH_MAP_TELA, eventos);
+        eventosTelas.put(Utility.HASH_MAP_FIREBASE, eventosTelasFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_EVENTOS, eventosTelas);
+
+        HashMap<String, ArrayList<String>> saudeTelas = new HashMap<>();
 
         ArrayList<String> saude = new ArrayList<>();
         saude.add("Ar condicionado");
@@ -163,7 +300,22 @@ public class Singleton {
         saude.add("Tablets");
         saude.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_SAUDE, saude);
+        ArrayList<String> saudeFirebase = new ArrayList<>();
+        saudeFirebase.add("ar_condicionado");
+        saudeFirebase.add("camera");
+        saudeFirebase.add("computador");
+        saudeFirebase.add("eletrodomesticos");
+        saudeFirebase.add("eletronicos");
+        saudeFirebase.add("outros");
+        saudeFirebase.add("tablets");
+        saudeFirebase.add("telefonia");
+
+        saudeTelas.put(Utility.HASH_MAP_TELA, saude);
+        saudeTelas.put(Utility.HASH_MAP_FIREBASE, saudeFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_SAUDE, saudeTelas);
+
+        HashMap<String, ArrayList<String>> servicosDomesticosTelas = new HashMap<>();
 
         ArrayList<String> servicosDomesticos = new ArrayList<>();
         servicosDomesticos.add("Ar condicionado");
@@ -175,7 +327,20 @@ public class Singleton {
         servicosDomesticos.add("Tablets");
         servicosDomesticos.add("Telefonia");
 
-        subcategoriasSegmentos.put(Utility.SEGMENTO_SERVICOS_DOMESTICOS, servicosDomesticos);*/
+        ArrayList<String> servicosDomesticosFirebase = new ArrayList<>();
+        servicosDomesticosFirebase.add("ar_condicionado");
+        servicosDomesticosFirebase.add("camera");
+        servicosDomesticosFirebase.add("computador");
+        servicosDomesticosFirebase.add("eletrodomesticos");
+        servicosDomesticosFirebase.add("eletronicos");
+        servicosDomesticosFirebase.add("outros");
+        servicosDomesticosFirebase.add("tablets");
+        servicosDomesticosFirebase.add("telefonia");
+
+        servicosDomesticosTelas.put(Utility.HASH_MAP_TELA, servicosDomesticos);
+        servicosDomesticosTelas.put(Utility.HASH_MAP_FIREBASE, servicosDomesticosFirebase);
+
+        subcategoriasSegmentos.put(Utility.SEGMENTO_SERVICOS_DOMESTICOS, servicosDomesticosTelas);
 
         return subcategoriasSegmentos;
     }

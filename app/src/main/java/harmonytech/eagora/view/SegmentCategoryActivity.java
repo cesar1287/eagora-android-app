@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,11 +42,15 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-        Intent intent = new Intent(this, SegmentDetailsActivity.class);
-        intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY, segmentoFirebase);
-        intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY, arraySegmento.get(Utility.HASH_MAP_FIREBASE).get(i));
-        intent.putExtra(Utility.SEGMENT_DETAILS_TITLE, arraySegmento.get(Utility.HASH_MAP_TELA).get(i));
-        startActivity(intent);
+        if(Utility.isConnected(this)){
+            Intent intent = new Intent(this, SegmentDetailsActivity.class);
+            intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY, segmentoFirebase);
+            intent.putExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY, arraySegmento.get(Utility.HASH_MAP_FIREBASE).get(i));
+            intent.putExtra(Utility.SEGMENT_DETAILS_TITLE, arraySegmento.get(Utility.HASH_MAP_TELA).get(i));
+            startActivity(intent);
+        }else{
+            Utility.showSnackBarErrorMessage(this, getResources().getString(R.string.no_internet_connection));
+        }
     }
 
     private void setupUI() {

@@ -20,9 +20,7 @@ import java.util.List;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.Provider;
-import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.fragment.ProviderFragment;
-import harmonytech.eagora.controller.fragment.SegmentFragment;
 import harmonytech.eagora.controller.util.FirebaseHelper;
 import harmonytech.eagora.controller.util.Utility;
 
@@ -111,10 +109,11 @@ public class SegmentDetailsActivity extends AppCompatActivity {
                     p = new Provider();
                     p.setName((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_NAME).getValue());
                     p.setEmail((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_EMAIL).getValue());
-                    //p.setPhone((Long)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_PHONE).getValue());
-                    //p.setPostalCode((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_POSTAL_CODE).getValue());
-                    //p.setBirth((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_BIRTH).getValue());
-                    //p.setRate((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
+                    p.setPhone((Long)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_PHONE).getValue());
+                    p.setPostalCode((String) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_POSTAL_CODE).getValue());
+                    p.setCpf((String) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CPF).getValue());
+                    p.setBirth((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_BIRTH).getValue());
+                    p.setRate((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
 
                     providers.add(p);
                 }

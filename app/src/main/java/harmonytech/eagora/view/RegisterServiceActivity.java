@@ -4,6 +4,7 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -16,11 +17,12 @@ import java.util.Random;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.ProviderFirebase;
+import harmonytech.eagora.controller.util.Utility;
 
 public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button btnCadastrar;
-    TextInputLayout etNome, etEmail, etCEP, etNascimento, etCPF;
+    TextInputLayout etNome, etEmail, etCEP, etNascimento, etCPF, etTelefone;
     Spinner spCategoria, spEspecialidade;
 
     DatabaseReference mDatabase;
@@ -35,6 +37,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         etNascimento = (TextInputLayout) findViewById(R.id.etNascimento);
         etCEP = (TextInputLayout) findViewById(R.id.etCep);
         etCPF = (TextInputLayout) findViewById(R.id.etCpf);
+        etTelefone = (TextInputLayout) findViewById(R.id.etTelefone);
         spCategoria = (Spinner) findViewById(R.id.spCategorias);
         spEspecialidade = (Spinner) findViewById(R.id.spSubCategoria);
 
@@ -42,6 +45,18 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         btnCadastrar.setOnClickListener(this);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        TextWatcher cpfMask = Utility.insertMask("###.###.###-##", etCPF.getEditText());
+        etCPF.getEditText().addTextChangedListener(cpfMask);
+
+        TextWatcher phoneMask = Utility.insertMask("(##)#####-####", etTelefone.getEditText());
+        etTelefone.getEditText().addTextChangedListener(phoneMask);
+
+        TextWatcher birthMask = Utility.insertMask("##/##/####", etNascimento.getEditText());
+        etNascimento.getEditText().addTextChangedListener(birthMask);
+
+        TextWatcher postalCodeMask = Utility.insertMask("#####-###", etCEP.getEditText());
+        etCEP.getEditText().addTextChangedListener(postalCodeMask);
 
         ActionBar actoActionBar = getSupportActionBar();
         if(actoActionBar!=null) {
@@ -55,19 +70,69 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
         switch (id){
             case R.id.btnCadastrar:
-
-                String name, email, birth, postalCode, cpf, phone;
-
-                name = etNome.getEditText().getText().toString();
-                email = etEmail.getEditText().toString();
-                birth = etNascimento.getEditText().toString();
-                postalCode = etCEP.getEditText().toString();
-                cpf = etCPF.getEditText().toString();
-
-                writeNewProvider(name, email, birth, postalCode, cpf);
-                Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
-                finish();
+                attemptLogin();
             break;
+        }
+    }
+
+    public void attemptLogin(){
+        String name, email, birth, postalCode, cpf, phone;
+
+        boolean allFieldsFilled = true;
+
+        name = etNome.getEditText().getText().toString();
+        email = etEmail.getEditText().getText().toString();
+        birth = etNascimento.getEditText().getText().toString();
+        postalCode = etCEP.getEditText().getText().toString();
+        cpf = etCPF.getEditText().getText().toString();
+        phone = etTelefone.getEditText().getText().toString();
+
+        if(name.equals("")){
+            allFieldsFilled = false;
+            etNome.setError("Campo obrigatório");
+        }else{
+            etNome.setErrorEnabled(false);
+        }
+
+        if(cpf.equals("")){
+            allFieldsFilled = false;
+            etCPF.setError("Campo obrigatório");
+        }else{
+            etCPF.setErrorEnabled(false);
+        }
+
+        if(phone.equals("")){
+            allFieldsFilled = false;
+            etTelefone.setError("Campo obrigatório");
+        }else{
+            etTelefone.setErrorEnabled(false);
+        }
+
+        if(email.equals("")){
+            allFieldsFilled = false;
+            etEmail.setError("Campo obrigatório");
+        }else{
+            etEmail.setErrorEnabled(false);
+        }
+
+        if(birth.equals("")){
+            allFieldsFilled = false;
+            etNascimento.setError("Campo obrigatório");
+        }else{
+            etNascimento.setErrorEnabled(false);
+        }
+
+        if(postalCode.equals("")){
+            allFieldsFilled = false;
+            etCEP.setError("Campo obrigatório");
+        }else{
+            etCEP.setErrorEnabled(false);
+        }
+
+        if(allFieldsFilled) {
+            writeNewProvider(name, email, birth, postalCode, cpf);
+            Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
+            finish();
         }
     }
 

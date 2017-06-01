@@ -1,15 +1,11 @@
 package harmonytech.eagora.view;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
@@ -19,7 +15,6 @@ import java.util.Random;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.ProviderFirebase;
-import harmonytech.eagora.controller.util.Utility;
 
 public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener{
 

@@ -437,4 +437,24 @@ public class Singleton {
 
         return subcategoriasSegmentos;
     }
+
+    public ArrayList<String> getAreas(){
+
+        ArrayList<String> areas = new ArrayList<>();
+
+        areas.add(Utility.SEGMENTO_ANIMAIS);
+        areas.add(Utility.SEGMENTO_ARTE_CULTURA);
+        areas.add(Utility.SEGMENTO_ASSISTENCIA_TECNICA);
+        areas.add(Utility.SEGMENTO_AULAS);
+        areas.add(Utility.SEGMENTO_AUTOS);
+        areas.add(Utility.SEGMENTO_BELEZA_ESTETICA);
+        areas.add(Utility.SEGMENTO_CONSTRUCAO);
+        areas.add(Utility.SEGMENTO_CONSULTORIA);
+        areas.add(Utility.SEGMENTO_DESIGN);
+        areas.add(Utility.SEGMENTO_EVENTOS);
+        areas.add(Utility.SEGMENTO_SAUDE);
+        areas.add(Utility.SEGMENTO_SERVICOS_DOMESTICOS);
+
+        return areas;
+    }
 }

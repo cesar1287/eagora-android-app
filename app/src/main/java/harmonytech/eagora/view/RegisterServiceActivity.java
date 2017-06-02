@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -13,13 +15,14 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.Random;
+import java.util.ArrayList;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.ProviderFirebase;
+import harmonytech.eagora.controller.util.Singleton;
 import harmonytech.eagora.controller.util.Utility;
 
-public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener{
+public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener{
 
     Button btnCadastrar;
     TextInputLayout etNome, etEmail, etCEP, etNascimento, etCPF, etTelefone;
@@ -34,13 +37,20 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_service);
 
+        ArrayList<String> areas = Singleton.getInstance().getAreas();
+
         etNome = (TextInputLayout) findViewById(R.id.etNome);
         etEmail = (TextInputLayout) findViewById(R.id.etEmail);
         etNascimento = (TextInputLayout) findViewById(R.id.etNascimento);
         etCEP = (TextInputLayout) findViewById(R.id.etCep);
         etCPF = (TextInputLayout) findViewById(R.id.etCpf);
         etTelefone = (TextInputLayout) findViewById(R.id.etTelefone);
+
         spCategoria = (Spinner) findViewById(R.id.spCategorias);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, areas);
+        spCategoria.setAdapter(adapter); // this will set list of values to spinner
+        spCategoria.setOnItemClickListener(this);
+
         spEspecialidade = (Spinner) findViewById(R.id.spSubCategoria);
 
         setupFieldMasks();
@@ -190,5 +200,10 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
         postalCodeMask = Utility.insertMask("#####-###", etCEP.getEditText());
         etCEP.getEditText().addTextChangedListener(postalCodeMask);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
     }
 }

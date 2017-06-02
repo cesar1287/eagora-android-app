@@ -16,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        setupHashMap();
+        setupLists();
 
         ActionBar actionBar = getSupportActionBar();
 
@@ -35,9 +35,10 @@ public class SplashActivity extends AppCompatActivity {
 
     }
 
-    private void setupHashMap() {
+    private void setupLists() {
 
         Singleton.getInstance().getSegmentos();
+        Singleton.getInstance().getAreas();
     }
 
 }

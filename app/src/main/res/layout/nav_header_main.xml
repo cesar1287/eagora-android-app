@@ -19,6 +19,6 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="E agora?"
         android:textSize="50dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"/>
 </LinearLayout>

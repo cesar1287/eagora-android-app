@@ -51,7 +51,9 @@
                         android:textSize="70sp"
                         android:textColor="@color/colorCard"
                         android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"/>
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"/>
 
                     <!--android:fontFamily="@string/common_google_play_services_restricted_profile_title"-->
 

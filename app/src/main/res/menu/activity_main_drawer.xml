@@ -5,30 +5,30 @@
         <item
             android:id="@+id/nav_categorias"
             android:icon="@drawable/nav_image_categoria"
-            android:title="Categorias" />
+            android:title="@string/label_menu_lateral_categorias" />
         <item
             android:id="@+id/nav_cadastrar"
             android:icon="@drawable/nav_image_cadastro"
-            android:title="Cadastrar Serviço" />
+            android:title="@string/label_menu_lateral_cadastrar" />
         <item
             android:id="@+id/nav_dicas_seg"
             android:icon="@drawable/nav_image_dicas"
-            android:title="Dicas de Segurança" />
+            android:title="@string/label_menu_lateral_dicas" />
         <item
             android:id="@+id/nav_termos_uso"
             android:icon="@drawable/nav_image_termos"
-            android:title="Termos de Uso" />
+            android:title="@string/label_menu_lateral_termos" />
 
     </group>
 
-    <item android:title="Contato e Dúvidas">
+    <item android:title="@string/label_menu_lateral_subtitulo">
         <menu>
             <item
                 android:id="@+id/nav_duvidas"
-                android:title="Dúvidas Frequentes" />
+                android:title="@string/label_menu_lateral_duvidas" />
             <item
                 android:id="@+id/nav_contato"
-                android:title="Fale Conosco" />
+                android:title="@string/label_menu_lateral_fale" />
         </menu>
     </item>
 

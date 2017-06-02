@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="E agora?"
+        android:text="@string/label_menu_lateral_title"
         android:textSize="50dp"
         android:fontFamily="sans-serif-smallcaps"
         android:textStyle="bold"/>

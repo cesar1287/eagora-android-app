@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Categoria"/>
+                android:text="@string/label_cadastro_serviço_categoria"/>
 
             <Spinner
                 android:id="@+id/spCategorias"
@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Especialidade"/>
+                android:text="@string/label_cadastro_serviço_Especialidade"/>
 
             <Spinner
                 android:id="@+id/spSubCategoria"

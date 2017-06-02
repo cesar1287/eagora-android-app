@@ -30,7 +30,7 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary"
                 android:fitsSystemWindows="true"
-                app:title="E agora?"
+                app:title="@string/label_main_title"
                 app:expandedTitleMarginStart="-150dp">
 
                 <RelativeLayout
@@ -47,7 +47,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_name_main"
+                        android:text="@string/label_main_title"
                         android:textSize="70sp"
                         android:textColor="@color/colorCard"
                         android:layout_centerHorizontal="true"
@@ -88,7 +88,7 @@
 
             <Button
                 android:id="@+id/btnRegisterService"
-                android:text="Cadastrar Serviço"
+                android:text="@string/button_main_cadastrar"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"

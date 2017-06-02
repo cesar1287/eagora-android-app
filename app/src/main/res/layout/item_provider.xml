@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
+    android:layout_height="75dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="?android:attr/selectableItemBackground"
     android:layout_marginTop="7dp">
@@ -17,22 +17,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp">
-
-            <RelativeLayout
-                android:layout_width="70dp"
-                android:layout_height="70dp">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/image_profile"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/eagora_image_profile"/>
-            </RelativeLayout>
+            android:layout_height="70dp"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
@@ -49,16 +38,48 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginEnd="10dp"/>
 
+
                 <TextView
                     android:id="@+id/segment_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="32915585"
+                    android:text="Telefone"
+                    android:textSize="13dp"
+
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/segment_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="13dp"
+                    android:layout_marginTop="4dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginRight="10dp"/>
 
             </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"            >
+
+            <RatingBar
+                android:id="@+id/segment_avaliacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
 
         </LinearLayout>
 

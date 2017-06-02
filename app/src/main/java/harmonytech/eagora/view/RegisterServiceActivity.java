@@ -27,6 +27,8 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
     DatabaseReference mDatabase;
 
+    TextWatcher cpfMask, phoneMask, birthMask, postalCodeMask;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,22 +43,12 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         spCategoria = (Spinner) findViewById(R.id.spCategorias);
         spEspecialidade = (Spinner) findViewById(R.id.spSubCategoria);
 
+        setupFieldMasks();
+
         btnCadastrar = (Button) findViewById(R.id.btnCadastrar);
         btnCadastrar.setOnClickListener(this);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
-        TextWatcher cpfMask = Utility.insertMask("###.###.###-##", etCPF.getEditText());
-        etCPF.getEditText().addTextChangedListener(cpfMask);
-
-        TextWatcher phoneMask = Utility.insertMask("(##)#####-####", etTelefone.getEditText());
-        etTelefone.getEditText().addTextChangedListener(phoneMask);
-
-        TextWatcher birthMask = Utility.insertMask("##/##/####", etNascimento.getEditText());
-        etNascimento.getEditText().addTextChangedListener(birthMask);
-
-        TextWatcher postalCodeMask = Utility.insertMask("#####-###", etCEP.getEditText());
-        etCEP.getEditText().addTextChangedListener(postalCodeMask);
 
         ActionBar actoActionBar = getSupportActionBar();
         if(actoActionBar!=null) {
@@ -79,6 +71,8 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         String name, email, birth, postalCode, cpf, phone;
 
         boolean allFieldsFilled = true;
+        boolean allFilledRight = true;
+        boolean allFilledCorrectly = true;
 
         name = etNome.getEditText().getText().toString();
         email = etEmail.getEditText().getText().toString();
@@ -96,6 +90,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
         if(cpf.equals("")){
             allFieldsFilled = false;
+            allFilledRight = false;
             etCPF.setError("Campo obrigatório");
         }else{
             etCPF.setErrorEnabled(false);
@@ -129,36 +124,48 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
             etCEP.setErrorEnabled(false);
         }
 
-        if(cpf.length()<14){
-            allFieldsFilled = false;
-            etCPF.setError("O CPF têm 11 dígitos");
-        }else{
-            etCPF.setErrorEnabled(false);
-        }
-
-        if(phone.length()<14){
-            allFieldsFilled = false;
-            etTelefone.setError("Telefone inválido");
-        }else{
-            etTelefone.setErrorEnabled(false);
-        }
-
-        if(birth.length()<10){
-            allFieldsFilled = false;
-            etNascimento.setError("Data de nascimento inválida");
-        }else{
-            etNascimento.setErrorEnabled(false);
-        }
-
-        if(postalCode.length()<9){
-            allFieldsFilled = false;
-            etCEP.setError("CEP inválido");
-        }else{
-            etCEP.setErrorEnabled(false);
-        }
-
-
         if(allFieldsFilled) {
+            if (cpf.length() < 14) {
+                allFilledRight = false;
+                etCPF.setError("O CPF têm 11 dígitos");
+            } else {
+                etCPF.setErrorEnabled(false);
+            }
+
+            if (phone.length() < 14) {
+                allFilledRight = false;
+                etTelefone.setError("Telefone inválido");
+            } else {
+                etTelefone.setErrorEnabled(false);
+            }
+
+            if (birth.length() < 10) {
+                allFilledRight = false;
+                etNascimento.setError("Data de nascimento inválida");
+            } else {
+                etNascimento.setErrorEnabled(false);
+            }
+
+            if (postalCode.length() < 9) {
+                allFilledRight = false;
+                etCEP.setError("CEP inválido");
+            } else {
+                etCEP.setErrorEnabled(false);
+            }
+        }
+
+        if(allFilledRight){
+            cpf = cpf.replaceAll("[.]", "").replaceAll("[-]","");
+
+            if(!Utility.isValidCPF(cpf)){
+                allFilledCorrectly = false;
+                etCPF.setError("CPF inválido");
+            }else{
+                etCPF.setErrorEnabled(false);
+            }
+        }
+
+        if(allFieldsFilled && allFilledRight && allFilledCorrectly) {
             writeNewProvider(name, email, birth, postalCode, cpf);
             Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             finish();
@@ -172,4 +179,17 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
                 String.valueOf(new Random().nextInt(100))).setValue(providerFirebase);
     }
 
+    public void setupFieldMasks(){
+        cpfMask = Utility.insertMask("###.###.###-##", etCPF.getEditText());
+        etCPF.getEditText().addTextChangedListener(cpfMask);
+
+        phoneMask = Utility.insertMask("(##)#####-####", etTelefone.getEditText());
+        etTelefone.getEditText().addTextChangedListener(phoneMask);
+
+        birthMask = Utility.insertMask("##/##/####", etNascimento.getEditText());
+        etNascimento.getEditText().addTextChangedListener(birthMask);
+
+        postalCodeMask = Utility.insertMask("#####-###", etCEP.getEditText());
+        etCEP.getEditText().addTextChangedListener(postalCodeMask);
+    }
 }

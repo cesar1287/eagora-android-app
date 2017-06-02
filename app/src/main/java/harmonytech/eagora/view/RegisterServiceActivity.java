@@ -166,17 +166,16 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         }
 
         if(allFieldsFilled && allFilledRight && allFilledCorrectly) {
-            writeNewProvider(name, email, birth, postalCode, cpf);
+            writeNewProvider(name, email, birth, postalCode, cpf, phone);
             Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             finish();
         }
     }
 
-    private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf) {
-        ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf);
+    private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf, String phone) {
+        ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf, phone);
 
-        mDatabase.child("assistenciaTecnica").child("computador").child("random"+
-                String.valueOf(new Random().nextInt(100))).setValue(providerFirebase);
+        mDatabase.child("assistenciaTecnica").child("computador").child(cpf).setValue(providerFirebase);
     }
 
     public void setupFieldMasks(){

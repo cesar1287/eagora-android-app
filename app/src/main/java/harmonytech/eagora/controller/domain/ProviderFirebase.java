@@ -12,7 +12,7 @@ public class ProviderFirebase {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public ProviderFirebase(String name, String email, String birth, String postalCode, String cpf) {
+    public ProviderFirebase(String name, String email, String birth, String postalCode, String cpf, String phone) {
         this.name = name;
         this.email = email;
         this.birth = birth;

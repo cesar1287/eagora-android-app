@@ -129,6 +129,35 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
             etCEP.setErrorEnabled(false);
         }
 
+        if(cpf.length()<14){
+            allFieldsFilled = false;
+            etCPF.setError("O CPF têm 11 dígitos");
+        }else{
+            etCPF.setErrorEnabled(false);
+        }
+
+        if(phone.length()<14){
+            allFieldsFilled = false;
+            etTelefone.setError("Telefone inválido");
+        }else{
+            etTelefone.setErrorEnabled(false);
+        }
+
+        if(birth.length()<10){
+            allFieldsFilled = false;
+            etNascimento.setError("Data de nascimento inválida");
+        }else{
+            etNascimento.setErrorEnabled(false);
+        }
+
+        if(postalCode.length()<9){
+            allFieldsFilled = false;
+            etCEP.setError("CEP inválido");
+        }else{
+            etCEP.setErrorEnabled(false);
+        }
+
+
         if(allFieldsFilled) {
             writeNewProvider(name, email, birth, postalCode, cpf);
             Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();

@@ -42,6 +42,26 @@ public class Utility {
 
     public static final String SEGMENT_DETAILS_TITLE = "title";
 
+    private static final int[] pesoCPF = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2};
+
+    private static int calcularDigito(String str, int[] peso) {
+        int soma = 0;
+        for (int indice=str.length()-1, digito; indice >= 0; indice-- ) {
+            digito = Integer.parseInt(str.substring(indice,indice+1));
+            soma += digito*peso[peso.length-str.length()+indice];
+        }
+        soma = 11 - soma % 11;
+        return soma > 9 ? 0 : soma;
+    }
+
+    public static boolean isValidCPF(String cpf) {
+        if ((cpf==null) || (cpf.length()!=11)) return false;
+
+        Integer digito1 = calcularDigito(cpf.substring(0,9), pesoCPF);
+        Integer digito2 = calcularDigito(cpf.substring(0,9) + digito1, pesoCPF);
+        return cpf.equals(cpf.substring(0,9) + digito1.toString() + digito2.toString());
+    }
+
     public static boolean isConnected(Activity activity){
         ConnectivityManager cm =
                 (ConnectivityManager)activity.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -55,6 +75,17 @@ public class Utility {
         TSnackbar snackbar = TSnackbar.make(activity.findViewById(android.R.id.content), errorMessage, TSnackbar.LENGTH_SHORT);
         View snackbarView = snackbar.getView();
         snackbarView.setBackgroundColor(activity.getResources().getColor(R.color.redNoInternetConnection));
+        TextView textView = (TextView) snackbarView.findViewById(com.androidadvance.topsnackbar.R.id.snackbar_text);
+        textView.setTextColor(Color.WHITE);
+        textView.setGravity(Gravity.CENTER_HORIZONTAL);
+        snackbar.show();
+    }
+
+    public static void showSnackBarSucessMessage(Activity activity, String sucessMessage){
+
+        TSnackbar snackbar = TSnackbar.make(activity.findViewById(android.R.id.content), sucessMessage, TSnackbar.LENGTH_SHORT);
+        View snackbarView = snackbar.getView();
+        snackbarView.setBackgroundColor(activity.getResources().getColor(R.color.greenSucessMessage));
         TextView textView = (TextView) snackbarView.findViewById(com.androidadvance.topsnackbar.R.id.snackbar_text);
         textView.setTextColor(Color.WHITE);
         textView.setGravity(Gravity.CENTER_HORIZONTAL);

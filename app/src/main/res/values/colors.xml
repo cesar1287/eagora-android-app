@@ -6,4 +6,5 @@
     <color name="colorCard">#80f2f2f2</color>
     <color name="colorBackground">#ffffff</color>
     <color name="redNoInternetConnection">#F44336</color>
+    <color name="greenSucessMessage">#4BB543</color>
 </resources>

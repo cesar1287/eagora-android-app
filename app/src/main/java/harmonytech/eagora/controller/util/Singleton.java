@@ -48,24 +48,26 @@ public class Singleton {
         HashMap<String, ArrayList<String>> animaisTelas = new HashMap<>();
 
         ArrayList<String> animais = new ArrayList<>();
-        animais.add("Ar condicionado");
-        animais.add("Câmera");
-        animais.add("Computador");
-        animais.add("Eletrodomésticos");
-        animais.add("Eletrônicos");
+        animais.add("Acessorios");
+        animais.add("Adestrador de animais");
+        animais.add("Banho e tosa");
+        animais.add("Cuidador de animais");
+        animais.add("Passeio para animais");
+        animais.add("Vededor de Ração");
+        animais.add("Veterinário");
         animais.add("Outros");
-        animais.add("Tablets");
-        animais.add("Telefonia");
+
 
         ArrayList<String> animaisFirebase = new ArrayList<>();
-        animaisFirebase.add("ar_condicionado");
-        animaisFirebase.add("camera");
-        animaisFirebase.add("computador");
-        animaisFirebase.add("eletrodomesticos");
-        animaisFirebase.add("eletronicos");
+        animaisFirebase.add("acessorios");
+        animaisFirebase.add("adestrador_de_animais");
+        animaisFirebase.add("banho_e_tosa");
+        animaisFirebase.add("cuidador_de_animais");
+        animaisFirebase.add("passeio_para_animais");
+        animaisFirebase.add("vededor_de_ração");
+        animaisFirebase.add("veterinário");
         animaisFirebase.add("outros");
-        animaisFirebase.add("tablets");
-        animaisFirebase.add("telefonia");
+
 
         animaisTelas.put(Utility.HASH_MAP_TELA, animais);
         animaisTelas.put(Utility.HASH_MAP_FIREBASE, animaisFirebase);
@@ -75,24 +77,32 @@ public class Singleton {
         HashMap<String, ArrayList<String>> arteCulturaTelas = new HashMap<>();
 
         ArrayList<String> arteCultura = new ArrayList<>();
-        arteCultura.add("Ar condicionado");
-        arteCultura.add("Câmera");
-        arteCultura.add("Computador");
-        arteCultura.add("Eletrodomésticos");
-        arteCultura.add("Eletrônicos");
+        arteCultura.add("Aluguel de teatro");
+        arteCultura.add("Artesão");
+        arteCultura.add("Companhia de dança");
+        arteCultura.add("Compahia de teatro");
+        arteCultura.add("Escultor");
+        arteCultura.add("Desenhista");
+        arteCultura.add("Pintor de Telas");
+        arteCultura.add("Roteirista");
+        arteCultura.add("Cantor");
+        arteCultura.add("Músico");
         arteCultura.add("Outros");
-        arteCultura.add("Tablets");
-        arteCultura.add("Telefonia");
+
+
 
         ArrayList<String> arteCulturaFirebase = new ArrayList<>();
-        arteCulturaFirebase.add("ar_condicionado");
-        arteCulturaFirebase.add("camera");
-        arteCulturaFirebase.add("computador");
-        arteCulturaFirebase.add("eletrodomesticos");
-        arteCulturaFirebase.add("eletronicos");
+        arteCulturaFirebase.add("aluguel_de_teatro");
+        arteCulturaFirebase.add("artesão");
+        arteCulturaFirebase.add("companhia_de_danca");
+        arteCulturaFirebase.add("compahia_de_teatro");
+        arteCulturaFirebase.add("escultor");
+        arteCulturaFirebase.add("desenhista");
+        arteCulturaFirebase.add("pintor_de_telas");
+        arteCulturaFirebase.add("roteirista");
+        arteCulturaFirebase.add("cantor");
+        arteCulturaFirebase.add("musico");
         arteCulturaFirebase.add("outros");
-        arteCulturaFirebase.add("tablets");
-        arteCulturaFirebase.add("telefonia");
 
         arteCulturaTelas.put(Utility.HASH_MAP_TELA, arteCultura);
         arteCulturaTelas.put(Utility.HASH_MAP_FIREBASE, arteCulturaFirebase);
@@ -111,6 +121,7 @@ public class Singleton {
         aulas.add("Aulas de informática");
         aulas.add("Aulas de lutas");
         aulas.add("Aulas de música");
+        aulas.add("Outros");
 
         ArrayList<String> aulasFirebase = new ArrayList<>();
         aulasFirebase.add("artes_e_artesanato");
@@ -122,6 +133,7 @@ public class Singleton {
         aulasFirebase.add("aulas_de_informatica");
         aulasFirebase.add("aulas_de_lutas");
         aulasFirebase.add("aulas_de_musica");
+        aulasFirebase.add("outros");
 
         aulasTelas.put(Utility.HASH_MAP_TELA, aulas);
         aulasTelas.put(Utility.HASH_MAP_FIREBASE, aulasFirebase);
@@ -139,6 +151,7 @@ public class Singleton {
         autos.add("Martelinho de ouro");
         autos.add("Revisão");
         autos.add("Som automoivo");
+        autos.add("Outros");
 
         ArrayList<String> autosFirebase = new ArrayList<>();
         autosFirebase.add("alarme_automotivo");
@@ -149,6 +162,7 @@ public class Singleton {
         autosFirebase.add("martelinho_de_ouro");
         autosFirebase.add("revisao");
         autosFirebase.add("som_automoivo");
+        autos.add("outros");
 
         autosTelas.put(Utility.HASH_MAP_TELA, autos);
         autosTelas.put(Utility.HASH_MAP_FIREBASE, autosFirebase);
@@ -167,6 +181,7 @@ public class Singleton {
         belezaEstetica.add("Maquiadores");
         belezaEstetica.add("Personal stylist");
         belezaEstetica.add("Sapateiro");
+        belezaEstetica.add("Outros");
 
         ArrayList<String> belezaEsteticaFirebase = new ArrayList<>();
         belezaEsteticaFirebase.add("cabeleireiros");
@@ -178,6 +193,7 @@ public class Singleton {
         belezaEsteticaFirebase.add("maquiadores");
         belezaEsteticaFirebase.add("personal_stylist");
         belezaEsteticaFirebase.add("sapateiro");
+        belezaEsteticaFirebase.add("outros");
 
         belezaEsteticaTelas.put(Utility.HASH_MAP_TELA, belezaEstetica);
         belezaEsteticaTelas.put(Utility.HASH_MAP_FIREBASE, belezaEsteticaFirebase);
@@ -207,6 +223,8 @@ public class Singleton {
         construcaoReformas.add("Segurança Eletrônica");
         construcaoReformas.add("Serraria");
         construcaoReformas.add("Vidraceiro");
+        construcaoReformas.add("Outros");
+
 
         ArrayList<String> construcaoReformasFirebase = new ArrayList<>();
         construcaoReformasFirebase.add("arquiteto");
@@ -229,6 +247,8 @@ public class Singleton {
         construcaoReformasFirebase.add("segurança_eletronica");
         construcaoReformasFirebase.add("serraria");
         construcaoReformasFirebase.add("vidraceiro");
+        construcaoReformasFirebase.add("outros");
+
 
         construcaoReformasTelas.put(Utility.HASH_MAP_TELA, construcaoReformas);
         construcaoReformasTelas.put(Utility.HASH_MAP_FIREBASE, construcaoReformasFirebase);
@@ -249,7 +269,7 @@ public class Singleton {
         consultoria.add("Economia e finanças");
         consultoria.add("Segurança do trabalho");
         consultoria.add("Tradutores");
-
+        consultoria.add("Outros");
 
         ArrayList<String> consultoriaFirebase = new ArrayList<>();
         consultoriaFirebase.add("advogados");
@@ -263,6 +283,8 @@ public class Singleton {
         consultoriaFirebase.add("economia_e_finanças");
         consultoriaFirebase.add("segurança_do_trabalho");
         consultoriaFirebase.add("tradutores");
+        consultoriaFirebase.add("outros");
+
 
         consultoriaTelas.put(Utility.HASH_MAP_TELA, consultoria);
         consultoriaTelas.put(Utility.HASH_MAP_FIREBASE, consultoriaFirebase);
@@ -283,6 +305,8 @@ public class Singleton {
         designTecnologia.add("Ilustração");
         designTecnologia.add("Marketing online");
         designTecnologia.add("Web Desing");
+        designTecnologia.add("Outros");
+
 
         ArrayList<String> designTecnologiaFirebase = new ArrayList<>();
         designTecnologiaFirebase.add("animação");
@@ -296,6 +320,8 @@ public class Singleton {
         designTecnologiaFirebase.add("ilustração");
         designTecnologiaFirebase.add("marketing_online");
         designTecnologiaFirebase.add("web_Desing");
+        designTecnologiaFirebase.add("outros");
+
 
         designTecnologiaTelas.put(Utility.HASH_MAP_TELA, designTecnologia);
         designTecnologiaTelas.put(Utility.HASH_MAP_FIREBASE, designTecnologiaFirebase);
@@ -321,6 +347,8 @@ public class Singleton {
         eventos.add("Gravação de vídeos");
         eventos.add("Recepcionistas");
         eventos.add("Segurança");
+        eventos.add("Outros");
+
 
         ArrayList<String> eventosTelasFirebase = new ArrayList<>();
         eventosTelasFirebase.add("animacao_de_festas");
@@ -339,6 +367,8 @@ public class Singleton {
         eventosTelasFirebase.add("gravacao_de_videos");
         eventosTelasFirebase.add("recepcionistas");
         eventosTelasFirebase.add("seguranca");
+        eventosTelasFirebase.add("outros");
+
 
         eventosTelas.put(Utility.HASH_MAP_TELA, eventos);
         eventosTelas.put(Utility.HASH_MAP_FIREBASE, eventosTelasFirebase);
@@ -355,6 +385,8 @@ public class Singleton {
         saude.add("Nutricionista");
         saude.add("Psicólogo");
         saude.add("Quiroprático");
+        saude.add("Outros");
+
 
         ArrayList<String> saudeFirebase = new ArrayList<>();
         saudeFirebase.add("acompanhante_de_idosos");
@@ -364,6 +396,8 @@ public class Singleton {
         saudeFirebase.add("nutricionista");
         saudeFirebase.add("psicologo");
         saudeFirebase.add("quiropratico");
+        saudeFirebase.add("outros");
+
 
         saudeTelas.put(Utility.HASH_MAP_TELA, saude);
         saudeTelas.put(Utility.HASH_MAP_FIREBASE, saudeFirebase);
@@ -381,6 +415,8 @@ public class Singleton {
         servicosDomesticos.add("Motorista");
         servicosDomesticos.add("Passadeira");
         servicosDomesticos.add("Passeador de cães");
+        servicosDomesticos.add("Outros");
+
 
         ArrayList<String> servicosDomesticosFirebase = new ArrayList<>();
         servicosDomesticosFirebase.add("adestrador_de_caes");
@@ -391,6 +427,8 @@ public class Singleton {
         servicosDomesticosFirebase.add("motorista");
         servicosDomesticosFirebase.add("passadeira");
         servicosDomesticosFirebase.add("passeador_de_caes");
+        servicosDomesticosFirebase.add("outros");
+
 
         servicosDomesticosTelas.put(Utility.HASH_MAP_TELA, servicosDomesticos);
         servicosDomesticosTelas.put(Utility.HASH_MAP_FIREBASE, servicosDomesticosFirebase);

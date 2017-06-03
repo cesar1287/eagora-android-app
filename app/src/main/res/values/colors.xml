@@ -7,4 +7,5 @@
     <color name="colorBackground">#ffffff</color>
     <color name="redNoInternetConnection">#F44336</color>
     <color name="greenSucessMessage">#4BB543</color>
+    <color name="black">#000</color>
 </resources>

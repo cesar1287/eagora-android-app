@@ -16,13 +16,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.ProviderFirebase;
 import harmonytech.eagora.controller.util.Singleton;
 import harmonytech.eagora.controller.util.Utility;
 
-public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener{
+public class RegisterServiceActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
 
     Button btnCadastrar;
     TextInputLayout etNome, etEmail, etCEP, etNascimento, etCPF, etTelefone;
@@ -32,12 +33,19 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
     TextWatcher cpfMask, phoneMask, birthMask, postalCodeMask;
 
+    ArrayAdapter<String> adapterSubCategorias;
+
+    HashMap<String, HashMap<String, ArrayList<String>>> subareas;
+    HashMap<String, String> segmentosFirebase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_service);
 
         ArrayList<String> areas = Singleton.getInstance().getAreas();
+        subareas = Singleton.getInstance().getSegmentos();
+        segmentosFirebase = Singleton.getInstance().getSegmentosFirebase();
 
         etNome = (TextInputLayout) findViewById(R.id.etNome);
         etEmail = (TextInputLayout) findViewById(R.id.etEmail);
@@ -47,9 +55,9 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         etTelefone = (TextInputLayout) findViewById(R.id.etTelefone);
 
         spCategoria = (Spinner) findViewById(R.id.spCategorias);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, areas);
-        spCategoria.setAdapter(adapter); // this will set list of values to spinner
-        spCategoria.setOnItemClickListener(this);
+        ArrayAdapter<String> adapterCategorias = new ArrayAdapter<>(getApplicationContext(), R.layout.spinner_item, areas);
+        spCategoria.setAdapter(adapterCategorias); // this will set list of values to spinner
+        spCategoria.setOnItemSelectedListener(this);
 
         spEspecialidade = (Spinner) findViewById(R.id.spSubCategoria);
 
@@ -185,7 +193,10 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
     private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf, String phone) {
         ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf, phone);
 
-        mDatabase.child("assistenciaTecnica").child("computador").child(cpf).setValue(providerFirebase);
+        mDatabase
+                .child(segmentosFirebase.get(spCategoria.getSelectedItem().toString()))
+                .child(subareas.get(spCategoria.getSelectedItem().toString()).get(Utility.HASH_MAP_FIREBASE).get(spEspecialidade.getSelectedItemPosition()))
+                .child(cpf).setValue(providerFirebase);
     }
 
     public void setupFieldMasks(){
@@ -203,7 +214,26 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
     }
 
     @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        int id = adapterView.getId();
+
+        switch (id){
+            case R.id.spCategorias:
+
+                if(adapterSubCategorias==null) {
+                    adapterSubCategorias = new ArrayAdapter<>(getApplicationContext(), R.layout.spinner_item, subareas.get(spCategoria.getSelectedItem().toString()).get(Utility.HASH_MAP_TELA));
+                    spEspecialidade.setAdapter(adapterSubCategorias); // this will set list of values to spinner
+                }else{
+                    adapterSubCategorias.clear();
+                    adapterSubCategorias.addAll(subareas.get(spCategoria.getSelectedItem().toString()).get(Utility.HASH_MAP_TELA));
+                    adapterSubCategorias.notifyDataSetChanged();
+                }
+                break;
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }

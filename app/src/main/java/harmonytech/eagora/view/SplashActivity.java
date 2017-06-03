@@ -39,6 +39,7 @@ public class SplashActivity extends AppCompatActivity {
 
         Singleton.getInstance().getSegmentos();
         Singleton.getInstance().getAreas();
+        Singleton.getInstance().getSegmentosFirebase();
     }
 
 }

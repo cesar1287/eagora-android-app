@@ -457,4 +457,13 @@ public class Singleton {
 
         return areas;
     }
+
+    public HashMap<String, String> getSegmentosFirebase(){
+
+        HashMap<String, String> segmentosFirebase = new HashMap<>();
+
+        segmentosFirebase.put(Utility.SEGMENTO_ASSISTENCIA_TECNICA, Utility.SEGMENTO_ASSISTENCIA_TECNICA_FIREBASE);
+
+        return segmentosFirebase;
+    }
 }

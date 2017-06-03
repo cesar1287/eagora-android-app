@@ -1,7 +1,6 @@
 package harmonytech.eagora.view;
 
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextWatcher;
@@ -67,11 +66,6 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         btnCadastrar.setOnClickListener(this);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
-        ActionBar actoActionBar = getSupportActionBar();
-        if(actoActionBar!=null) {
-            actoActionBar.setTitle("Cadastro de serviços");
-        }
     }
 
     @Override
@@ -200,16 +194,16 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
     }
 
     public void setupFieldMasks(){
-        cpfMask = Utility.insertMask("###.###.###-##", etCPF.getEditText());
+        cpfMask = Utility.insertMask(getResources().getString(R.string.cpf_mask), etCPF.getEditText());
         etCPF.getEditText().addTextChangedListener(cpfMask);
 
-        phoneMask = Utility.insertMask("(##)#####-####", etTelefone.getEditText());
+        phoneMask = Utility.insertMask(getResources().getString(R.string.phone_mask), etTelefone.getEditText());
         etTelefone.getEditText().addTextChangedListener(phoneMask);
 
-        birthMask = Utility.insertMask("##/##/####", etNascimento.getEditText());
+        birthMask = Utility.insertMask(getResources().getString(R.string.birth_mask), etNascimento.getEditText());
         etNascimento.getEditText().addTextChangedListener(birthMask);
 
-        postalCodeMask = Utility.insertMask("#####-###", etCEP.getEditText());
+        postalCodeMask = Utility.insertMask(getResources().getString(R.string.postalCode_mask), etCEP.getEditText());
         etCEP.getEditText().addTextChangedListener(postalCodeMask);
     }
 

@@ -59,8 +59,6 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
 
         if(actoActionBar!=null){
             actoActionBar.setTitle(segmento);
-            actoActionBar.setDefaultDisplayHomeAsUpEnabled(true);
-            actoActionBar.setDisplayHomeAsUpEnabled(true);
         }
 
         ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arraySegmento.get(Utility.HASH_MAP_TELA));

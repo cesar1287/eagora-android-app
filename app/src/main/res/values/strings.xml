@@ -29,4 +29,12 @@
     <string name="label_cadastro_serviço_categoria">Categoria</string>
     <string name="label_cadastro_serviço_Especialidade">Especialidade</string>
 
+    <string name="screen_register_service">Cadastrar serviço</string>
+    <string name="screen_faq">Dúvidas Frequentes</string>
+
+    <string name="cpf_mask">###.###.###-##</string>
+    <string name="phone_mask">(##)#####-####</string>
+    <string name="birth_mask">##/##/####</string>
+    <string name="postalCode_mask">#####-###</string>
+
 </resources>

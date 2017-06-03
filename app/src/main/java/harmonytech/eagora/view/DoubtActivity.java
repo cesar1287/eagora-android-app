@@ -16,26 +16,5 @@ public class DoubtActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doubt);
-
-        ActionBar actoActionBar = getSupportActionBar();
-
-        actoActionBar.setTitle("Dúvidas Frequentes");
-        actoActionBar.setDefaultDisplayHomeAsUpEnabled(true);
-        actoActionBar.setDisplayHomeAsUpEnabled(true);
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        switch (id){
-            case android.R.id.home:
-                finish();
-                break;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
 }

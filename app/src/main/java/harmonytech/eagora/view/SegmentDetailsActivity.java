@@ -72,7 +72,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
             actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
 
-            segmentoFirebase = mDatabase.child(category).child(subcategory).orderByChild("nome");
+            segmentoFirebase = mDatabase.child(category).child(subcategory).orderByChild("name");
         }
     }
 

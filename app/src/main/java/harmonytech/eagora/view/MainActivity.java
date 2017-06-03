@@ -121,12 +121,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         Segment animal = new Segment();
+        animal.setNameFirebase(Utility.SEGMENTO_ANIMAIS_FIREBASE);
         animal.setName(Utility.SEGMENTO_ANIMAIS);
         Uri uriAnimal = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_animais);
         animal.setBanner(uriAnimal);
         recipesList.add(animal);
 
         Segment arteCultura = new Segment();
+        arteCultura.setNameFirebase(Utility.SEGMENTO_ARTE_CULTURA_FIREBASE);
         arteCultura.setName(Utility.SEGMENTO_ARTE_CULTURA);
         Uri uriArteCultura = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_arte_cultura);
         arteCultura.setBanner(uriArteCultura);
@@ -140,54 +142,63 @@ public class MainActivity extends AppCompatActivity
         recipesList.add(assistenciaTecnica);
 
         Segment aulas = new Segment();
+        aulas.setNameFirebase(Utility.SEGMENTO_AULAS_FIREBASE);
         aulas.setName(Utility.SEGMENTO_AULAS);
         Uri uriAulas = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_aulas);
         aulas.setBanner(uriAulas);
         recipesList.add(aulas);
 
         Segment autos = new Segment();
+        autos.setNameFirebase(Utility.SEGMENTO_AUTOS_FIREBASE);
         autos.setName(Utility.SEGMENTO_AUTOS);
         Uri uriAutos = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_servicos_carro);
         autos.setBanner(uriAutos);
         recipesList.add(autos);
 
         Segment belezaEstetica = new Segment();
+        belezaEstetica.setNameFirebase(Utility.SEGMENTO_BELEZA_ESTETICA_FIREBASE);
         belezaEstetica.setName(Utility.SEGMENTO_BELEZA_ESTETICA);
         Uri uriBelezaEstetica = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_beleza_estetica);
         belezaEstetica.setBanner(uriBelezaEstetica);
         recipesList.add(belezaEstetica);
 
         Segment construcao = new Segment();
+        construcao.setNameFirebase(Utility.SEGMENTO_CONSTRUCAO_FIREBASE);
         construcao.setName(Utility.SEGMENTO_CONSTRUCAO);
         Uri uriConstrucao = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_reforma);
         construcao.setBanner(uriConstrucao);
         recipesList.add(construcao);
 
         Segment consultoria = new Segment();
+        consultoria.setNameFirebase(Utility.SEGMENTO_CONSULTORIA_FIREBASE);
         consultoria.setName(Utility.SEGMENTO_CONSULTORIA);
         Uri uriConsultoria = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_consultoria);
         consultoria.setBanner(uriConsultoria);
         recipesList.add(consultoria);
 
         Segment design = new Segment();
+        design.setNameFirebase(Utility.SEGMENTO_DESIGN_FIREBASE);
         design.setName(Utility.SEGMENTO_DESIGN);
         Uri uriDesign = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_design);
         design.setBanner(uriDesign);
         recipesList.add(design);
 
         Segment eventos = new Segment();
+        eventos.setNameFirebase(Utility.SEGMENTO_EVENTOS_FIREBASE);
         eventos.setName(Utility.SEGMENTO_EVENTOS);
         Uri uriEventos = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_eventos);
         eventos.setBanner(uriEventos);
         recipesList.add(eventos);
 
         Segment saude = new Segment();
+        saude.setNameFirebase(Utility.SEGMENTO_SAUDE_FIREBASE);
         saude.setName(Utility.SEGMENTO_SAUDE);
         Uri uriSaude = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_saude);
         saude.setBanner(uriSaude);
         recipesList.add(saude);
 
         Segment servicosDomesticos = new Segment();
+        servicosDomesticos.setNameFirebase(Utility.SEGMENTO_SERVICOS_DOMESTICOS_FIREBASE);
         servicosDomesticos.setName(Utility.SEGMENTO_SERVICOS_DOMESTICOS);
         Uri uriServicoDomestico = Uri.parse(Utility.URI_PACKAGE + R.drawable.eagora_image_servicos_domesticos);
         servicosDomesticos.setBanner(uriServicoDomestico);

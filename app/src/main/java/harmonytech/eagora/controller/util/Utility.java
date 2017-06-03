@@ -24,18 +24,29 @@ public class Utility {
     public static final String SEGMENTO_FIREBASE = "segmentoFirebase";
 
     public static final String SEGMENTO_ANIMAIS = "Animais";
+    public static final String SEGMENTO_ANIMAIS_FIREBASE = "animais";
     public static final String SEGMENTO_ARTE_CULTURA = "Arte e Cultura";
+    public static final String SEGMENTO_ARTE_CULTURA_FIREBASE = "arte_cultura";
     public static final String SEGMENTO_ASSISTENCIA_TECNICA = "Assistência Técnica";
     public static final String SEGMENTO_ASSISTENCIA_TECNICA_FIREBASE = "assistenciaTecnica";
     public static final String SEGMENTO_AULAS = "Aulas";
+    public static final String SEGMENTO_AULAS_FIREBASE = "aulas";
     public static final String SEGMENTO_AUTOS = "Autos";
+    public static final String SEGMENTO_AUTOS_FIREBASE = "autos";
     public static final String SEGMENTO_BELEZA_ESTETICA = "Beleza e Estética";
+    public static final String SEGMENTO_BELEZA_ESTETICA_FIREBASE = "beleza_estetica";
     public static final String SEGMENTO_CONSTRUCAO = "Construção e Reformas";
+    public static final String SEGMENTO_CONSTRUCAO_FIREBASE = "construcao_reformas";
     public static final String SEGMENTO_CONSULTORIA = "Consultoria";
+    public static final String SEGMENTO_CONSULTORIA_FIREBASE = "consultoria";
     public static final String SEGMENTO_DESIGN = "Design e Tecnologia";
+    public static final String SEGMENTO_DESIGN_FIREBASE = "design_tecnologia";
     public static final String SEGMENTO_EVENTOS = "Eventos";
+    public static final String SEGMENTO_EVENTOS_FIREBASE = "eventos";
     public static final String SEGMENTO_SAUDE = "Saúde";
+    public static final String SEGMENTO_SAUDE_FIREBASE = "saude";
     public static final String SEGMENTO_SERVICOS_DOMESTICOS = "Serviços Domésticos";
+    public static final String SEGMENTO_SERVICOS_DOMESTICOS_FIREBASE = "servicos_domesticos";
 
     public static final String HASH_MAP_TELA = "tela";
     public static final String HASH_MAP_FIREBASE = "firebase";

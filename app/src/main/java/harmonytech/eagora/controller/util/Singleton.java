@@ -462,7 +462,18 @@ public class Singleton {
 
         HashMap<String, String> segmentosFirebase = new HashMap<>();
 
+        segmentosFirebase.put(Utility.SEGMENTO_ANIMAIS, Utility.SEGMENTO_ANIMAIS_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_ARTE_CULTURA, Utility.SEGMENTO_ARTE_CULTURA_FIREBASE);
         segmentosFirebase.put(Utility.SEGMENTO_ASSISTENCIA_TECNICA, Utility.SEGMENTO_ASSISTENCIA_TECNICA_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_AULAS, Utility.SEGMENTO_AULAS_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_AUTOS, Utility.SEGMENTO_AUTOS_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_BELEZA_ESTETICA, Utility.SEGMENTO_BELEZA_ESTETICA_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_CONSTRUCAO, Utility.SEGMENTO_CONSTRUCAO_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_CONSULTORIA, Utility.SEGMENTO_CONSULTORIA_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_DESIGN, Utility.SEGMENTO_DESIGN_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_EVENTOS, Utility.SEGMENTO_EVENTOS_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_SAUDE, Utility.SEGMENTO_SAUDE_FIREBASE);
+        segmentosFirebase.put(Utility.SEGMENTO_SERVICOS_DOMESTICOS, Utility.SEGMENTO_SERVICOS_DOMESTICOS_FIREBASE);
 
         return segmentosFirebase;
     }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -39,11 +40,10 @@ public class ProviderAdapter extends RecyclerView.Adapter<ProviderAdapter.MyView
     @Override
     public void onBindViewHolder(ProviderAdapter.MyViewHolder myViewHolder, int position) {
 
-        /*Glide.with(c)
-                .load(mList.get((position)).getBanner())
-                .centerCrop()
-                .into(myViewHolder.bannerSegment);*/
-        myViewHolder.nameSegment.setText(mList.get(position).getName());
+        myViewHolder.providerName.setText(mList.get(position).getName());
+        myViewHolder.providerEmail.setText(mList.get(position).getEmail());
+        myViewHolder.providerPhone.setText(mList.get(position).getPhone());
+        myViewHolder.providerRate.setNumStars((int) mList.get(position).getRate());
     }
 
     @Override
@@ -56,13 +56,15 @@ public class ProviderAdapter extends RecyclerView.Adapter<ProviderAdapter.MyView
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener /*View.OnCreateContextMenuListener*/{
-        ImageView bannerSegment;
-        TextView nameSegment;
+        TextView providerName, providerEmail, providerPhone;
+        RatingBar providerRate;
 
         MyViewHolder(View itemView) {
             super(itemView);
-            bannerSegment = (ImageView) itemView.findViewById(R.id.segment_banner);
-            nameSegment = (TextView) itemView.findViewById(R.id.segment_name);
+            providerName = (TextView) itemView.findViewById(R.id.provider_name);
+            providerEmail = (TextView) itemView.findViewById(R.id.provider_email);
+            providerPhone = (TextView) itemView.findViewById(R.id.provider_phone);
+            providerRate = (RatingBar) itemView.findViewById(R.id.provider_rate);
 
             itemView.setOnClickListener(this);
         }

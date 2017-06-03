@@ -2,8 +2,8 @@ package harmonytech.eagora.controller.domain;
 
 public class Provider {
 
-    private String name, email, birth, postalCode, cpf;
-    private long phone, rate;
+    private String name, email, birth, postalCode, cpf, phone;
+    private long rate;
 
     public String getCpf() {
         return cpf;
@@ -21,11 +21,11 @@ public class Provider {
         this.rate = rate;
     }
 
-    public long getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(long phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

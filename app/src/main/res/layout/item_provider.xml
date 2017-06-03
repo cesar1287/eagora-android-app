@@ -26,7 +26,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/segment_name"
+                    android:id="@+id/provider_name"
                     android:text="Deldo de fresa"
                     android:fontFamily="sans-serif"
                     android:textSize="15dp"
@@ -40,7 +40,7 @@
 
 
                 <TextView
-                    android:id="@+id/segment_phone"
+                    android:id="@+id/provider_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Telefone"
@@ -51,7 +51,7 @@
                     android:layout_marginRight="10dp"/>
 
                 <TextView
-                    android:id="@+id/segment_email"
+                    android:id="@+id/provider_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"
@@ -71,7 +71,7 @@
                 android:layout_alignParentEnd="true"            >
 
                 <RatingBar
-                    android:id="@+id/segment_avaliacao"
+                    android:id="@+id/provider_rate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/Base.Widget.AppCompat.RatingBar.Small"

@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onPrepared(MediaPlayer mp) {
                 videoview.start();
+                mp.setLooping(true);
             }
         });
 

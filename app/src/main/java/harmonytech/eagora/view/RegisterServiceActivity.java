@@ -214,14 +214,8 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         switch (id){
             case R.id.spCategorias:
 
-                if(adapterSubCategorias==null) {
-                    adapterSubCategorias = new ArrayAdapter<>(getApplicationContext(), R.layout.spinner_item, subareas.get(spCategoria.getSelectedItem().toString()).get(Utility.HASH_MAP_TELA));
-                    spEspecialidade.setAdapter(adapterSubCategorias); // this will set list of values to spinner
-                }else{
-                    adapterSubCategorias.clear();
-                    adapterSubCategorias.addAll(subareas.get(spCategoria.getSelectedItem().toString()).get(Utility.HASH_MAP_TELA));
-                    adapterSubCategorias.notifyDataSetChanged();
-                }
+                adapterSubCategorias = new ArrayAdapter<>(getApplicationContext(), R.layout.spinner_item, subareas.get(spCategoria.getSelectedItem().toString()).get(Utility.HASH_MAP_TELA));
+                spEspecialidade.setAdapter(adapterSubCategorias); // this will set list of values to spinner
                 break;
         }
     }

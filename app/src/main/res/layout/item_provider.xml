@@ -76,8 +76,9 @@
                     android:layout_height="wrap_content"
                     style="@style/Base.Widget.AppCompat.RatingBar.Small"
                     android:layout_gravity="end"
-                    android:layout_marginRight="10dp"/>
-
+                    android:numStars="5"
+                    android:layout_marginRight="10dp"
+                    android:theme="@style/RatingBar"/>
             </LinearLayout>
 
         </LinearLayout>

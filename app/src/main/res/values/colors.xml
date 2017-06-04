@@ -8,4 +8,5 @@
     <color name="redNoInternetConnection">#F44336</color>
     <color name="greenSucessMessage">#4BB543</color>
     <color name="black">#000</color>
+    <color name="yellow">#ffff00</color>
 </resources>

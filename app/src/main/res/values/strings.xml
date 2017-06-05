@@ -63,4 +63,56 @@
         o que melhor lhe atender e tratar a negociação do serviço diretamente com esse profissional.\n\nContrate pelo
         eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
     </string>
+
+    <string name="question_4">Como encontrar um profissional pelo app?</string>
+    <string name="answer_4">Para encontrar um profissional, se você já tem o aplicativo do eAgora, também é simples. No app, ao clicar
+        em “Sou cliente”, você pode escolher diretamente a categoria do serviço que está precisando na cidade que você deseja.
+        Ao visualizar os contatos de profissionais, você pode escolher o que melhor lhe atender e tratar a negociação do serviço
+        diretamente com esse profissional.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais em diversas
+        categorias dispostos a resolver os seus problemas.
+    </string>
+
+    <string name="question_5">Como os profissionais são selecionados?</string>
+    <string name="answer_5">A plataforma eAgora seleciona os profissionais de acordo com o serviço solicitado e dentro da localização
+        do endereço solicitado. Ao encontrar os profissionais, você terá a liberdade de escolhe-los de acordo com as recomendações
+        de outros clientes, pontuações entre outros. Contrate pelo eAgora de maneira rápida e prática, há profissionais em
+        diversas categorias disposto a resolver os seus problemas.\n\nContrate pelo eAgora de maneira rápida e prática,
+        há profissionais em diversas categorias dispostos a resolver os seus problemas.
+    </string>
+
+    <string name="question_6">Como contratar com segurança?</string>
+    <string name="answer_6">A plataforma eAgora faz apenas a indicação do contato de profissionais. Antes de contratar,
+        entre em contato com os profissionais, analise a forma de atendimento e peça informações sobre preço, garantia e
+        contrato e disponibilidade do profissional.\n\nObs: A negociação e pagamento do serviço é feito diretamente entre
+        você e o profissional.\n\nAbaixo segue algumas dicas de como proceder antes de fechar negócio:\n\n\t\t1. Analise o
+        profissional, valores do serviço e a forma de atendimento;\n\t\t2. Veja se o profissional possui avaliações
+        de outros clientes;\n\t\t3. Certifique-se de que é o mesmo que irá te atende-lo presencialmente;\n\t\t4. Faça um contrato
+        de serviços ou peça um recibo com seu nome/nome da empresa, telefone para contato, CNPJ/CPF;\n\t\t5. Pergunte quais
+        materiais e serviços estão inclusos. Assim você evita surpresas com o aumento de custo posteriormente;\n\t\t6. Não
+        efetue o pagamento total do serviço antes que ele seja finalizado;\n\t\t7. Pergunte se existe um período de garantia
+        do serviço prestado e inclua essa informação no contrato.\n\nAntes de finalizar a contratação ou negociação
+        com o profissional, você deverá se informar sobre as suas especificações, prazos e qualidades buscando garantia
+        e satisfação do serviço prestado para sua necessidade.\n\nFeche qualquer contrato seguindo nossas dicas com a nossa
+        plataforma.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos
+        a resolver os seus problemas.
+    </string>
+
+    <string name="question_7">Como resolver problemas com o profissional?</string>
+    <string name="answer_7">A plataforma eAgora te ajuda a localizar profissionais próximos na região desejada. Entretanto,
+        a plataforma eAgora não se responsabiliza e não oferece garantias pelos serviços prestados por profissionais que
+        indicamos.\n\nRecomendamos que todos os clientes façam um contrato com o profissional, peçam recibos e não paguem
+        todo o valor do serviço antes que ele seja finalizado.\n\nCaso você precise reportar algum problema com o profissional
+        contratado, pedimos que entre em contato com a nossa equipe e informe os dados do profissional. A situação será
+        analisada, e se necessário, será efetuado o bloqueio temporário e/ou permanente do perfil deste profissional.
+        O profissional cadastrado será notificado para que ele entre em contato e solucione o problema pendente.\n\nEm caso de
+        dúvidas, sugestões ou problemas com a utilização do site www.eagora.com.br, o usuário poderá contatar diretamente
+        o seu serviço de atendimento, através do endereço de e-mail: saceagora.com.br.
+    </string>
+
+    <string name="question_8">Como avaliar o profissional contratado?</string>
+    <string name="answer_8">Para avaliar o profissional, localize o profissional contratado dentro do seu perfil.\n\n\t\t1. Clique em:
+        "Recomende este profissional".\n\t\t2. Em seguida, classifique a qualidade do serviço (estrelas de qualificação) e
+        no campo da descrição conte sua experiência, atendimento, qualidade e preço do serviço.\n\t\t3. Para finalizar e salvar
+        a sua avaliação clique em "Enviar recomendação”.\n\nA recomendação será publicada após o clique do botão “Enviar recomendação”.\n\nEm caso de dúvidas, sugestões ou problemas com a utilização do site www.eagora.com.br, o usuário poderá contatar diretamente o seu serviço de atendimento, através do endereço de e-mail: saceagora.com.br.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
+    </string>
 </resources>

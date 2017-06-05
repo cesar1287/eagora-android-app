@@ -42,9 +42,34 @@ public class DoubtActivity extends AppCompatActivity {
         List<String> answer3 = new ArrayList<>();
         answer3.add(getResources().getString(R.string.answer_3));
 
+        listDataHeader.add(getResources().getString(R.string.question_4));
+        List<String> answer4 = new ArrayList<>();
+        answer4.add(getResources().getString(R.string.answer_4));
+
+        listDataHeader.add(getResources().getString(R.string.question_5));
+        List<String> answer5 = new ArrayList<>();
+        answer5.add(getResources().getString(R.string.answer_5));
+
+        listDataHeader.add(getResources().getString(R.string.question_6));
+        List<String> answer6 = new ArrayList<>();
+        answer6.add(getResources().getString(R.string.answer_6));
+
+        listDataHeader.add(getResources().getString(R.string.question_7));
+        List<String> answer7 = new ArrayList<>();
+        answer7.add(getResources().getString(R.string.answer_7));
+
+        listDataHeader.add(getResources().getString(R.string.question_8));
+        List<String> answer8 = new ArrayList<>();
+        answer8.add(getResources().getString(R.string.answer_8));
+
         listDataChild.put(getResources().getString(R.string.question_1), answer1);
         listDataChild.put(getResources().getString(R.string.question_2), answer2);
         listDataChild.put(getResources().getString(R.string.question_3), answer3);
+        listDataChild.put(getResources().getString(R.string.question_4), answer4);
+        listDataChild.put(getResources().getString(R.string.question_5), answer5);
+        listDataChild.put(getResources().getString(R.string.question_6), answer6);
+        listDataChild.put(getResources().getString(R.string.question_7), answer7);
+        listDataChild.put(getResources().getString(R.string.question_8), answer8);
 
         listAdapter = new harmonytech.eagora.controller.util.ExpandableListAdapter(DoubtActivity.this, listDataHeader, listDataChild);
 

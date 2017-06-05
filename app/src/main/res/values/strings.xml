@@ -37,13 +37,30 @@
     <string name="birth_mask">##/##/####</string>
     <string name="postalCode_mask">#####-###</string>
 
-    <string name="question_1">O que é a eAgora?fffffffffffffffffffffffffffffffffffffff</string>
+    <string name="question_1">O que é a eAgora?</string>
     <string name="answer_1">O eAgora é uma plataforma (site e aplicativo disponível para celulares Android e iOS) que tem como objetivo conectar
         clientes a diversos profissionais do mercado.\nSe você busca por um profissional para realizar um determinado serviço de forma a satisfazer as suas necessidades,
         basta entrar na plataforma, digitar a região onde se encontra o profissional, selecionar o campo de atuação do profissional desejado e
         conversar com ele diretamente, simples assim.\n\nPossuímos as seguintes categorias de serviço:\n\nAssistência Técnica;\nConstrução e reformas;\n
         Serviços domésticos;\nAulas;\nBeleza e estética;\nDesign e tecnologia;\nConsultoria;\nSaúde;\nEventos;\nAutos;\nAnimais;\nArte e cultura.\n\nContrate pelo
         eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
-</string>
+    </string>
 
+    <string name="question_2">Como baixar o app do eAgora?</string>
+    <string name="answer_2">Para baixar nosso aplicativo é necessário que você tenha um celular smartphone.
+        O aplicativo está disponível no sistema Android e IOS.\n\nBasta acessar o Play Store, caso seu celular seja Android,
+        ou o App Store caso seu celular seja iOS e busque por "eAgora". Clique em “instalar”, depois em “aceitar” e finalmente
+        quando o download for concluído basta clicar em “abrir”.  Pronto! Agora você já pode começar a usar a plataforma eAgora
+        direto de seu celular! Você só precisa procurar um profissional que atenda às suas necessidades e tratar de orçamentos
+        e serviços diretamente com o profissional desejado.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais]
+        em diversas categorias dispostos a resolver os seus problemas.
+    </string>
+
+    <string name="question_3">Como encontrar um profissional pelo site?</string>
+    <string name="answer_3">Você pode abrir a solicitação pelo aplicativo, disponível para Android e iOS ou diretamente
+        pelo site.\n\nNo site, ao clicar em “Sou cliente”, você pode escolher diretamente a categoria do serviço
+        que está precisando na cidade que você deseja. Ao visualizar os contatos de profissionais, você pode escolher
+        o que melhor lhe atender e tratar a negociação do serviço diretamente com esse profissional.\n\nContrate pelo
+        eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
+    </string>
 </resources>

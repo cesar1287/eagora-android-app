@@ -31,10 +31,20 @@ public class DoubtActivity extends AppCompatActivity {
         listDataChild = new HashMap<>();
 
         listDataHeader.add(getResources().getString(R.string.question_1));
-        List<String> answer = new ArrayList<>();
-        answer.add(getResources().getString(R.string.answer_1));
+        List<String> answer1 = new ArrayList<>();
+        answer1.add(getResources().getString(R.string.answer_1));
 
-        listDataChild.put(getResources().getString(R.string.question_1), answer);
+        listDataHeader.add(getResources().getString(R.string.question_2));
+        List<String> answer2 = new ArrayList<>();
+        answer2.add(getResources().getString(R.string.answer_2));
+
+        listDataHeader.add(getResources().getString(R.string.question_3));
+        List<String> answer3 = new ArrayList<>();
+        answer3.add(getResources().getString(R.string.answer_3));
+
+        listDataChild.put(getResources().getString(R.string.question_1), answer1);
+        listDataChild.put(getResources().getString(R.string.question_2), answer2);
+        listDataChild.put(getResources().getString(R.string.question_3), answer3);
 
         listAdapter = new harmonytech.eagora.controller.util.ExpandableListAdapter(DoubtActivity.this, listDataHeader, listDataChild);
 

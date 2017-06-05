@@ -11,7 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".view.SplashActivity"
             android:theme="@style/AppThemeNoActionBar">
@@ -21,32 +20,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar" />
-
         <activity
             android:name=".view.SegmentCategoryActivity"
             android:parentActivityName=".view.MainActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".view.SegmentDetailsActivity"
             android:screenOrientation="portrait" />
-
         <activity
-            android:label="@string/screen_register_service"
             android:name=".view.RegisterServiceActivity"
+            android:label="@string/screen_register_service"
             android:parentActivityName=".view.MainActivity"
             android:screenOrientation="portrait" />
-
         <activity
-            android:label="@string/screen_faq"
             android:name=".view.DoubtActivity"
+            android:label="@string/screen_faq"
             android:parentActivityName=".view.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.TermsConditionsActivity"></activity>
     </application>
 
 </manifest>

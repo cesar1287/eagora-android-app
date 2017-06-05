@@ -26,6 +26,7 @@
 
     <style name="RatingBar" parent="Theme.AppCompat">
         <item name="colorControlActivated">@color/yellow</item>
+        <item name="colorControlNormal">@color/asbestos</item>
     </style>
 
     <style name="TextLabel" parent="TextAppearance.AppCompat">
@@ -38,5 +39,9 @@
         <item name="colorControlActivated">@color/black</item>
     </style>
 
+
+    <style name="MyAppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 
 </resources>

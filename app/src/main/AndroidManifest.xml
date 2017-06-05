@@ -13,8 +13,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".view.SplashActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,8 +45,15 @@
         <activity
             android:name=".view.TermsConditionsActivity"
             android:label="@string/screen_terms_condition"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".view.MainActivity">
+            android:parentActivityName=".view.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".view.ProviderDetailsActivity"
+            android:label=""
+            android:parentActivityName=".view.MainActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

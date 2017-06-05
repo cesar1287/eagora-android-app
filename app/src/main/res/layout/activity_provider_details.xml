@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="harmonytech.eagora.view.ProviderDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimary">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+            android:id="@+id/detailsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="José Reginaldo de Tudo"
+            android:textSize="23dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_below="@+id/detailsName"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"/>
+    </RelativeLayout>
+
+
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+        android:id="@+id/detailsCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animais"
+        android:layout_gravity="center_horizontal"
+        android:textSize="29dp"
+        android:layout_marginTop="20dp"/>
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+        android:id="@+id/detailsSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acessórios"
+        android:layout_gravity="center_horizontal"
+        android:textSize="19dp"
+        android:layout_marginTop="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:id="@+id/iconEmail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/eagora_icon_email"/>
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+            android:id="@+id/detailsEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="islane.junior@gmail.com"
+            android:layout_toRightOf="@+id/iconEmail"
+            android:paddingTop="8dp"
+            android:paddingLeft="15dp"
+            android:textSize="17dp"
+            android:layout_marginTop="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:id="@+id/icon_phone"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/eagora_icon_phone"/>
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+            android:id="@+id/detailsPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(85)32915565"
+            android:layout_toRightOf="@+id/icon_phone"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:paddingLeft="15dp"
+            android:textSize="17dp"
+            android:layout_marginTop="1dp"/>
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomButton
+            android:id="@+id/detailsLigar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="LIGAR"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            style="@style/Base.Widget.AppCompat.ButtonBar"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -131,7 +131,7 @@
         Assessoria de atendimento ao prestador de serviço e/ ou profissional liberal, gerando uma agenda e auxiliando no atendimento ao cliente;
     </string>
 
-    <string name="terms_2">2. DA ACEITAÇÃO DOS TERMOS E CONDIÇÕES GERAIS DE USO E DE COMPRA E VENDA\n
+    <string name="terms_2"><b>2. DA ACEITAÇÃO DOS TERMOS E CONDIÇÕES GERAIS DE USO E DE COMPRA E VENDA</b>\n
         Todos aqueles que desejarem ter acesso aos serviços ofertados através do site www.eagora.com.br deverão, primeiramente, se informar
         sobre as regras que compõem o presente instrumento, as quais ficarão disponíveis para pronta e ampla consulta, em link direto no próprio site.\n\n
         Ao utilizar o site www.eagora.com.br, o usuário aceita integralmente as presentes normas e compromete-se a observá-las, sob risco de aplicação das
@@ -141,7 +141,7 @@
         ainda, entrar em contato com o serviço de atendimento ao cliente, para apresentar-lhe as suas ressalvas.
     </string>
 
-    <string name="terms_3">3. DA NAVEGAÇÃO\n
+    <string name="terms_3"><b>3. DA NAVEGAÇÃO</b>\n
         O editor do site www.eagora.com.br se compromete a utilizar todas as soluções técnicas à sua disposição para permitir o acesso ao serviço 24 (vinte e quatro)
         horas por dia, 7 (sete) dias por semana. Entretanto, ele poderá, a qualquer momento, interromper, limitar ou suspender o acesso ao site ou a algumas de suas páginas,
         a fim de realizar atualizações, modificações de conteúdo ou qualquer outra ação julgada necessária para o seu bom funcionamento.\n\n
@@ -149,7 +149,7 @@
         quanto aquelas ainda a serem implementadas.
     </string>
 
-    <string name="terms_4">4. DA GESTÃO DO SITE\n
+    <string name="terms_4"><b>4. DA GESTÃO DO SITE</b>\n
         Para a boa gestão, o editor do site www.eagora.com.br poderá, a qualquer momento:\n\n
         a) suspender, interromper ou limitar o acesso a todo ou a parte do site a uma categoria
         específica de internautas;\n\n
@@ -158,7 +158,7 @@
         c) suspender o site, a fim de realizar atualizações e modificações.
     </string>
 
-    <string name="terms_5">DO CADASTRO\n
+    <string name="terms_5"><b>5. DO CADASTRO</b>\n
         Os serviços disponibilizados no site www.eagora.com.br apenas poderão ser acessados por pessoas plenamente capazes, conforme o Direito brasileiro. Todos aqueles
         que não possuírem plena capacidade civil - menores de 18 anos não emancipados, pródigos, ébrios habituais ou viciados em tóxicos e pessoas que não puderem exprimir
         sua vontade, por motivo transitório ou permanente - deverão ser devidamente assistidos por seus representantes legais, que se responsabilizarão pelo cumprimento das presentes regras.\n\n
@@ -178,7 +178,7 @@
         possível, desde que não sejam verificados débitos em aberto.
     </string>
 
-    <string name="terms_6">6. DAS RESPONSABILIDADES\n
+    <string name="terms_6"><b>6. DAS RESPONSABILIDADES</b>\n
         O editor se responsabilizará pelos defeitos ou vícios encontrados nos serviços prestados pelo site www.eagora.com.br, desde que tenha lhes dado causa. Defeitos ou vícios técnicos ou operacionais originados
         no próprio sistema do usuário não serão de responsabilidade do editor.\n\n
         O editor responsabiliza-se apenas pelas informações que foram por ele diretamente divulgadas. Quaisquer informações incluídas pelos usuários, tais como em comentários e em perfis pessoais, serão de inteira
@@ -202,7 +202,7 @@
         e qualquer outro direito de propriedade intelectual e industrial.
     </string>
 
-    <string name="terms_7">7. DOS LINKS EXTERNOS\n
+    <string name="terms_7"><b>7. DOS LINKS EXTERNOS</b>\n
         O site www.eagora.com.br pode conter links externos redirigindo o usuário para outras páginas da internet, sobre os quais o editor não exerce controle. Apesar das verificações prévias e regulares realizadas pelo
         editor, ele se isenta de qualquer responsabilidade sobre o conteúdo encontrado nestes sites e serviços.\n\n
         Poderão ser incluídos links nas páginas e nos documentos do site www.eagora.com.br, desde que não sirvam para fins comerciais ou publicitários. Esta inclusão dependerá de autorização prévia do editor.\n\n
@@ -210,7 +210,7 @@
         O editor se reserva o direito de retirar a qualquer momento um link levando ao seu próprio serviço, se a página de origem não estiver conforme a sua política editorial.
     </string>
 
-    <string name="terms_8">8. DOS DIREITOS AUTORAIS\n
+    <string name="terms_8"><b>8. DOS DIREITOS AUTORAIS</b>\n
         A estrutura do site www.eagora.com.br, bem como os textos, os gráficos, as imagens, as fotografias, os sons, os vídeos e as demais aplicações informáticas que o compõem são de propriedade do editor e são protegidas
         pela legislação brasileira e internacional referente à propriedade intelectual.\n\n
         Qualquer representação, reprodução, adaptação ou exploração parcial ou total dos conteúdos, marcas e serviços propostos pelo site, por qualquer meio que seja, sem autorização prévia, expressa e escrita do editor,
@@ -219,7 +219,7 @@
         É vedado ao usuário incluir no site dados que possam modificar o seu conteúdo ou sua aparência.
     </string>
 
-    <string name="terms_9">9. DA POLÍTICA DE PRIVACIDADE\n
+    <string name="terms_9"><b>9. DA POLÍTICA DE PRIVACIDADE</b>\n
         9.1. Dados pessoais\n\n
         Todos os dados pessoais fornecidos pelo usuário no momento de seu cadastro ou que venham a ser solicitados posteriormente, a este título, permanecerão sigilosos e não serão repassados a quaisquer parceiros do site,
         exceto quando essas informações forem indispensáveis para o processamento da negociação na prestação de serviços.\n\n
@@ -234,7 +234,7 @@
         ferramentas e alguns serviços  do site.
     </string>
 
-    <string name="terms_10">10. DOS SERVIÇOS OFERECIDOS\n
+    <string name="terms_10"><b>10. DOS SERVIÇOS OFERECIDOS</b>\n
         Por intermédio do site www.eagora.com.br, o editor fornece ao cliente um catálogo ou uma loja online apresentando com exatidão os prestadores de serviço e/ ou profissionais liberais disponíveis na região desejada. Os
         prestadores de serviço e/ ou profissionais liberais disponíveis estarão descritos e apresentados com o maior grau de precisão possível, contendo informações corretas, claras, precisas, ostensivas e em língua portuguesa
         sobre suas características, qualidades, quantidade, composição, preço, garantia, prazos e origem, entre outros dados, para que o usuário (cliente) encontre a melhor opção para sua necessidade.\n\n
@@ -244,24 +244,24 @@
         Antes de finalizar a contratação e/ ou negociação com o profissional liberal, o usuário deverá se informar sobre as suas especificações, prazos e qualidades buscando garantia e satisfação do serviço prestado para sua necessidade.
     </string>
 
-    <string name="terms_11">11. DOS PREÇOS\n
+    <string name="terms_11"><b>11. DOS PREÇOS</b>\n
         Os prestadores de serviço e/ ou profissionais liberais se reserva o direito de modificar os preços dos serviços a qualquer momento, publicando-os no site www.eagora.com.br.\n\n
         A plataforma do eagora não terá custo algum para o usuário (cliente) que esteja procurando um prestador de serviço e/ ou profissional liberal para atender a sua necessidade.\n\n
         Ao prestador de serviço e/ ou profissional liberal, será oferecido um mês grátis de acesso após o cadastramento na plataforma, após o término desse prazo, caso o profissional deseje continuar realizando contratos e/ou negociações
         dos seus serviços através da plataforma eAagora, irá efetuar um pagamento mensal no valor de R$ 10,99 na data escolhida de sua preferência.\n\n
     </string>
 
-    <string name="terms_12">12. DO PAGAMENTO\n
+    <string name="terms_12"><b>12. DO PAGAMENTO</b>\n
         O pagamento do serviço contratado pelo cliente deverá ser tratado com o prestador de serviço e/ ou profissional liberal, como melhor atende-los.\n\n
         O prestador de serviço e/ ou profissional liberal irá efetuará o pagamento da sua assinatura na plataforma do eAgora por meio do cartão de crédito, boleto bancário ou depósito em conta corrente.\n\n
         Caso o usuário opte em sair antes do período pago, a plataforma eAgora se reserva o direito de não devolução do valor pago referente a mensalidade.
     </string>
 
-    <string name="terms_13">13. DO SERVIÇO DE ATENDIMENTO AO USUÁRIO\n\n
+    <string name="terms_13"><b>13. DO SERVIÇO DE ATENDIMENTO AO USUÁRIO</b>\n\n
         Em caso de dúvidas, sugestões ou problemas com a utilização do site www.eagora.com.br, o usuário poderá contatar diretamente o seu serviço de atendimento, através do endereço de e-mail: saceagora.com.br.
     </string>
 
-    <string name="terms_14">14. DAS SANÇÕES\n
+    <string name="terms_14"><b>14. DAS SANÇÕES</b>\n
         Sem prejuízo das demais medidas legais cabíveis, o editor do site www.eagora.com.br poderá, a qualquer momento, advertir, suspender ou cancelar a conta do usuário:\n\n
         a) que descumprir quaisquer dos dispositivos contidos no presente instrumento;\n\n
         b) que descumprir os seus deveres de usuário;\n\n
@@ -270,7 +270,7 @@
         e) cujo comportamento constitua ou possa vir a importar ofensa ou dano a terceiro ou ao próprio site.\n\n
     </string>
 
-    <string name="terms_15">15. DAS ALTERAÇÕES\n
+    <string name="terms_15"><b>15. DAS ALTERAÇÕES</b>\n
         A presente versão dos termos e condições gerais de uso e de compra e venda foi atualizada pela última vez em: 01/06/2017.\n\n
         O editor se reserva o direito de modificar, a qualquer momento e sem qualquer aviso prévio a plataforma, bem como as presentes normas, especialmente para adaptá-las às evoluções do site www.eagora.com.br, seja pela disponibilização de
         novas funcionalidades, seja pela supressão ou modificação daquelas já existentes.\n\n
@@ -279,7 +279,7 @@
         Caso a plataforma tenha suas atividades empresariais encerradas, o usuário (prestador de serviço) não reservará o direito de culpar a empresa pela perda de agenda e negócios com os usuários (clientes).\n\n
     </string>
 
-    <string name="terms_16">16. DO DIREITO APLICÁVEL E DO FORO\n
+    <string name="terms_16"><b>16. DO DIREITO APLICÁVEL E DO FORO</b>\n
         Para a solução das controvérsias decorrentes do presente instrumento, será aplicado integralmente o Direito brasileiro, notadamente a sua legislação consumerista.\n\n
         Os eventuais litígios deverão ser apresentados no foro da comarca em que se encontra a sede do editor do site.\n\n\n\n
         Seja bem-vindo(a)!\n\n

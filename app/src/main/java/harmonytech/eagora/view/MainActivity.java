@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, RegisterServiceActivity.class));
 
         } else if (id == R.id.nav_termos_uso) {
+            startActivity(new Intent(this, TermsConditionsActivity.class));
 
         } else if (id == R.id.nav_duvidas) {
             startActivity(new Intent(this, DoubtActivity.class));

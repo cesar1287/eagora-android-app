@@ -44,6 +44,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".view.TermsConditionsActivity"
+            android:label="@string/screen_terms_condition"
             android:screenOrientation="portrait"
             android:parentActivityName=".view.MainActivity">
         </activity>

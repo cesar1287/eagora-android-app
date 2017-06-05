@@ -125,7 +125,7 @@
         com sede em: Três Lagoas – MS, por meio do site eAgora, com o seguinte endereço: www.eagora.com.br\n\n
     </string>
 
-    <string name="terms_1">1. DO OBJETO\n
+    <string name="terms_1"><b>1. DO OBJETO</b>\n
         O site EAgora.com.br caracteriza-se pela prestação dos seguintes serviços :\n
         Interação do prestador de serviço e/ou profissional liberal com o cliente;\n
         Assessoria de atendimento ao prestador de serviço e/ ou profissional liberal, gerando uma agenda e auxiliando no atendimento ao cliente;
@@ -285,4 +285,5 @@
         Seja bem-vindo(a)!\n\n
         A equipe do site www.eagora.com.br lhe deseja uma excelente navegação!
     </string>
+    <string name="screen_terms_condition">Termos e Condições</string>
 </resources>

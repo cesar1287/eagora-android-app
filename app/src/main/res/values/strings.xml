@@ -37,4 +37,13 @@
     <string name="birth_mask">##/##/####</string>
     <string name="postalCode_mask">#####-###</string>
 
+    <string name="question_1">O que é a eAgora?fffffffffffffffffffffffffffffffffffffff</string>
+    <string name="answer_1">O eAgora é uma plataforma (site e aplicativo disponível para celulares Android e iOS) que tem como objetivo conectar
+        clientes a diversos profissionais do mercado.\nSe você busca por um profissional para realizar um determinado serviço de forma a satisfazer as suas necessidades,
+        basta entrar na plataforma, digitar a região onde se encontra o profissional, selecionar o campo de atuação do profissional desejado e
+        conversar com ele diretamente, simples assim.\n\nPossuímos as seguintes categorias de serviço:\n\nAssistência Técnica;\nConstrução e reformas;\n
+        Serviços domésticos;\nAulas;\nBeleza e estética;\nDesign e tecnologia;\nConsultoria;\nSaúde;\nEventos;\nAutos;\nAnimais;\nArte e cultura.\n\nContrate pelo
+        eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
+</string>
+
 </resources>

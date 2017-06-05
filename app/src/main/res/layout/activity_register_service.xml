@@ -23,7 +23,7 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/eagora_image_profile"/>-->
 
-            <TextView
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_cadastro_serviço_categoria"/>
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content">
             </Spinner>
 
-            <TextView
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_cadastro_serviço_Especialidade"
@@ -48,93 +48,93 @@
 
             </Spinner>
 
-            <android.support.design.widget.TextInputLayout
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Nome">
 
-                    <EditText
+                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etCpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="CPF">
 
-                    <EditText
+                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Telefone">
 
-                    <EditText
+                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Email">
 
-                    <EditText
+                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etNascimento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Data de Nascimento">
 
-                    <EditText
+                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="date"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
+            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etCep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="CEP">
 
-                    <EditText
+                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <Button
+            <harmonytech.eagora.controller.custom_widgets.MyCustomButton
                 android:id="@+id/btnCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_title"
@@ -18,109 +18,109 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_title1"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_1"
             android:layout_marginTop="4dp"
             android:gravity="left"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_2"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_3"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_4"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_5"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_6"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_7"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_8"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_9"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_10"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_11"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_11"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_12"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_13"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_14"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_15"
             android:layout_marginTop="8dp"/>
 
-        <TextView
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_16"

@@ -19,7 +19,7 @@
 
     <string name="label_menu_lateral_title">E agora?</string>
     <string name="label_menu_lateral_categorias">Categorias</string>
-    <string name="label_menu_lateral_cadastrar">Cadastrar Serviços</string>
+    <string name="label_menu_lateral_cadastrar">Cadastrar Serviço</string>
     <string name="label_menu_lateral_dicas">Dicas de Segurança</string>
     <string name="label_menu_lateral_termos">Termos de uso</string>
     <string name="label_menu_lateral_subtitulo">Contato e Dúvidas</string>

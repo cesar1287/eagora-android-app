@@ -40,9 +40,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ActionBar actoActionBar = getSupportActionBar();
 
-        actoActionBar.setTitle(Utility.changeActionBarTitle(this, actoActionBar.getTitle().toString()));
 
         //set Custom Typeface
         FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/CircularStd-Book.otf");
@@ -54,6 +52,7 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle(Utility.changeActionBarTitle(this, toolbar.getTitle().toString()));
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

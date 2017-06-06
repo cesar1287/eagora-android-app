@@ -1,11 +1,15 @@
 package harmonytech.eagora.view;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.util.Utility;
@@ -59,5 +63,16 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void ligarPrestador(View view) {
+        String telefone;
+        telefone = tvPhone.getText().toString();
+
+        Uri uri = Uri.parse("tel:" + telefone);
+        Intent intent = new Intent(Intent.ACTION_DIAL, uri);
+
+        startActivity(intent);
     }
 }

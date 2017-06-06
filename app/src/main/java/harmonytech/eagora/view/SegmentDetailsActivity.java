@@ -16,6 +16,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import harmonytech.eagora.R;
@@ -73,7 +74,10 @@ public class SegmentDetailsActivity extends AppCompatActivity {
             actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
 
-            segmentoFirebase = mDatabase.child(category).child(subcategory).orderByChild(FirebaseHelper.FIREBASE_DATABASE_ORDERBY);
+            segmentoFirebase = mDatabase
+                    .child(category)
+                    .child(subcategory)
+                    .orderByChild(FirebaseHelper.FIREBASE_DATABASE_ORDERBY);
         }
     }
 
@@ -131,6 +135,8 @@ public class SegmentDetailsActivity extends AppCompatActivity {
 
         singleValueEventListener = new ValueEventListener() {
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                Collections.reverse(providers);
 
                 frag = (ProviderFragment) getSupportFragmentManager().findFragmentByTag("mainFrag");
                 if(frag == null) {

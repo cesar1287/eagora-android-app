@@ -1,7 +1,9 @@
 package harmonytech.eagora.view;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -37,5 +39,25 @@ public class ProviderDetailsActivity extends AppCompatActivity {
 
         rbRate = (RatingBar) findViewById(R.id.ratingBar);
         rbRate.setRating((float) getIntent().getDoubleExtra(Utility.PROVIDER_RATE, 0.01));
+
+        ActionBar actionBar = getSupportActionBar();
+
+        if(actionBar!=null){
+            actionBar.setDefaultDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id){
+            case android.R.id.home:
+                finish();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

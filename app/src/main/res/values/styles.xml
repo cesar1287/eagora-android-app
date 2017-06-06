@@ -39,6 +39,15 @@
         <item name="colorControlActivated">@color/black</item>
     </style>
 
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="windowFixedHeightMajor">90%</item>
+        <item name="windowFixedHeightMinor">90%</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_border</item>
+    </style>
 
     <style name="MyAppTheme" parent="android:Theme.Holo.Light">
         <item name="android:windowContentOverlay">@null</item>

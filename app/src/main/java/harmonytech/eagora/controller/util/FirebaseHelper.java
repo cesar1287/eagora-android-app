@@ -11,4 +11,6 @@ public class FirebaseHelper {
     public static final String FIREBASE_DATABASE_PROVIDER_CATEGORY = "categoria";
     public static final String FIREBASE_DATABASE_PROVIDER_SUBCATEGORY = "subcategoria";
     public static final String FIREBASE_DATABASE_PROVIDER_RATE = "rate";
+
+    public static final String FIREBASE_DATABASE_ORDERBY= "rate";
 }

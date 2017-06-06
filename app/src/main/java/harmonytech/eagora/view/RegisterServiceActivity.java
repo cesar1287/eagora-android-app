@@ -1,6 +1,7 @@
 package harmonytech.eagora.view;
 
 import android.support.design.widget.TextInputLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextWatcher;
@@ -41,6 +42,11 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_service);
+
+        ActionBar actoActionBar = getSupportActionBar();
+
+        actoActionBar.setTitle(Utility.changeActionBarTitle(this, actoActionBar.getTitle().toString()));
+
 
         ArrayList<String> areas = Singleton.getInstance().getAreas();
         subareas = Singleton.getInstance().getSegmentos();

@@ -63,7 +63,7 @@ public class SegmentCategoryActivity extends AppCompatActivity implements Adapte
             actoActionBar.setTitle(segmento);
         }
 
-        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arraySegmento.get(Utility.HASH_MAP_TELA));
+        ArrayAdapter adapter = new ArrayAdapter<>(this, R.layout.custom_list_view, arraySegmento.get(Utility.HASH_MAP_TELA));
 
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);

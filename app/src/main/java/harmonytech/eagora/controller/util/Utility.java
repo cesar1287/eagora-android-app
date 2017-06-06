@@ -52,6 +52,14 @@ public class Utility {
     public static final String HASH_MAP_FIREBASE = "firebase";
 
     public static final String SEGMENT_DETAILS_TITLE = "title";
+    public static final String SEGMENT_DETAILS_SUBTITLE = "subtitle";
+
+    public static final String PROVIDER_NAME = "name";
+    public static final String PROVIDER_EMAIL = "email";
+    public static final String PROVIDER_PHONE = "phone";
+    public static final String PROVIDER_RATE = "rate";
+    public static final String PROVIDER_CATEGORY = "category";
+    public static final String PROVIDER_SUBCATEGORY = "subcategory";
 
     private static final int[] pesoCPF = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2};
 

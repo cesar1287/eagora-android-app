@@ -1,6 +1,7 @@
 package harmonytech.eagora.controller.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -18,6 +19,8 @@ import harmonytech.eagora.R;
 import harmonytech.eagora.controller.adapter.ProviderAdapter;
 import harmonytech.eagora.controller.domain.Provider;
 import harmonytech.eagora.controller.interfaces.RecyclerViewOnClickListenerHack;
+import harmonytech.eagora.controller.util.Utility;
+import harmonytech.eagora.view.ProviderDetailsActivity;
 import harmonytech.eagora.view.SegmentDetailsActivity;
 
 public class ProviderFragment extends Fragment implements RecyclerViewOnClickListenerHack{
@@ -52,10 +55,14 @@ public class ProviderFragment extends Fragment implements RecyclerViewOnClickLis
 
     @Override
     public void onClickListener(View view, int position) {
-        /*Intent intent = new Intent(getActivity(), SegmentCategoryActivity.class);
-        intent.putExtra(Utility.SEGMENTO, mList.get(position).getName());
-        intent.putExtra(Utility.SEGMENTO_FIREBASE, mList.get(position).getNameFirebase());
-        startActivity(intent);*/
+        Intent intent = new Intent(getActivity(), ProviderDetailsActivity.class);
+        intent.putExtra(Utility.PROVIDER_NAME, mList.get(position).getName());
+        intent.putExtra(Utility.PROVIDER_EMAIL, mList.get(position).getEmail());
+        intent.putExtra(Utility.PROVIDER_PHONE, mList.get(position).getPhone());
+        intent.putExtra(Utility.PROVIDER_RATE, mList.get(position).getRate());
+        intent.putExtra(Utility.PROVIDER_CATEGORY, mList.get(position).getCategory());
+        intent.putExtra(Utility.PROVIDER_SUBCATEGORY, mList.get(position).getSubcategory());
+        startActivity(intent);
     }
 
     private static class RecyclerViewTouchListener implements RecyclerView.OnItemTouchListener {

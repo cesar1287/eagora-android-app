@@ -33,7 +33,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
     ValueEventListener valueEventListener;
     ValueEventListener singleValueEventListener;
 
-    String category, subcategory, title;
+    String category, subcategory, title, subtitle;
 
     ArrayList<Provider> providers;
 
@@ -49,6 +49,7 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         providers = new ArrayList<>();
 
         title = getIntent().getStringExtra(Utility.SEGMENT_DETAILS_TITLE);
+        subtitle = getIntent().getStringExtra(Utility.SEGMENT_DETAILS_SUBTITLE);
         category = getIntent().getStringExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CATEGORY);
         subcategory = getIntent().getStringExtra(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_SUBCATEGORY);
 
@@ -113,7 +114,9 @@ public class SegmentDetailsActivity extends AppCompatActivity {
                     p.setPostalCode((String) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_POSTAL_CODE).getValue());
                     p.setCpf((String) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_CPF).getValue());
                     p.setBirth((String)postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_BIRTH).getValue());
-                    p.setRate((Long) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
+                    p.setRate((Double) postSnapshot.child(FirebaseHelper.FIREBASE_DATABASE_PROVIDER_RATE).getValue());
+                    p.setCategory(subtitle);
+                    p.setSubcategory(title);
 
                     providers.add(p);
                 }

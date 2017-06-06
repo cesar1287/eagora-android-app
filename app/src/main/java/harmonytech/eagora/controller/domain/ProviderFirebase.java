@@ -6,13 +6,13 @@ import com.google.firebase.database.IgnoreExtraProperties;
 public class ProviderFirebase {
 
     public String name, email, birth, cpf, postalCode, phone;
-    public long rate;
+    public double rate;
 
     public ProviderFirebase() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public ProviderFirebase(String name, String email, String birth, String postalCode, String cpf, String phone) {
+    public ProviderFirebase(String name, String email, String birth, String postalCode, String cpf, String phone, double rate) {
         this.name = name;
         this.email = email;
         this.birth = birth;

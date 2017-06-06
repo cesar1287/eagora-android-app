@@ -2,8 +2,24 @@ package harmonytech.eagora.controller.domain;
 
 public class Provider {
 
-    private String name, email, birth, postalCode, cpf, phone;
-    private long rate;
+    private String name, email, birth, postalCode, cpf, phone, category, subcategory;
+    private double rate;
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getSubcategory() {
+        return subcategory;
+    }
+
+    public void setSubcategory(String subcategory) {
+        this.subcategory = subcategory;
+    }
 
     public String getCpf() {
         return cpf;
@@ -13,11 +29,11 @@ public class Provider {
         this.cpf = cpf;
     }
 
-    public long getRate() {
+    public double getRate() {
         return rate;
     }
 
-    public void setRate(long rate) {
+    public void setRate(double rate) {
         this.rate = rate;
     }
 

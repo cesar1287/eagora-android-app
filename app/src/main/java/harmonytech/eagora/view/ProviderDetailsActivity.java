@@ -2,10 +2,16 @@ package harmonytech.eagora.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import harmonytech.eagora.R;
+import harmonytech.eagora.controller.util.Utility;
 
 public class ProviderDetailsActivity extends AppCompatActivity {
+
+    TextView tvName, tvEmail, tvPhone, tvCategory, tvSubcategory;
+    RatingBar rbRate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,5 +19,23 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_provider_details);
 
         getSupportActionBar().setElevation(0);
+
+        tvCategory = (TextView) findViewById(R.id.detailsCategory);
+        tvCategory.setText(getIntent().getStringExtra(Utility.PROVIDER_CATEGORY));
+
+        tvSubcategory = (TextView) findViewById(R.id.detailsSpecialty);
+        tvSubcategory.setText(getIntent().getStringExtra(Utility.PROVIDER_SUBCATEGORY));
+
+        tvName = (TextView) findViewById(R.id.detailsName);
+        tvName.setText(getIntent().getStringExtra(Utility.PROVIDER_NAME));
+
+        tvEmail = (TextView) findViewById(R.id.detailsEmail);
+        tvEmail.setText(getIntent().getStringExtra(Utility.PROVIDER_EMAIL));
+
+        tvPhone = (TextView) findViewById(R.id.detailsPhone);
+        tvPhone.setText(getIntent().getStringExtra(Utility.PROVIDER_PHONE));
+
+        rbRate = (RatingBar) findViewById(R.id.ratingBar);
+        rbRate.setRating((float) getIntent().getDoubleExtra(Utility.PROVIDER_RATE, 0.01));
     }
 }

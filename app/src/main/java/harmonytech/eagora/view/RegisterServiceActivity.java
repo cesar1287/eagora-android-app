@@ -81,6 +81,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
     public void attemptLogin(){
         String name, email, birth, postalCode, cpf, phone;
+        double rate;
 
         boolean allFieldsFilled = true;
         boolean allFilledRight = true;
@@ -92,6 +93,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         postalCode = etCEP.getEditText().getText().toString();
         cpf = etCPF.getEditText().getText().toString();
         phone = etTelefone.getEditText().getText().toString();
+        rate = 0.01;
 
         if(name.equals("")){
             allFieldsFilled = false;
@@ -178,14 +180,14 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         }
 
         if(allFieldsFilled && allFilledRight && allFilledCorrectly) {
-            writeNewProvider(name, email, birth, postalCode, cpf, phone);
+            writeNewProvider(name, email, birth, postalCode, cpf, phone, rate);
             Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             finish();
         }
     }
 
-    private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf, String phone) {
-        ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf, phone);
+    private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf, String phone, double rate) {
+        ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf, phone, rate);
 
         mDatabase
                 .child(segmentosFirebase.get(spCategoria.getSelectedItem().toString()))

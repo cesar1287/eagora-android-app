@@ -26,9 +26,11 @@ public class DoubtActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doubt);
 
-        ActionBar actoActionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
 
-        actoActionBar.setTitle(Utility.changeActionBarTitle(this, actoActionBar.getTitle().toString()));
+        if(actionBar!=null) {
+            actionBar.setTitle(Utility.changeActionBarTitle(this, actionBar.getTitle().toString()));
+        }
 
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.lvExp);

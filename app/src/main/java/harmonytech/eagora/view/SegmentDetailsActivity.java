@@ -45,9 +45,11 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_details);
 
-        ActionBar actoActionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
 
-        actoActionBar.setTitle(Utility.changeActionBarTitle(this, actoActionBar.getTitle().toString()));
+        if(actionBar!=null) {
+            actionBar.setTitle(Utility.changeActionBarTitle(this, actionBar.getTitle().toString()));
+        }
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -75,7 +77,6 @@ public class SegmentDetailsActivity extends AppCompatActivity {
 
         if(actionBar!=null){
             actionBar.setTitle(title);
-            actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
 
             segmentoFirebase = mDatabase

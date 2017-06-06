@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="José Reginaldo de Tudo"
-            android:textSize="23dp"
+            android:textSize="23sp"
             android:layout_centerHorizontal="true"/>
 
         <RatingBar
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="Animais"
         android:layout_gravity="center_horizontal"
-        android:textSize="29dp"
+        android:textSize="29sp"
         android:layout_marginTop="20dp"/>
 
     <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:text="Acessórios"
         android:layout_gravity="center_horizontal"
-        android:textSize="19dp"
+        android:textSize="19sp"
         android:layout_marginTop="1dp"/>
 
     <RelativeLayout
@@ -73,7 +73,7 @@
             android:layout_toRightOf="@+id/iconEmail"
             android:paddingTop="8dp"
             android:paddingLeft="15dp"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_marginTop="1dp"/>
     </RelativeLayout>
 
@@ -99,7 +99,7 @@
             android:layout_gravity="center_horizontal"
             android:paddingTop="8dp"
             android:paddingLeft="15dp"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_marginTop="1dp"/>
 
         <harmonytech.eagora.controller.custom_widgets.MyCustomButton
@@ -108,15 +108,11 @@
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
             android:text="LIGAR"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_alignParentRight="true"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             style="@style/Base.Widget.AppCompat.ButtonBar"
-            android:onClick="ligarPrestador"/>
+            android:onClick="callProvider"/>
     </RelativeLayout>
-
-
-
-
 </LinearLayout>

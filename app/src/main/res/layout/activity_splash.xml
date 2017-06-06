@@ -10,8 +10,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="0.7"
-        android:scaleY="0.5"
-        android:background="@drawable/eagora_image_logo"
+        android:background="@drawable/logo"
         android:layout_centerVertical="true"/>
 </RelativeLayout>

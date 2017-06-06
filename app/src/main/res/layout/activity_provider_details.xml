@@ -112,7 +112,8 @@
             android:layout_alignParentRight="true"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
-            style="@style/Base.Widget.AppCompat.ButtonBar"/>
+            style="@style/Base.Widget.AppCompat.ButtonBar"
+            android:onClick="ligarPrestador"/>
     </RelativeLayout>
 
 

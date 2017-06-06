@@ -45,6 +45,10 @@ public class SegmentDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_details);
 
+        ActionBar actoActionBar = getSupportActionBar();
+
+        actoActionBar.setTitle(Utility.changeActionBarTitle(this, actoActionBar.getTitle().toString()));
+
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         providers = new ArrayList<>();

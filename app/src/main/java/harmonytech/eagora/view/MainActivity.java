@@ -1,9 +1,11 @@
 package harmonytech.eagora.view;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -42,6 +44,12 @@ public class MainActivity extends AppCompatActivity
         //set Custom Typeface
         FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/CircularStd-Book.otf");
 
+        //set Custom Typeface CollapsingToolbar
+        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        final Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/CircularStd-Book.otf");
+        collapsingToolbarLayout.setCollapsedTitleTypeface(tf);
+        collapsingToolbarLayout.setExpandedTitleTypeface(tf);
+
         btnRegisterService = (Button) findViewById(R.id.btnRegisterService);
         btnRegisterService.setOnClickListener(this);
 
@@ -49,6 +57,7 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle(Utility.changeActionBarTitle(this, toolbar.getTitle().toString()));
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

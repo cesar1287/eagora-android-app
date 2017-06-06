@@ -1,5 +1,6 @@
 package harmonytech.eagora.view;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ExpandableListAdapter;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import harmonytech.eagora.R;
+import harmonytech.eagora.controller.util.Utility;
 
 public class DoubtActivity extends AppCompatActivity {
 
@@ -23,6 +25,12 @@ public class DoubtActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doubt);
+
+        ActionBar actionBar = getSupportActionBar();
+
+        if(actionBar!=null) {
+            actionBar.setTitle(Utility.changeActionBarTitle(this, actionBar.getTitle().toString()));
+        }
 
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.lvExp);

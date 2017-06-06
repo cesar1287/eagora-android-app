@@ -6,7 +6,10 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.text.Editable;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.text.TextWatcher;
+import android.text.style.TypefaceSpan;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
@@ -156,5 +159,15 @@ public class Utility {
             public void afterTextChanged(Editable s) {
             }
         };
+    }
+
+    public static SpannableString changeActionBarTitle(Activity activity, String title){
+
+        SpannableString spannableString = new SpannableString(title);
+        spannableString.setSpan(new harmonytech.eagora.controller.util.TypefaceSpan(activity.getApplicationContext(),
+                        "CircularStd-Book.otf"), 0, spannableString.length(),
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return spannableString;
     }
 }

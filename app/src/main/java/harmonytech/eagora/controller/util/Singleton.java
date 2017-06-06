@@ -26,9 +26,9 @@ public class Singleton {
         assistenciaTecnica.add("Computador");
         assistenciaTecnica.add("Eletrodomésticos");
         assistenciaTecnica.add("Eletrônicos");
-        assistenciaTecnica.add("Outros");
         assistenciaTecnica.add("Tablets");
         assistenciaTecnica.add("Telefonia");
+        assistenciaTecnica.add("Outros");
 
         ArrayList<String> assistenciaTecnicaFirebase = new ArrayList<>();
         assistenciaTecnicaFirebase.add("ar_condicionado");
@@ -48,12 +48,12 @@ public class Singleton {
         HashMap<String, ArrayList<String>> animaisTelas = new HashMap<>();
 
         ArrayList<String> animais = new ArrayList<>();
-        animais.add("Acessorios");
+        animais.add("Acessórios");
         animais.add("Adestrador de animais");
         animais.add("Banho e tosa");
         animais.add("Cuidador de animais");
         animais.add("Passeio para animais");
-        animais.add("Vededor de Ração");
+        animais.add("Vendedor de Ração");
         animais.add("Veterinário");
         animais.add("Outros");
 
@@ -64,7 +64,7 @@ public class Singleton {
         animaisFirebase.add("banho_e_tosa");
         animaisFirebase.add("cuidador_de_animais");
         animaisFirebase.add("passeio_para_animais");
-        animaisFirebase.add("vededor_de_ração");
+        animaisFirebase.add("vendedor_de_ração");
         animaisFirebase.add("veterinário");
         animaisFirebase.add("outros");
 
@@ -150,7 +150,7 @@ public class Singleton {
         autos.add("Insulfilm");
         autos.add("Martelinho de ouro");
         autos.add("Revisão");
-        autos.add("Som automoivo");
+        autos.add("Som automotivo");
         autos.add("Outros");
 
         ArrayList<String> autosFirebase = new ArrayList<>();
@@ -161,7 +161,7 @@ public class Singleton {
         autosFirebase.add("insulfilm");
         autosFirebase.add("martelinho_de_ouro");
         autosFirebase.add("revisao");
-        autosFirebase.add("som_automoivo");
+        autosFirebase.add("som_automotivo");
         autos.add("outros");
 
         autosTelas.put(Utility.HASH_MAP_TELA, autos);

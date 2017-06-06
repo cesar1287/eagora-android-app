@@ -44,7 +44,6 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         if(actionBar!=null){
-            actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setElevation(0);
         }
@@ -64,11 +63,11 @@ public class ProviderDetailsActivity extends AppCompatActivity {
     }
 
 
-    public void ligarPrestador(View view) {
-        String telefone;
-        telefone = tvPhone.getText().toString();
+    public void callProvider(View view) {
+        String phone;
+        phone = tvPhone.getText().toString();
 
-        Uri uri = Uri.parse("tel:" + telefone);
+        Uri uri = Uri.parse("tel:" + phone);
         Intent intent = new Intent(Intent.ACTION_DIAL, uri);
 
         startActivity(intent);

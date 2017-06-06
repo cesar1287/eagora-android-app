@@ -23,6 +23,7 @@ import java.util.List;
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.domain.Segment;
 import harmonytech.eagora.controller.fragment.SegmentFragment;
+import harmonytech.eagora.controller.util.FontsOverride;
 import harmonytech.eagora.controller.util.Utility;
 
 public class MainActivity extends AppCompatActivity
@@ -37,6 +38,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //set Custom Typeface
+        FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/CircularStd-Book.otf");
 
         btnRegisterService = (Button) findViewById(R.id.btnRegisterService);
         btnRegisterService.setOnClickListener(this);

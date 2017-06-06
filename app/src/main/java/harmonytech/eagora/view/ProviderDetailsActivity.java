@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.util.Utility;
@@ -23,8 +22,6 @@ public class ProviderDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider_details);
-
-        getSupportActionBar().setElevation(0);
 
         tvCategory = (TextView) findViewById(R.id.detailsCategory);
         tvCategory.setText(getIntent().getStringExtra(Utility.PROVIDER_CATEGORY));
@@ -49,6 +46,7 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         if(actionBar!=null){
             actionBar.setDefaultDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setElevation(0);
         }
     }
 

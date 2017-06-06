@@ -43,10 +43,11 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_service);
 
-        ActionBar actoActionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
 
-        actoActionBar.setTitle(Utility.changeActionBarTitle(this, actoActionBar.getTitle().toString()));
-
+        if(actionBar!=null) {
+            actionBar.setTitle(Utility.changeActionBarTitle(this, actionBar.getTitle().toString()));
+        }
 
         ArrayList<String> areas = Singleton.getInstance().getAreas();
         subareas = Singleton.getInstance().getSegmentos();

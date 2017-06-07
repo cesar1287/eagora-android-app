@@ -46,14 +46,16 @@
             android:name=".view.TermsConditionsActivity"
             android:label="@string/screen_terms_condition"
             android:parentActivityName=".view.MainActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".view.ProviderDetailsActivity"
             android:label=""
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ContactUsActivity"
+            android:label="@string/screen_contact_us"
+            android:parentActivityName=".view.MainActivity"
+            android:screenOrientation="portrait"/>/>
     </application>
 
 </manifest>

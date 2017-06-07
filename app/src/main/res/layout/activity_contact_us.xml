@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="harmonytech.eagora.view.ContactUsActivity">
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/contactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Nome"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/etTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Telefone"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/contactEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Email"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/etNascimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Data de Nascimento"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/contactPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Telefone"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/contactCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Cidade"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+    <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+        android:id="@+id/contactMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:hint="Mensagem"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"/>
+
+    </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+
+</LinearLayout>

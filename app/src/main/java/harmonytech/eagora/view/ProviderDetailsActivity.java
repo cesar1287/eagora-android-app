@@ -67,9 +67,6 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         String phone;
         phone = tvPhone.getText().toString();
 
-        Uri uri = Uri.parse("tel:" + phone);
-        Intent intent = new Intent(Intent.ACTION_DIAL, uri);
-
-        startActivity(intent);
+        Utility.callPhone(this, phone);
     }
 }

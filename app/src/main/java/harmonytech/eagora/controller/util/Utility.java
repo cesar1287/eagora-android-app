@@ -2,9 +2,11 @@ package harmonytech.eagora.controller.util;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -63,6 +65,8 @@ public class Utility {
     public static final String PROVIDER_RATE = "rate";
     public static final String PROVIDER_CATEGORY = "category";
     public static final String PROVIDER_SUBCATEGORY = "subcategory";
+
+    public static final String EAGORA_PHONE = "(67)98157–2320";
 
     private static final int[] pesoCPF = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2};
 
@@ -169,5 +173,13 @@ public class Utility {
                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         return spannableString;
+    }
+
+    public static void callPhone(Activity activity, String phone){
+
+        Uri uri = Uri.parse("tel:" + phone);
+        Intent intent = new Intent(Intent.ACTION_DIAL, uri);
+
+        activity.startActivity(intent);
     }
 }

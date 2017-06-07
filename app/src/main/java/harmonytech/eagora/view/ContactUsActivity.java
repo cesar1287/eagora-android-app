@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import harmonytech.eagora.R;
@@ -16,7 +17,7 @@ import harmonytech.eagora.controller.util.Utility;
 
 public class ContactUsActivity extends AppCompatActivity {
 
-    TextInputLayout nome, telefone, email, cidade, mensagem;
+    TextInputLayout nome, telefone, cidade, mensagem;
 
     TextWatcher phoneMask;
 
@@ -37,7 +38,6 @@ public class ContactUsActivity extends AppCompatActivity {
         mensagem = (TextInputLayout)findViewById(R.id.contactMessage);
 
         setupFieldMasks();
-
     }
 
     public void attemptLogin(){
@@ -110,7 +110,7 @@ public class ContactUsActivity extends AppCompatActivity {
         sb.append("Mensagem: "+ mensagemRemetente).append("\n");
 
         Intent email = new Intent(Intent.ACTION_SEND);
-        email.putExtra(Intent.EXTRA_EMAIL, new String[] {"islane.junior@gmail.com"});
+        email.putExtra(Intent.EXTRA_EMAIL, new String[] {"contato.eagora@outlook.com"});
         email.putExtra(Intent.EXTRA_SUBJECT, "Fale Conosco - Eagora");
         email.putExtra(Intent.EXTRA_TEXT, sb.toString());
         email.setType("plain/text");
@@ -122,7 +122,6 @@ public class ContactUsActivity extends AppCompatActivity {
     public void enviarEmail(View view){
 
         attemptLogin();
-
     }
 
     public void setupFieldMasks(){
@@ -130,4 +129,10 @@ public class ContactUsActivity extends AppCompatActivity {
         telefone.getEditText().addTextChangedListener(phoneMask);
     }
 
+    public void callEagora(View view) {
+
+        String phone = Utility.EAGORA_PHONE;
+
+        Utility.callPhone(this, phone);
+    }
 }

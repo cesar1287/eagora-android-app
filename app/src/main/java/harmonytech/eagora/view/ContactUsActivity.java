@@ -103,11 +103,11 @@ public class ContactUsActivity extends AppCompatActivity {
         String mensagemRemetente = mensagem.getEditText().getText().toString();
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Nome: " + nomeRemetente).append("\n");
-        sb.append("Telefone: " + telefoneRemetente).append("\n");
-        sb.append("Cidade: " + cidadeRementente).append("\n");
+        sb.append("Nome: ").append(nomeRemetente).append("\n");
+        sb.append("Telefone: ").append(telefoneRemetente).append("\n");
+        sb.append("Cidade: ").append(cidadeRementente).append("\n");
         sb.append("\n\n\n");
-        sb.append("Mensagem: "+ mensagemRemetente).append("\n");
+        sb.append("Mensagem: ").append(mensagemRemetente).append("\n");
 
         Intent email = new Intent(Intent.ACTION_SEND);
         email.putExtra(Intent.EXTRA_EMAIL, new String[] {"contato.eagora@outlook.com"});

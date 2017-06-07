@@ -11,10 +11,6 @@
             android:icon="@drawable/nav_image_cadastro"
             android:title="@string/label_menu_lateral_cadastrar" />
         <item
-            android:id="@+id/nav_dicas_seg"
-            android:icon="@drawable/nav_image_dicas"
-            android:title="@string/label_menu_lateral_dicas" />
-        <item
             android:id="@+id/nav_termos_uso"
             android:icon="@drawable/nav_image_termos"
             android:title="@string/label_menu_lateral_termos" />

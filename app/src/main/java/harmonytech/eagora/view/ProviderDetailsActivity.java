@@ -9,13 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import harmonytech.eagora.R;
 import harmonytech.eagora.controller.util.Utility;
 
 public class ProviderDetailsActivity extends AppCompatActivity {
 
-    TextView tvName, tvEmail, tvPhone, tvCategory, tvSubcategory;
+    TextView tvName, tvEmail, tvPhone, tvCategory, tvSubcategory, tvWpp;
     RatingBar rbRate;
 
     @Override
@@ -37,6 +38,9 @@ public class ProviderDetailsActivity extends AppCompatActivity {
 
         tvPhone = (TextView) findViewById(R.id.detailsPhone);
         tvPhone.setText(getIntent().getStringExtra(Utility.PROVIDER_PHONE));
+
+        tvWpp = (TextView) findViewById(R.id.detailsWpp);
+        tvWpp.setText(getIntent().getStringExtra(Utility.PROVIDER_PHONE));
 
         rbRate = (RatingBar) findViewById(R.id.ratingBar);
         rbRate.setRating((float) getIntent().getDoubleExtra(Utility.PROVIDER_RATE, 0.01));
@@ -68,5 +72,22 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         phone = tvPhone.getText().toString();
 
         Utility.callPhone(this, phone);
+    }
+
+    public void chamarWpp(View view) {
+        String wpp;
+        wpp = removeCharactersPhone();
+
+        Utility.openWhatsApp(this, wpp);
+    }
+
+    public String removeCharactersPhone(){
+        String phone;
+        String newPhone;
+        phone = tvPhone.getText().toString();
+        newPhone = "55" + phone.replaceAll("\\(","").replaceAll("\\)","").replace("-","");
+
+        return newPhone;
+
     }
 }

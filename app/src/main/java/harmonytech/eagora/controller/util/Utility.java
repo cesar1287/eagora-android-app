@@ -1,6 +1,7 @@
 package harmonytech.eagora.controller.util;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -16,6 +17,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.androidadvance.topsnackbar.TSnackbar;
 
@@ -181,5 +183,21 @@ public class Utility {
         Intent intent = new Intent(Intent.ACTION_DIAL, uri);
 
         activity.startActivity(intent);
+    }
+
+    public static void openWhatsApp(Activity activity, String phone) {
+        String smsNumber = phone; //without '+'
+        try {
+            Intent sendIntent = new Intent("android.intent.action.MAIN");
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.setType("text/plain");
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "Oi, estou precisando dos seus serviços");
+            sendIntent.putExtra("jid", smsNumber + "@s.whatsapp.net"); //phone number without "+" prefix
+            sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
+            sendIntent.setPackage("com.whatsapp");
+            activity.startActivity(sendIntent);
+        } catch(Exception e) {
+            Toast.makeText(activity.getApplicationContext(), "Error/n" + e.toString(), Toast.LENGTH_SHORT).show();
+        }
     }
 }

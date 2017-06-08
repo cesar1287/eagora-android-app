@@ -115,4 +115,44 @@
             style="@style/Base.Widget.AppCompat.ButtonBar"
             android:onClick="callProvider"/>
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/icon_wpp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/eagora_icon_wpp"/>
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+            android:id="@+id/detailsWpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(85)32915565"
+            android:layout_toRightOf="@+id/icon_wpp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:paddingLeft="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="1dp"/>
+
+        <harmonytech.eagora.controller.custom_widgets.MyCustomButton
+            android:id="@+id/detailsChamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="CONVERSAR"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            style="@style/Base.Widget.AppCompat.ButtonBar"
+            android:onClick="chamarWpp"/>
+    </RelativeLayout>
 </LinearLayout>

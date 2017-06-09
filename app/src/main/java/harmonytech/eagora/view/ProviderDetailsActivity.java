@@ -76,7 +76,6 @@ public class ProviderDetailsActivity extends AppCompatActivity {
     public void chamarWpp(View view) {
         String wpp;
         wpp = removeCharactersPhone();
-        Toast.makeText(this, wpp, Toast.LENGTH_LONG).show();
         Utility.openWhatsApp(this, wpp);
     }
 

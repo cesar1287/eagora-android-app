@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.telephony.PhoneNumberUtils;
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -189,15 +190,13 @@ public class Utility {
         String smsNumber = phone; //without '+'
         try {
             Intent sendIntent = new Intent("android.intent.action.MAIN");
-            sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.setType("text/plain");
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "Oi, estou precisando dos seus serviços");
-            sendIntent.putExtra("jid", smsNumber + "@s.whatsapp.net"); //phone number without "+" prefix
             sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
-            sendIntent.setPackage("com.whatsapp");
+            sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(smsNumber) + "@s.whatsapp.net");//phone number without "+" prefix
+
             activity.startActivity(sendIntent);
         } catch(Exception e) {
             Toast.makeText(activity.getApplicationContext(), "Error/n" + e.toString(), Toast.LENGTH_SHORT).show();
         }
+
     }
 }

@@ -70,14 +70,13 @@ public class ProviderDetailsActivity extends AppCompatActivity {
     public void callProvider(View view) {
         String phone;
         phone = tvPhone.getText().toString();
-
         Utility.callPhone(this, phone);
     }
 
     public void chamarWpp(View view) {
         String wpp;
         wpp = removeCharactersPhone();
-
+        Toast.makeText(this, wpp, Toast.LENGTH_LONG).show();
         Utility.openWhatsApp(this, wpp);
     }
 
@@ -85,9 +84,12 @@ public class ProviderDetailsActivity extends AppCompatActivity {
         String phone;
         String newPhone;
         phone = tvPhone.getText().toString();
-        newPhone = "55" + phone.replaceAll("\\(","").replaceAll("\\)","").replace("-","");
+        newPhone = phone.replaceAll("\\(","").replaceAll("\\)","").replace("-","");
+        newPhone = "55"+newPhone;
+        StringBuilder sb = new StringBuilder(newPhone);
+        sb.deleteCharAt(4);
+        newPhone = sb.toString();
 
         return newPhone;
-
     }
 }

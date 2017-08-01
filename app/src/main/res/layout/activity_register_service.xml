@@ -13,7 +13,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        tools:context="harmonytech.eagora.view.RegisterServiceActivity">
+        tools:context="harmonytech.praagora.view.RegisterServiceActivity">
 
             <!--<de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_profile"
@@ -23,7 +23,7 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/eagora_image_profile"/>-->
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_cadastro_serviço_categoria"/>
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content">
             </Spinner>
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_cadastro_serviço_Especialidade"
@@ -48,93 +48,93 @@
 
             </Spinner>
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Nome">
 
-                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+                    <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"/>
 
-            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+            </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etCpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="CPF">
 
-                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+                    <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"/>
 
-            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+            </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Telefone">
 
-                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+                    <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"/>
 
-            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+            </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Email">
 
-                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+                    <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"/>
 
-            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+            </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etNascimento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="Data de Nascimento">
 
-                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+                    <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="date"/>
 
-            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+            </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
                 android:id="@+id/etCep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
                 android:hint="CEP">
 
-                    <harmonytech.eagora.controller.custom_widgets.MyCustomEditText
+                    <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"/>
 
-            </harmonytech.eagora.controller.custom_widgets.MyCustomTextInputLayout>
+            </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
-            <harmonytech.eagora.controller.custom_widgets.MyCustomButton
+            <harmonytech.praagora.controller.custom_widgets.MyCustomButton
                 android:id="@+id/btnCadastrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="harmonytech.eagora.view.ProviderDetailsActivity">
+    tools:context="harmonytech.praagora.view.ProviderDetailsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:background="@color/colorPrimary">
 
-        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+        <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
             android:id="@+id/detailsName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
 
 
 
-    <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+    <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
         android:id="@+id/detailsCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:textSize="29sp"
         android:layout_marginTop="20dp"/>
 
-    <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+    <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
         android:id="@+id/detailsSpecialty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:layout_height="35dp"
             android:src="@drawable/eagora_icon_email"/>
 
-        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+        <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
             android:id="@+id/detailsEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             android:layout_height="35dp"
             android:src="@drawable/eagora_icon_phone"/>
 
-        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+        <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
             android:id="@+id/detailsPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             android:textSize="17sp"
             android:layout_marginTop="1dp"/>
 
-        <harmonytech.eagora.controller.custom_widgets.MyCustomButton
+        <harmonytech.praagora.controller.custom_widgets.MyCustomButton
             android:id="@+id/detailsLigar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
             android:layout_height="35dp"
             android:src="@drawable/eagora_icon_wpp"/>
 
-        <harmonytech.eagora.controller.custom_widgets.MyCustomTextView
+        <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
             android:id="@+id/detailsWpp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
             android:textSize="17sp"
             android:layout_marginTop="1dp"/>
 
-        <harmonytech.eagora.controller.custom_widgets.MyCustomButton
+        <harmonytech.praagora.controller.custom_widgets.MyCustomButton
             android:id="@+id/detailsChamar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

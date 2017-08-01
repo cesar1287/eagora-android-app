@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">E agora</string>
-    <string name="app_name_main">E agora?</string>
+    <string name="app_name">Pra agora</string>
+    <string name="app_name_main">Pra agora</string>
     <string name="label_main_categorias">Categorias</string>
     <string name="loading_providers_pls_wait">Carregando prestadores, por favor aguarde…</string>
     <string name="error_loading_providers">Erro ao carregar os prestadores.</string>
@@ -14,10 +14,10 @@
     <string name="action_settings">Settings</string>
 
 
-    <string name="label_main_title">E agora?</string>
+    <string name="label_main_title">Pra agora</string>
     <string name="button_main_cadastrar">Cadastrar Serviço</string>
 
-    <string name="label_menu_lateral_title">E agora?</string>
+    <string name="label_menu_lateral_title">Pra agora</string>
     <string name="label_menu_lateral_categorias">Categorias</string>
     <string name="label_menu_lateral_cadastrar">Cadastrar Serviço</string>
     <string name="label_menu_lateral_dicas">Dicas de Segurança</string>
@@ -37,21 +37,21 @@
     <string name="birth_mask">##/##/####</string>
     <string name="postalCode_mask">#####-###</string>
 
-    <string name="question_1">O que é a eAgora?</string>
-    <string name="answer_1">O eAgora é uma plataforma (site e aplicativo disponível para celulares Android e iOS) que tem como objetivo conectar
+    <string name="question_1">O que é a Pra agora</string>
+    <string name="answer_1">O Pra agora é uma plataforma (site e aplicativo disponível para celulares Android e iOS) que tem como objetivo conectar
         clientes a diversos profissionais do mercado.\nSe você busca por um profissional para realizar um determinado serviço de forma a satisfazer as suas necessidades,
         basta entrar na plataforma, digitar a região onde se encontra o profissional, selecionar o campo de atuação do profissional desejado e
         conversar com ele diretamente, simples assim.\n\nPossuímos as seguintes categorias de serviço:\n\nAssistência Técnica;\nConstrução e reformas;\nServiços domésticos;\nAulas;\nBeleza e estética;\nDesign e tecnologia;\nConsultoria;\nSaúde;\nEventos;\nAutos;\nAnimais;\nArte e cultura.\n\nContrate pelo
-        eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
+        Pra agora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
     </string>
 
-    <string name="question_2">Como baixar o app do eAgora?</string>
+    <string name="question_2">Como baixar o app do Pra agora?</string>
     <string name="answer_2">Para baixar nosso aplicativo é necessário que você tenha um celular smartphone.
         O aplicativo está disponível no sistema Android e IOS.\n\nBasta acessar o Play Store, caso seu celular seja Android,
-        ou o App Store caso seu celular seja iOS e busque por "eAgora". Clique em “instalar”, depois em “aceitar” e finalmente
-        quando o download for concluído basta clicar em “abrir”.  Pronto! Agora você já pode começar a usar a plataforma eAgora
+        ou o App Store caso seu celular seja iOS e busque por "Pra agora". Clique em “instalar”, depois em “aceitar” e finalmente
+        quando o download for concluído basta clicar em “abrir”.  Pronto! Agora você já pode começar a usar a plataforma Pra agora
         direto de seu celular! Você só precisa procurar um profissional que atenda às suas necessidades e tratar de orçamentos
-        e serviços diretamente com o profissional desejado.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais]
+        e serviços diretamente com o profissional desejado.\n\nContrate pelo Pra agora de maneira rápida e prática, há profissionais]
         em diversas categorias dispostos a resolver os seus problemas.
     </string>
 
@@ -60,27 +60,27 @@
         pelo site.\n\nNo site, ao clicar em “Sou cliente”, você pode escolher diretamente a categoria do serviço
         que está precisando na cidade que você deseja. Ao visualizar os contatos de profissionais, você pode escolher
         o que melhor lhe atender e tratar a negociação do serviço diretamente com esse profissional.\n\nContrate pelo
-        eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
+        Pra agora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
     </string>
 
     <string name="question_4">Como encontrar um profissional pelo app?</string>
-    <string name="answer_4">Para encontrar um profissional, se você já tem o aplicativo do eAgora, também é simples. No app, ao clicar
+    <string name="answer_4">Para encontrar um profissional, se você já tem o aplicativo do Pra agora, também é simples. No app, ao clicar
         em “Sou cliente”, você pode escolher diretamente a categoria do serviço que está precisando na cidade que você deseja.
         Ao visualizar os contatos de profissionais, você pode escolher o que melhor lhe atender e tratar a negociação do serviço
-        diretamente com esse profissional.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais em diversas
+        diretamente com esse profissional.\n\nContrate pelo Pra agora de maneira rápida e prática, há profissionais em diversas
         categorias dispostos a resolver os seus problemas.
     </string>
 
     <string name="question_5">Como os profissionais são selecionados?</string>
-    <string name="answer_5">A plataforma eAgora seleciona os profissionais de acordo com o serviço solicitado e dentro da localização
+    <string name="answer_5">A plataforma Pra agora seleciona os profissionais de acordo com o serviço solicitado e dentro da localização
         do endereço solicitado. Ao encontrar os profissionais, você terá a liberdade de escolhe-los de acordo com as recomendações
-        de outros clientes, pontuações entre outros. Contrate pelo eAgora de maneira rápida e prática, há profissionais em
-        diversas categorias disposto a resolver os seus problemas.\n\nContrate pelo eAgora de maneira rápida e prática,
+        de outros clientes, pontuações entre outros. Contrate pelo Pra agora de maneira rápida e prática, há profissionais em
+        diversas categorias disposto a resolver os seus problemas.\n\nContrate pelo Pra agora de maneira rápida e prática,
         há profissionais em diversas categorias dispostos a resolver os seus problemas.
     </string>
 
     <string name="question_6">Como contratar com segurança?</string>
-    <string name="answer_6">A plataforma eAgora faz apenas a indicação do contato de profissionais. Antes de contratar,
+    <string name="answer_6">A plataforma Pra agora faz apenas a indicação do contato de profissionais. Antes de contratar,
         entre em contato com os profissionais, analise a forma de atendimento e peça informações sobre preço, garantia e
         contrato e disponibilidade do profissional.\n\nObs: A negociação e pagamento do serviço é feito diretamente entre
         você e o profissional.\n\nAbaixo segue algumas dicas de como proceder antes de fechar negócio:\n\n\t\t1. Analise o
@@ -92,48 +92,48 @@
         do serviço prestado e inclua essa informação no contrato.\n\nAntes de finalizar a contratação ou negociação
         com o profissional, você deverá se informar sobre as suas especificações, prazos e qualidades buscando garantia
         e satisfação do serviço prestado para sua necessidade.\n\nFeche qualquer contrato seguindo nossas dicas com a nossa
-        plataforma.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos
+        plataforma.\n\nContrate pelo Pra agora de maneira rápida e prática, há profissionais em diversas categorias dispostos
         a resolver os seus problemas.
     </string>
 
     <string name="question_7">Como resolver problemas com o profissional?</string>
-    <string name="answer_7">A plataforma eAgora te ajuda a localizar profissionais próximos na região desejada. Entretanto,
-        a plataforma eAgora não se responsabiliza e não oferece garantias pelos serviços prestados por profissionais que
+    <string name="answer_7">A plataforma Pra agora te ajuda a localizar profissionais próximos na região desejada. Entretanto,
+        a plataforma Pra agora não se responsabiliza e não oferece garantias pelos serviços prestados por profissionais que
         indicamos.\n\nRecomendamos que todos os clientes façam um contrato com o profissional, peçam recibos e não paguem
         todo o valor do serviço antes que ele seja finalizado.\n\nCaso você precise reportar algum problema com o profissional
         contratado, pedimos que entre em contato com a nossa equipe e informe os dados do profissional. A situação será
         analisada, e se necessário, será efetuado o bloqueio temporário e/ou permanente do perfil deste profissional.
         O profissional cadastrado será notificado para que ele entre em contato e solucione o problema pendente.\n\nEm caso de
-        dúvidas, sugestões ou problemas com a utilização do site www.eagora.com.br, o usuário poderá contatar diretamente
-        o seu serviço de atendimento, através do endereço de e-mail: saceagora.com.br.
+        dúvidas, sugestões ou problemas com a utilização do site www.Pra agora.com.br, o usuário poderá contatar diretamente
+        o seu serviço de atendimento, através do endereço de e-mail: sacPra agora.com.br.
     </string>
 
     <string name="question_8">Como avaliar o profissional contratado?</string>
     <string name="answer_8">Para avaliar o profissional, localize o profissional contratado dentro do seu perfil.\n\n\t\t1. Clique em:
         "Recomende este profissional".\n\t\t2. Em seguida, classifique a qualidade do serviço (estrelas de qualificação) e
         no campo da descrição conte sua experiência, atendimento, qualidade e preço do serviço.\n\t\t3. Para finalizar e salvar
-        a sua avaliação clique em "Enviar recomendação”.\n\nA recomendação será publicada após o clique do botão “Enviar recomendação”.\n\nEm caso de dúvidas, sugestões ou problemas com a utilização do site www.eagora.com.br, o usuário poderá contatar diretamente o seu serviço de atendimento, através do endereço de e-mail: saceagora.com.br.\n\nContrate pelo eAgora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
+        a sua avaliação clique em "Enviar recomendação”.\n\nA recomendação será publicada após o clique do botão “Enviar recomendação”.\n\nEm caso de dúvidas, sugestões ou problemas com a utilização do site www.Pra agora.com.br, o usuário poderá contatar diretamente o seu serviço de atendimento, através do endereço de e-mail: sacPra agora.com.br.\n\nContrate pelo Pra agora de maneira rápida e prática, há profissionais em diversas categorias dispostos a resolver os seus problemas.
     </string>
 
-    <string name="terms_title">TERMOS E CONDIÇÕES GERAIS DE USO DO SITE "EAgora"\n\n
+    <string name="terms_title">TERMOS E CONDIÇÕES GERAIS DE USO DO SITE "Pra agora"\n\n
 
     </string>
 
     <string name="terms_title1">Estes termos e condições gerais de uso e de negociação na contratação de serviços pelos prestadores de serviços liberais e autônomos
         aplicam-se aos serviços prestados pela pessoa jurídica EAM Comércio LTDA, devidamente registrada sob o CNPJ n. XX.XXX.XXX/0001-XX,
-        com sede em: Três Lagoas – MS, por meio do site eAgora, com o seguinte endereço: www.eagora.com.br\n\n
+        com sede em: Três Lagoas – MS, por meio do site Pra agora, com o seguinte endereço: www.Pra agora.com.br\n\n
     </string>
 
     <string name="terms_1"><b>1. DO OBJETO</b>\n
-        O site EAgora.com.br caracteriza-se pela prestação dos seguintes serviços :\n
+        O site Pra agora.com.br caracteriza-se pela prestação dos seguintes serviços :\n
         Interação do prestador de serviço e/ou profissional liberal com o cliente;\n
         Assessoria de atendimento ao prestador de serviço e/ ou profissional liberal, gerando uma agenda e auxiliando no atendimento ao cliente;
     </string>
 
     <string name="terms_2"><b>2. DA ACEITAÇÃO DOS TERMOS E CONDIÇÕES GERAIS DE USO E DE COMPRA E VENDA</b>\n
-        Todos aqueles que desejarem ter acesso aos serviços ofertados através do site www.eagora.com.br deverão, primeiramente, se informar
+        Todos aqueles que desejarem ter acesso aos serviços ofertados através do site www.Pra agora.com.br deverão, primeiramente, se informar
         sobre as regras que compõem o presente instrumento, as quais ficarão disponíveis para pronta e ampla consulta, em link direto no próprio site.\n\n
-        Ao utilizar o site www.eagora.com.br, o usuário aceita integralmente as presentes normas e compromete-se a observá-las, sob risco de aplicação das
+        Ao utilizar o site www.Pra agora.com.br, o usuário aceita integralmente as presentes normas e compromete-se a observá-las, sob risco de aplicação das
         penalidades cabíveis. Antes de iniciar qualquer navegação no site, o usuário deverá cientificar-se de eventuais modificações ou atualizações ocorridas
         neste termos.\n\n
         Caso não concorde com quaisquer das regras aqui descritas, o usuário deve, imediatamente, abster-se de utilizar o serviço. Se for de seu interesse, poderá,
@@ -141,15 +141,15 @@
     </string>
 
     <string name="terms_3"><b>3. DA NAVEGAÇÃO</b>\n
-        O editor do site www.eagora.com.br se compromete a utilizar todas as soluções técnicas à sua disposição para permitir o acesso ao serviço 24 (vinte e quatro)
+        O editor do site www.Pra agora.com.br se compromete a utilizar todas as soluções técnicas à sua disposição para permitir o acesso ao serviço 24 (vinte e quatro)
         horas por dia, 7 (sete) dias por semana. Entretanto, ele poderá, a qualquer momento, interromper, limitar ou suspender o acesso ao site ou a algumas de suas páginas,
         a fim de realizar atualizações, modificações de conteúdo ou qualquer outra ação julgada necessária para o seu bom funcionamento.\n\n
-        Os presentes termos e condições gerais de uso se aplicam a todas as extensões do site www.eagora.com.br em redes sociais ou em comunidades, tanto as já existentes,
+        Os presentes termos e condições gerais de uso se aplicam a todas as extensões do site www.Pra agora.com.br em redes sociais ou em comunidades, tanto as já existentes,
         quanto aquelas ainda a serem implementadas.
     </string>
 
     <string name="terms_4"><b>4. DA GESTÃO DO SITE</b>\n
-        Para a boa gestão, o editor do site www.eagora.com.br poderá, a qualquer momento:\n\n
+        Para a boa gestão, o editor do site www.Pra agora.com.br poderá, a qualquer momento:\n\n
         a) suspender, interromper ou limitar o acesso a todo ou a parte do site a uma categoria
         específica de internautas;\n\n
         b) remover toda informação que possa perturbar o funcionamento do site ou que esteja em
@@ -158,27 +158,27 @@
     </string>
 
     <string name="terms_5"><b>5. DO CADASTRO</b>\n
-        Os serviços disponibilizados no site www.eagora.com.br apenas poderão ser acessados por pessoas plenamente capazes, conforme o Direito brasileiro. Todos aqueles
+        Os serviços disponibilizados no site www.Pra agora.com.br apenas poderão ser acessados por pessoas plenamente capazes, conforme o Direito brasileiro. Todos aqueles
         que não possuírem plena capacidade civil - menores de 18 anos não emancipados, pródigos, ébrios habituais ou viciados em tóxicos e pessoas que não puderem exprimir
         sua vontade, por motivo transitório ou permanente - deverão ser devidamente assistidos por seus representantes legais, que se responsabilizarão pelo cumprimento das presentes regras.\n\n
         As pessoas jurídicas também poderão se cadastrar, por meio de seus representantes legais.\n\n
-        Ao usuário, será permitido manter apenas uma conta junto ao site www.eagora.com.br. Contas duplicadas serão automaticamente desativadas pelo editor do site, sem prejuízo de demais penalidades
+        Ao usuário, será permitido manter apenas uma conta junto ao site www.Pra agora.com.br. Contas duplicadas serão automaticamente desativadas pelo editor do site, sem prejuízo de demais penalidades
         cabíveis.\n\n
         Para o devido cadastramento junto ao serviço, o usuário deverá fornecer integralmente os dados requeridos. Todas as informações fornecidas pelo usuário devem ser precisas, verdadeiras e
         atualizadas. Em qualquer caso, o usuário responderá, em âmbito cível e criminal, pela veracidade, exatidão e autenticidade dos dados informados.\n\n
         O usuário deverá fornecer um endereço de e-mail válido, através do qual o site realizará todos os contatos necessários. Todas as comunicações enviadas para o referido endereço serão consideradas
         lidas pelo usuário, que se compromete, assim, a consultar regularmente suas mensagens recebidas e a respondê-las em prazo razoável.\n\n
-        Após a confirmação de seu cadastro, o usuário possuirá um login (apelido) e uma senha pessoais, que deverão ser por ele utilizados para o acesso a sua conta no site www.eagora.com.br. Estes dados
+        Após a confirmação de seu cadastro, o usuário possuirá um login (apelido) e uma senha pessoais, que deverão ser por ele utilizados para o acesso a sua conta no site www.Pra agora.com.br. Estes dados
         de conexão não poderão ser informados pelo usuário a terceiros, sendo de sua inteira responsabilidade o uso que deles seja feito. O usuário compromete-se a comunicar imediatamente ao editor do site
         quaisquer atividades suspeitas ou inesperadas em sua conta.\n\n
         Não será permitido ceder, vender, alugar ou transferir, de qualquer forma, a conta.\n\n
         Será automaticamente descadastrado o usuário que descumprir quaisquer das normas contidas no presente instrumento, sendo-lhe vedado realizar nova inscrição no site.\n\n
-        O usuário poderá, a qualquer tempo e sem necessidade de justificação, requerer o cancelamento de seu cadastro junto ao site www.eagora.com.br. O seu descadastramento será realizado o mais rapidamente
+        O usuário poderá, a qualquer tempo e sem necessidade de justificação, requerer o cancelamento de seu cadastro junto ao site www.Pra agora.com.br. O seu descadastramento será realizado o mais rapidamente
         possível, desde que não sejam verificados débitos em aberto.
     </string>
 
     <string name="terms_6"><b>6. DAS RESPONSABILIDADES</b>\n
-        O editor se responsabilizará pelos defeitos ou vícios encontrados nos serviços prestados pelo site www.eagora.com.br, desde que tenha lhes dado causa. Defeitos ou vícios técnicos ou operacionais originados
+        O editor se responsabilizará pelos defeitos ou vícios encontrados nos serviços prestados pelo site www.Pra agora.com.br, desde que tenha lhes dado causa. Defeitos ou vícios técnicos ou operacionais originados
         no próprio sistema do usuário não serão de responsabilidade do editor.\n\n
         O editor responsabiliza-se apenas pelas informações que foram por ele diretamente divulgadas. Quaisquer informações incluídas pelos usuários, tais como em comentários e em perfis pessoais, serão de inteira
         responsabilidade dos próprios.\n\n
@@ -189,11 +189,11 @@
         O editor não será responsável:\n\n
         a) pelas características intrínsecas da internet, principalmente relativas à confiabilidade e à procedência das informações circulando nesta rede;\n\n
         b) pelos conteúdos ou atividades ilícitas praticadas através de seu site.\n\n
-        A eagora não garante que os Usuários do SITE o utilizam em conformidade com a lei, a moral, a ordem pública, as Condições Gerais de Uso e, conforme o caso, as Condições Particulares. Do mesmo modo, não
+        A Pra agora não garante que os Usuários do SITE o utilizam em conformidade com a lei, a moral, a ordem pública, as Condições Gerais de Uso e, conforme o caso, as Condições Particulares. Do mesmo modo, não
         garante a veracidade e exatidão, esgotamento e/ou autenticidade dos dados disponibilizados pelos Usuários nas páginas do SITE.\n\n
-        A eagora não será responsável, direta ou subsidiariamente, pelos danos e prejuízos de qualquer natureza derivados da utilização do SITE por parte dos usuários ou que possam derivar-se da falta de veracidade,
+        A Pra agora não será responsável, direta ou subsidiariamente, pelos danos e prejuízos de qualquer natureza derivados da utilização do SITE por parte dos usuários ou que possam derivar-se da falta de veracidade,
         exatidão e/ou autenticidade dos dados ou informações proporcionados pelos usuários, ou pela utilização da identidade de um terceiro por um usuário através do SITE. A título enunciativo, mas não limitativo,
-        a eagora não será responsável direta ou subsidiariamente por:\n\n
+        a Pra agora não será responsável direta ou subsidiariamente por:\n\n
         a) conteúdos, informações, opiniões e manifestações de qualquer Usuário ou de terceiras pessoas ou entidades que se comuniquem ou se exibam através do SITE;\n\n
         b) danos e prejuízos causados a terceiros originados ou derivados da utilização do SITE por parte do usuário;\n\n
         c) danos e prejuízos causados pela falta de veracidade, exatidão ou incorreção da identidade dos usuários e de toda informação que estes proporcionem ou façam acessíveis a outros usuários ou a terceiros;\n\n
@@ -202,15 +202,15 @@
     </string>
 
     <string name="terms_7"><b>7. DOS LINKS EXTERNOS</b>\n
-        O site www.eagora.com.br pode conter links externos redirigindo o usuário para outras páginas da internet, sobre os quais o editor não exerce controle. Apesar das verificações prévias e regulares realizadas pelo
+        O site www.Pra agora.com.br pode conter links externos redirigindo o usuário para outras páginas da internet, sobre os quais o editor não exerce controle. Apesar das verificações prévias e regulares realizadas pelo
         editor, ele se isenta de qualquer responsabilidade sobre o conteúdo encontrado nestes sites e serviços.\n\n
-        Poderão ser incluídos links nas páginas e nos documentos do site www.eagora.com.br, desde que não sirvam para fins comerciais ou publicitários. Esta inclusão dependerá de autorização prévia do editor.\n\n
+        Poderão ser incluídos links nas páginas e nos documentos do site www.Pra agora.com.br, desde que não sirvam para fins comerciais ou publicitários. Esta inclusão dependerá de autorização prévia do editor.\n\n
         Não será autorizada a inclusão de páginas que divulguem quaisquer tipos de informações ilícitas, violentas, polêmicas, pornográficas, xenofóbicas, discriminatórias ou ofensivas.\n\n
         O editor se reserva o direito de retirar a qualquer momento um link levando ao seu próprio serviço, se a página de origem não estiver conforme a sua política editorial.
     </string>
 
     <string name="terms_8"><b>8. DOS DIREITOS AUTORAIS</b>\n
-        A estrutura do site www.eagora.com.br, bem como os textos, os gráficos, as imagens, as fotografias, os sons, os vídeos e as demais aplicações informáticas que o compõem são de propriedade do editor e são protegidas
+        A estrutura do site www.Pra agora.com.br, bem como os textos, os gráficos, as imagens, as fotografias, os sons, os vídeos e as demais aplicações informáticas que o compõem são de propriedade do editor e são protegidas
         pela legislação brasileira e internacional referente à propriedade intelectual.\n\n
         Qualquer representação, reprodução, adaptação ou exploração parcial ou total dos conteúdos, marcas e serviços propostos pelo site, por qualquer meio que seja, sem autorização prévia, expressa e escrita do editor,
         é estritamente vedada, podendo-se recorrer às medidas cíveis e penais cabíveis. Estão excluídos desta previsão apenas os elementos que estejam expressamente designados no site como livres de direitos autorais.\n\n
@@ -234,34 +234,34 @@
     </string>
 
     <string name="terms_10"><b>10. DOS SERVIÇOS OFERECIDOS</b>\n
-        Por intermédio do site www.eagora.com.br, o editor fornece ao cliente um catálogo ou uma loja online apresentando com exatidão os prestadores de serviço e/ ou profissionais liberais disponíveis na região desejada. Os
+        Por intermédio do site www.Pra agora.com.br, o editor fornece ao cliente um catálogo ou uma loja online apresentando com exatidão os prestadores de serviço e/ ou profissionais liberais disponíveis na região desejada. Os
         prestadores de serviço e/ ou profissionais liberais disponíveis estarão descritos e apresentados com o maior grau de precisão possível, contendo informações corretas, claras, precisas, ostensivas e em língua portuguesa
         sobre suas características, qualidades, quantidade, composição, preço, garantia, prazos e origem, entre outros dados, para que o usuário (cliente) encontre a melhor opção para sua necessidade.\n\n
         Os prestadores de serviço e/ ou profissionais liberais serão colocados para contratação e/ ou negociação pela sua disponibilidade no site.\n\n
         Os preços e as valores referentes à contratação e/ ou negociação dos prestadores de serviço e/ ou profissionais liberais serão acordadas diretamente com esses profissionais , sendo apenas de responsabilidade do editor
-        do site www.eagora.com.br facilitar a interação do cliente com o profissional liberal.\n\n
+        do site www.Pra agora.com.br facilitar a interação do cliente com o profissional liberal.\n\n
         Antes de finalizar a contratação e/ ou negociação com o profissional liberal, o usuário deverá se informar sobre as suas especificações, prazos e qualidades buscando garantia e satisfação do serviço prestado para sua necessidade.
     </string>
 
     <string name="terms_11"><b>11. DOS PREÇOS</b>\n
-        Os prestadores de serviço e/ ou profissionais liberais se reserva o direito de modificar os preços dos serviços a qualquer momento, publicando-os no site www.eagora.com.br.\n\n
-        A plataforma do eagora não terá custo algum para o usuário (cliente) que esteja procurando um prestador de serviço e/ ou profissional liberal para atender a sua necessidade.\n\n
+        Os prestadores de serviço e/ ou profissionais liberais se reserva o direito de modificar os preços dos serviços a qualquer momento, publicando-os no site www.Pra agora.com.br.\n\n
+        A plataforma do Pra agora não terá custo algum para o usuário (cliente) que esteja procurando um prestador de serviço e/ ou profissional liberal para atender a sua necessidade.\n\n
         Ao prestador de serviço e/ ou profissional liberal, será oferecido um mês grátis de acesso após o cadastramento na plataforma, após o término desse prazo, caso o profissional deseje continuar realizando contratos e/ou negociações
         dos seus serviços através da plataforma eAagora, irá efetuar um pagamento mensal no valor de R$ 10,99 na data escolhida de sua preferência.\n\n
     </string>
 
     <string name="terms_12"><b>12. DO PAGAMENTO</b>\n
         O pagamento do serviço contratado pelo cliente deverá ser tratado com o prestador de serviço e/ ou profissional liberal, como melhor atende-los.\n\n
-        O prestador de serviço e/ ou profissional liberal irá efetuará o pagamento da sua assinatura na plataforma do eAgora por meio do cartão de crédito, boleto bancário ou depósito em conta corrente.\n\n
-        Caso o usuário opte em sair antes do período pago, a plataforma eAgora se reserva o direito de não devolução do valor pago referente a mensalidade.
+        O prestador de serviço e/ ou profissional liberal irá efetuará o pagamento da sua assinatura na plataforma do Pra agora por meio do cartão de crédito, boleto bancário ou depósito em conta corrente.\n\n
+        Caso o usuário opte em sair antes do período pago, a plataforma Pra agora se reserva o direito de não devolução do valor pago referente a mensalidade.
     </string>
 
     <string name="terms_13"><b>13. DO SERVIÇO DE ATENDIMENTO AO USUÁRIO</b>\n\n
-        Em caso de dúvidas, sugestões ou problemas com a utilização do site www.eagora.com.br, o usuário poderá contatar diretamente o seu serviço de atendimento, através do endereço de e-mail: saceagora.com.br.
+        Em caso de dúvidas, sugestões ou problemas com a utilização do site www.Pra agora.com.br, o usuário poderá contatar diretamente o seu serviço de atendimento, através do endereço de e-mail: sacPra agora.com.br.
     </string>
 
     <string name="terms_14"><b>14. DAS SANÇÕES</b>\n
-        Sem prejuízo das demais medidas legais cabíveis, o editor do site www.eagora.com.br poderá, a qualquer momento, advertir, suspender ou cancelar a conta do usuário:\n\n
+        Sem prejuízo das demais medidas legais cabíveis, o editor do site www.Pra agora.com.br poderá, a qualquer momento, advertir, suspender ou cancelar a conta do usuário:\n\n
         a) que descumprir quaisquer dos dispositivos contidos no presente instrumento;\n\n
         b) que descumprir os seus deveres de usuário;\n\n
         c) que praticar atos fraudulentos ou dolosos;\n\n
@@ -271,7 +271,7 @@
 
     <string name="terms_15"><b>15. DAS ALTERAÇÕES</b>\n
         A presente versão dos termos e condições gerais de uso e de compra e venda foi atualizada pela última vez em: 01/06/2017.\n\n
-        O editor se reserva o direito de modificar, a qualquer momento e sem qualquer aviso prévio a plataforma, bem como as presentes normas, especialmente para adaptá-las às evoluções do site www.eagora.com.br, seja pela disponibilização de
+        O editor se reserva o direito de modificar, a qualquer momento e sem qualquer aviso prévio a plataforma, bem como as presentes normas, especialmente para adaptá-las às evoluções do site www.Pra agora.com.br, seja pela disponibilização de
         novas funcionalidades, seja pela supressão ou modificação daquelas já existentes.\n\n
         O usuário que utilizar o serviço, após realizadas modificações nos termos e condições gerais, demonstra a sua concordância com as novas normas. Caso discorde de alguma das modificações, deverá pedir, imediatamente, o cancelamento de
         sua conta e apresentar a sua ressalva ao serviço de atendimento, se assim o desejar.\n\n
@@ -282,7 +282,7 @@
         Para a solução das controvérsias decorrentes do presente instrumento, será aplicado integralmente o Direito brasileiro, notadamente a sua legislação consumerista.\n\n
         Os eventuais litígios deverão ser apresentados no foro da comarca em que se encontra a sede do editor do site.\n\n\n\n
         Seja bem-vindo(a)!\n\n
-        A equipe do site www.eagora.com.br lhe deseja uma excelente navegação!
+        A equipe do site www.Pra agora.com.br lhe deseja uma excelente navegação!
     </string>
     <string name="screen_terms_condition">Termos e Condições</string>
 

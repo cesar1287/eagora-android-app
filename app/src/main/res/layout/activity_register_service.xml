@@ -134,6 +134,21 @@
 
             </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 
+            <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição Profissional"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:background="@drawable/border"/>
+
             <harmonytech.praagora.controller.custom_widgets.MyCustomButton
                 android:id="@+id/btnCadastrar"
                 android:layout_width="match_parent"
@@ -143,6 +158,8 @@
                 android:text="CADASTRAR"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="25dp"/>
+
+
 
     </LinearLayout>
 

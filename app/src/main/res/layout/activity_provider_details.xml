@@ -52,11 +52,30 @@
         android:textSize="19sp"
         android:layout_marginTop="1dp"/>
 
+    <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="19dp"
+        android:text="Descrição Profissional"
+        android:textColor="@color/black"/>
+
+    <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
+        android:id="@+id/descriptionProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="45dp"
+        android:paddingTop="25dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
         <ImageView

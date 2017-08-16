@@ -46,16 +46,27 @@
             android:name=".view.TermsConditionsActivity"
             android:label="@string/screen_terms_condition"
             android:parentActivityName=".view.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".view.ProviderDetailsActivity"
             android:label=""
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".view.ContactUsActivity"
             android:label="@string/screen_contact_us"
             android:parentActivityName=".view.MainActivity"
-            android:screenOrientation="portrait"/>/>
+            android:screenOrientation="portrait" />
+        />
+        <activity
+            android:name=".view.SingWithActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".view.UsersCategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

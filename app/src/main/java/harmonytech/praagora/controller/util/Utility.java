@@ -25,7 +25,7 @@ import harmonytech.praagora.R;
 
 public class Utility {
 
-    public static final String URI_PACKAGE = "android.resource://harmonytech.eagora/";
+    public static final String URI_PACKAGE = "android.resource://harmonytech.praagora/";
 
     public static final String SEGMENTO = "segmento";
     public static final String SEGMENTO_FIREBASE = "segmentoFirebase";

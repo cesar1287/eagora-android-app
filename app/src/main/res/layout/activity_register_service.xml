@@ -121,16 +121,16 @@
 
 
             <harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout
-                android:id="@+id/etCep"
+                android:id="@+id/etCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextLabel"
-                android:hint="CEP">
+                android:hint="Cidade">
 
                     <harmonytech.praagora.controller.custom_widgets.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="number"/>
+                        android:inputType="text"/>
 
             </harmonytech.praagora.controller.custom_widgets.MyCustomTextInputLayout>
 

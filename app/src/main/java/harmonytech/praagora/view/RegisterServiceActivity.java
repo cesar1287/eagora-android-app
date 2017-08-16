@@ -56,7 +56,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         etNome = (TextInputLayout) findViewById(R.id.etNome);
         etEmail = (TextInputLayout) findViewById(R.id.etEmail);
         etNascimento = (TextInputLayout) findViewById(R.id.etNascimento);
-        etCEP = (TextInputLayout) findViewById(R.id.etCep);
+        etCEP = (TextInputLayout) findViewById(R.id.etCity);
         etCPF = (TextInputLayout) findViewById(R.id.etCpf);
         etTelefone = (TextInputLayout) findViewById(R.id.etTelefone);
 

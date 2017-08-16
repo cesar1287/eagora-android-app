@@ -1,9 +1,11 @@
 package harmonytech.praagora.view;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
@@ -17,7 +19,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 import android.widget.VideoView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +31,7 @@ import java.util.List;
 import harmonytech.praagora.R;
 import harmonytech.praagora.controller.domain.Segment;
 import harmonytech.praagora.controller.fragment.SegmentFragment;
+import harmonytech.praagora.controller.util.FirebaseHelper;
 import harmonytech.praagora.controller.util.FontsOverride;
 import harmonytech.praagora.controller.util.Utility;
 
@@ -36,10 +43,25 @@ public class MainActivity extends AppCompatActivity
 
     Button btnRegisterService;
 
+    private FirebaseAuth.AuthStateListener mAuthListener;
+    private FirebaseAuth mAuth;
+
+    Handler handler;
+    Runnable myRunnable;
+
+    String database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        verifyUserIsLogged();
+
         setContentView(R.layout.activity_main);
+
+        database = getIntent().getStringExtra(Utility.KEY_CONTENT_EXTRA_DATABASE);
 
         //set Custom Typeface
         FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/CircularStd-Book.otf");
@@ -67,6 +89,28 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthListener != null) {
+            mAuth.removeAuthStateListener(mAuthListener);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(handler != null) {
+            handler.removeCallbacks(myRunnable);
+        }
     }
 
     @Override
@@ -105,7 +149,32 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    public void verifyUserIsLogged(){
+
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // User is signed out
+                    startActivity(new Intent(MainActivity.this, UsersCategoryActivity.class));
+                    finish();
+                }/*else{
+                    sharedPreferences = getSharedPreferences(Utility.FAVORITE_SHARED_PREF_NAME, MODE_PRIVATE);
+                    String result = sharedPreferences.getString(Utility.FAVORITE_FIRST_TIME,"");
+                    if(result.equals("")){
+                        insertFirstExecFavorites();
+                    }
+                }*/
+            }
+        };
+    }
+
     private void setupUI() {
+
+        if(database.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
+            btnRegisterService.setVisibility(View.GONE);
+        }
 
         final VideoView videoview = (VideoView) findViewById(R.id.video);
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.eagora_clip);

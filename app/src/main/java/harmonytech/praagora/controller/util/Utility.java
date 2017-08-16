@@ -68,6 +68,11 @@ public class Utility {
     public static final String PROVIDER_CATEGORY = "category";
     public static final String PROVIDER_SUBCATEGORY = "subcategory";
 
+    public static final String KEY_CONTENT_EXTRA_DATABASE = "database";
+    public static final String KEY_CONTENT_EXTRA_DATA = "data";
+
+    public static final String LOGIN_SHARED_PREF_NAME = "LoginActivityPreferences";
+
     public static final String EAGORA_PHONE = "(67)98157–2320";
 
     private static final int[] pesoCPF = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2};

@@ -1,4 +1,15 @@
 <resources>
+    <string name="error_facebook_login_canceled">Login com o Facebook cancelado.</string>
+    <string name="error_facebook_login_unknown_error">Erro desconhecido com o login com o Facebook, tente novamente e contate o administrador.</string>
+    <string name="error_failed_signin_email_exists">Falha ao entrar\n\nEsse e-mail já está sendo usado em nosso sistema e dispositivo.\nTente novamente com outro método de login.</string>
+    <string name="error_unknown_error">Erro desconhecido, tente novamente e contate o administrador.</string>
+    <string name="error_signin">Algo deu errado ao fazer login, tente novamente.</string>
+
+    <string name="processing_login">Processando login, por favor aguarde…</string>
+
+    <string name="facebook_app_id">335153270268330</string>
+    <string name="fb_login_protocol_scheme">fb335153270268330</string>
+
     <string name="app_name">Pra agora</string>
     <string name="app_name_main">Pra agora</string>
     <string name="label_main_categorias">Categorias</string>
@@ -12,7 +23,6 @@
     <string name="no_internet_connection">Sem conexão com à internet</string>
 
     <string name="action_settings">Settings</string>
-
 
     <string name="label_main_title">Pra agora</string>
     <string name="button_main_cadastrar">Cadastrar Serviço</string>

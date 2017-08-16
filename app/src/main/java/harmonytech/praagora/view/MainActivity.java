@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -149,6 +150,13 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    public void signOut(View view){
+        LoginManager.getInstance().logOut();
+        mAuth.signOut();
+        startActivity(new Intent(this, UsersCategoryActivity.class));
+        finish();
+    }
+
     public void verifyUserIsLogged(){
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -172,10 +180,15 @@ public class MainActivity extends AppCompatActivity
 
     private void setupUI() {
 
-        if(database.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
+        SharedPreferences sharedPreferences = getSharedPreferences(Utility.LOGIN_SHARED_PREF_NAME, MODE_PRIVATE);
+        String result = sharedPreferences.getString("database", "");
+        if(result.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
             btnRegisterService.setVisibility(View.GONE);
         }
 
+        if(database!= null && database.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
+            btnRegisterService.setVisibility(View.GONE);
+        }
         final VideoView videoview = (VideoView) findViewById(R.id.video);
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.eagora_clip);
         videoview.setVideoURI(uri);

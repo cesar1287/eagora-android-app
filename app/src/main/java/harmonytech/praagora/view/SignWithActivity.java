@@ -176,6 +176,7 @@ public class SignWithActivity extends AppCompatActivity {
                             sharedPreferences = getSharedPreferences(Utility.LOGIN_SHARED_PREF_NAME, MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
 
+                            editor.putString("database", database);
                             editor.putString("id", Uid);
                             editor.putString("name", name);
                             editor.putString("email", email);
@@ -186,6 +187,7 @@ public class SignWithActivity extends AppCompatActivity {
                             sharedPreferences = getSharedPreferences(Utility.LOGIN_SHARED_PREF_NAME, MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
 
+                            editor.putString("database", database);
                             editor.putString("id", Uid);
                             editor.putString("name", name);
                             editor.putString("email", email);

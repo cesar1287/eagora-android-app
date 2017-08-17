@@ -13,13 +13,16 @@ import harmonytech.praagora.controller.util.Utility;
 
 public class ProviderDetailsActivity extends AppCompatActivity {
 
-    TextView tvName, tvEmail, tvPhone, tvCategory, tvSubcategory, tvWpp;
+    TextView tvName, tvEmail, tvPhone, tvCategory, tvSubcategory, tvWpp, tvDescriptionProvider;
     RatingBar rbRate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider_details);
+
+        tvDescriptionProvider = (TextView) findViewById(R.id.descriptionProvider);
+        tvDescriptionProvider.setText(getIntent().getStringExtra(Utility.PROVIDER_DESCRIPTION));
 
         tvCategory = (TextView) findViewById(R.id.detailsCategory);
         tvCategory.setText(getIntent().getStringExtra(Utility.PROVIDER_CATEGORY));

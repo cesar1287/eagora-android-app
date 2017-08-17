@@ -61,6 +61,7 @@ public class ProviderFragment extends Fragment implements RecyclerViewOnClickLis
         intent.putExtra(Utility.PROVIDER_RATE, mList.get(position).getRate());
         intent.putExtra(Utility.PROVIDER_CATEGORY, mList.get(position).getCategory());
         intent.putExtra(Utility.PROVIDER_SUBCATEGORY, mList.get(position).getSubcategory());
+        intent.putExtra(Utility.PROVIDER_DESCRIPTION, mList.get(position).getDescription());
         startActivity(intent);
     }
 

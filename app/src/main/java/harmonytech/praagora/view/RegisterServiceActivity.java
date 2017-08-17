@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -27,11 +28,12 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
     Button btnCadastrar;
     TextInputLayout etNome, etEmail, etCEP, etNascimento, etCPF, etTelefone;
+    EditText etDescription;
     Spinner spCategoria, spEspecialidade;
 
     DatabaseReference mDatabase;
 
-    TextWatcher cpfMask, phoneMask, birthMask, postalCodeMask;
+    TextWatcher cpfMask, phoneMask, birthMask;
 
     ArrayAdapter<String> adapterSubCategorias;
 
@@ -59,6 +61,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         etCEP = (TextInputLayout) findViewById(R.id.etCity);
         etCPF = (TextInputLayout) findViewById(R.id.etCpf);
         etTelefone = (TextInputLayout) findViewById(R.id.etTelefone);
+        etDescription = (EditText) findViewById(R.id.description);
 
         spCategoria = (Spinner) findViewById(R.id.spCategorias);
         ArrayAdapter<String> adapterCategorias = new ArrayAdapter<>(getApplicationContext(), R.layout.spinner_item, areas);
@@ -87,7 +90,7 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
     }
 
     public void attemptLogin(){
-        String name, email, birth, postalCode, cpf, phone;
+        String name, email, birth, postalCode, cpf, phone, description;
         double rate;
 
         boolean allFieldsFilled = true;
@@ -100,7 +103,13 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         postalCode = etCEP.getEditText().getText().toString();
         cpf = etCPF.getEditText().getText().toString();
         phone = etTelefone.getEditText().getText().toString();
+        description = etDescription.getText().toString();
         rate = 0.01;
+
+        if(description.equals("")){
+            allFieldsFilled = false;
+            Toast.makeText(this, "Campo Descrição Profissional é obrigatório", Toast.LENGTH_SHORT).show();
+        }
 
         if(name.equals("")){
             allFieldsFilled = false;
@@ -166,13 +175,6 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
             } else {
                 etNascimento.setErrorEnabled(false);
             }
-
-            if (postalCode.length() < 9) {
-                allFilledRight = false;
-                etCEP.setError("CEP inválido");
-            } else {
-                etCEP.setErrorEnabled(false);
-            }
         }
 
         if(allFilledRight){
@@ -187,14 +189,14 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
         }
 
         if(allFieldsFilled && allFilledRight && allFilledCorrectly) {
-            writeNewProvider(name, email, birth, postalCode, cpf, phone, rate);
+            writeNewProvider(name, email, birth, postalCode, cpf, phone, rate, description);
             Toast.makeText(this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             finish();
         }
     }
 
-    private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf, String phone, double rate) {
-        ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf, phone, rate);
+    private void writeNewProvider(String name, String email, String birth, String postalCode, String cpf, String phone, double rate, String description) {
+        ProviderFirebase providerFirebase = new ProviderFirebase(name, email, birth, postalCode, cpf, phone, rate, description);
 
         mDatabase
                 .child(segmentosFirebase.get(spCategoria.getSelectedItem().toString()))
@@ -211,9 +213,6 @@ public class RegisterServiceActivity extends AppCompatActivity implements View.O
 
         birthMask = Utility.insertMask(getResources().getString(R.string.birth_mask), etNascimento.getEditText());
         etNascimento.getEditText().addTextChangedListener(birthMask);
-
-        postalCodeMask = Utility.insertMask(getResources().getString(R.string.postalCode_mask), etCEP.getEditText());
-        etCEP.getEditText().addTextChangedListener(postalCodeMask);
     }
 
     @Override

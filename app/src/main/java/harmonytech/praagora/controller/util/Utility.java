@@ -67,6 +67,7 @@ public class Utility {
     public static final String PROVIDER_RATE = "rate";
     public static final String PROVIDER_CATEGORY = "category";
     public static final String PROVIDER_SUBCATEGORY = "subcategory";
+    public static final String PROVIDER_DESCRIPTION = "description";
 
     public static final String KEY_CONTENT_EXTRA_DATABASE = "database";
     public static final String KEY_CONTENT_EXTRA_DATA = "data";

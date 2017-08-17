@@ -2,8 +2,16 @@ package harmonytech.praagora.controller.domain;
 
 public class Provider {
 
-    private String name, email, birth, postalCode, cpf, phone, category, subcategory;
+    private String name, email, birth, postalCode, cpf, phone, category, subcategory, description;
     private double rate;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getCategory() {
         return category;

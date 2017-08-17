@@ -16,6 +16,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -52,6 +53,10 @@ public class MainActivity extends AppCompatActivity
 
     String database;
 
+    NavigationView navigationView;
+
+    SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,8 +81,6 @@ public class MainActivity extends AppCompatActivity
         btnRegisterService = (Button) findViewById(R.id.btnRegisterService);
         btnRegisterService.setOnClickListener(this);
 
-        setupUI();
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(Utility.changeActionBarTitle(this, toolbar.getTitle().toString()));
@@ -88,8 +91,10 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        setupUI();
     }
 
     @Override
@@ -153,6 +158,9 @@ public class MainActivity extends AppCompatActivity
     public void signOut(View view){
         LoginManager.getInstance().logOut();
         mAuth.signOut();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
         finish();
     }
 
@@ -179,15 +187,21 @@ public class MainActivity extends AppCompatActivity
 
     private void setupUI() {
 
-        SharedPreferences sharedPreferences = getSharedPreferences(Utility.LOGIN_SHARED_PREF_NAME, MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences(Utility.LOGIN_SHARED_PREF_NAME, MODE_PRIVATE);
         String result = sharedPreferences.getString("database", "");
-        if(result.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
-            btnRegisterService.setVisibility(View.GONE);
-        }
 
         if(database!= null && database.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
+            Menu nav_Menu = navigationView.getMenu();
+            nav_Menu.findItem(R.id.nav_cadastrar).setVisible(false);
             btnRegisterService.setVisibility(View.GONE);
+        }else{
+            if(result.equals(FirebaseHelper.FIREBASE_DATABASE_USERS)){
+                Menu nav_Menu = navigationView.getMenu();
+                nav_Menu.findItem(R.id.nav_cadastrar).setVisible(false);
+                btnRegisterService.setVisibility(View.GONE);
+            }
         }
+
         final VideoView videoview = (VideoView) findViewById(R.id.video);
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.eagora_clip);
         videoview.setVideoURI(uri);

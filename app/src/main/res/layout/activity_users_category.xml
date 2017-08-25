@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/service"
-    tools:context="harmonytech.praagora.view.UsersCategoryActivity">
+    tools:context="harmonytech.praagoraa.view.UsersCategoryActivity">
     
     <LinearLayout
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             android:textColor="@color/colorBackground"
             android:layout_marginBottom="110dp"/>
 
-        <harmonytech.praagora.controller.custom_widgets.MyCustomTextView
+        <harmonytech.praagoraa.controller.custom_widgets.MyCustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Em qual opção sua necessidade se encaixa?"
